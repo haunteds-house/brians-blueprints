@@ -1,0 +1,201 @@
+{
+  "index": 0,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Phase 1 — First smelting",
+    "version": 562954249895936,
+    "entities": [
+      {
+        "name": "burner-inserter",
+        "direction": 12,
+        "position": {
+          "x": 2.5,
+          "y": 46.5
+        }
+      },
+      {
+        "name": "burner-inserter",
+        "direction": 8,
+        "position": {
+          "x": 3.5,
+          "y": 47.5
+        }
+      },
+      {
+        "name": "burner-inserter",
+        "direction": 12,
+        "position": {
+          "x": 2.5,
+          "y": 50.5
+        }
+      },
+      {
+        "name": "burner-inserter",
+        "position": {
+          "x": 3.5,
+          "y": 49.5
+        }
+      },
+      {
+        "name": "constant-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [
+                  {
+                    "name": "iron-ore",
+                    "comparator": "=",
+                    "count": 1,
+                    "index": 1,
+                    "quality": "normal"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "position": {
+          "x": 0.5,
+          "y": 46.5
+        }
+      },
+      {
+        "name": "constant-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [
+                  {
+                    "name": "copper-ore",
+                    "comparator": "=",
+                    "count": 1,
+                    "index": 1,
+                    "quality": "normal"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "position": {
+          "x": 0.5,
+          "y": 50.5
+        }
+      },
+      {
+        "name": "constant-combinator",
+        "direction": 4,
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [
+                  {
+                    "name": "coal",
+                    "comparator": "=",
+                    "count": 1,
+                    "index": 1,
+                    "quality": "normal"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "position": {
+          "x": 1.5,
+          "y": 48.5
+        }
+      },
+      {
+        "name": "inserter",
+        "direction": 12,
+        "position": {
+          "x": 2.5,
+          "y": 48.5
+        }
+      },
+      {
+        "name": "stone-furnace",
+        "position": {
+          "x": 4,
+          "y": 46
+        }
+      },
+      {
+        "name": "stone-furnace",
+        "position": {
+          "x": 4,
+          "y": 51
+        }
+      },
+      {
+        "name": "wooden-chest",
+        "position": {
+          "x": 1.5,
+          "y": 46.5
+        }
+      },
+      {
+        "name": "wooden-chest",
+        "bar": 2,
+        "position": {
+          "x": 3.5,
+          "y": 48.5
+        }
+      },
+      {
+        "name": "wooden-chest",
+        "position": {
+          "x": 1.5,
+          "y": 50.5
+        }
+      }
+    ],
+    "icons": [
+      {
+        "index": 1,
+        "signal": {
+          "name": "signal-B",
+          "type": "virtual"
+        }
+      },
+      {
+        "index": 2,
+        "signal": {
+          "name": "signal-1",
+          "type": "virtual"
+        }
+      },
+      {
+        "index": 3,
+        "signal": {
+          "name": "iron-plate"
+        }
+      },
+      {
+        "index": 4,
+        "signal": {
+          "name": "copper-plate"
+        }
+      }
+    ],
+    "snap-to-grid": {
+      "x": 32,
+      "y": 32
+    },
+    "absolute-snapping": true,
+    "position-relative-to-grid": {
+      "x": 0,
+      "y": 0
+    },
+    "description": "Experimental starter subset, not the completed overhaul. Reserve 96x96 tiles and align all five phases on one chunk intersection. Phase 5 requires applying the upgrade planner to built entities. Preserve underground belt tiers and long-handed inserters. Follow the Space Age milestone order in ../CHECKPOINT.md. Cliff explosives require Vulcanus and are omitted."
+  }
+}
