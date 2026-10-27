@@ -145,11 +145,11 @@ for index, entry in ipairs(config.cases) do
   end
   inventory.destroy()
   if entry.kind == "smelting" then
-    attach_power(surface, {9.5, 1.5}, {6.5, 1.5}, {16.5, 5.5})
-    case.feeder = assert(surface.find_entity("fast-transport-belt", {16.5, .5}))
-    for _, x in ipairs({9.5, 23.5}) do
+    attach_power(surface, {-2.5, 5.5}, {-5.5, 5.5}, {2.5, 5.5})
+    case.feeder = assert(surface.find_entity("fast-transport-belt", {39.5, .5}))
+    for row = 0, entry.rows - 1 do
       case.sinks[#case.sinks + 1] = assert(surface.find_entity(
-        "fast-transport-belt", {x, entry.height - .5}))
+        "fast-transport-belt", {.5, 6.5 + row * 8}))
     end
   elseif entry.kind == "solid-import" then
     attach_power(surface, {32.5, 34.5}, {34.5, 36.5}, {29.5, 32.5})

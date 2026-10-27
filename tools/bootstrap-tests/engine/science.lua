@@ -44,7 +44,9 @@ assert(#surface.find_entities_filtered {force = force} == expected,
 
 local feeders, fluids = {}, {}
 for _, port in ipairs(config.item_ports) do
-  local belt = surface.find_entity("fast-transport-belt", {port.x, port.y})
+  local belt = surface.find_entity("transport-belt", {port.x, port.y}) or
+    surface.find_entity("fast-transport-belt", {port.x, port.y}) or
+    surface.find_entity("express-transport-belt", {port.x, port.y})
   assert(belt, "Missing declared belt input")
   feeders[#feeders + 1] = {entity = belt, item = port.item}
 end
@@ -54,21 +56,20 @@ for _, port in ipairs(config.fluid_ports) do
   fluids[#fluids + 1] = {entity = pipe, name = port.fluid}
 end
 
--- The fixture's generator is outside the factory and supplies ample electricity.
+-- External test electricity feeds the blueprint's declared pole inlet.
 local power = surface.create_entity {
-  name = "electric-energy-interface", position = {75, -12}, force = force
+  name = "electric-energy-interface", position = {-3.5, 1.5}, force = force
 }
 power.power_production = 1000000000
 power.electric_buffer_size = 100000000000
 power.energy = 100000000000
 local inlet = surface.create_entity {
-  name = "big-electric-pole", position = {73, -12}, force = force
+  name = "medium-electric-pole", position = {-.5, 1.5}, force = force
 }
-local grid = assert(surface.find_entity("big-electric-pole", {73, 17}))
+local grid = assert(surface.find_entity("small-electric-pole", {1.5, 1.5}))
 inlet.get_wire_connector(defines.wire_connector_id.pole_copper, true).connect_to(
   grid.get_wire_connector(defines.wire_connector_id.pole_copper, true))
-assert(inlet.electric_network_id and inlet.electric_network_id == grid.electric_network_id,
-       "Power inlet is not connected to the blueprint grid")
+assert(inlet.electric_network_id == grid.electric_network_id, "Disconnected test power")
 
 local machines = surface.find_entities_filtered {type = "assembling-machine"}
 local labs = surface.find_entities_filtered {name = "lab"}
@@ -86,6 +87,42 @@ for _, machine in pairs(machines) do
 end
 for name, count in pairs(config.science_counts) do
   assert(recipe_counts[name] == count, "Science machine count changed: " .. name)
+end
+
+if config.phase >= 4 then
+  local function segment(x,y)
+    return assert(surface.find_entity("pipe", {x,y})).get_fluid_segment_id(1)
+  end
+  assert(segment(.5,97.5) == segment(19.5,123.5), "Water inlet is disconnected")
+  assert(segment(.5,99.5) == segment(33.5,125.5), "Crude inlet is disconnected")
+  assert(segment(.5,97.5) ~= segment(.5,99.5), "Water and crude pipes were joined")
+  assert(segment(138.5,113.5) == segment(78.5,120.5), "Auxiliary petroleum outlet is disconnected")
+  assert(segment(138.5,113.5) ~= segment(.5,99.5), "Petroleum and crude pipes were joined")
+end
+
+if config.inspect then
+  local book_inventory = game.create_inventory(1)
+  assert(book_inventory[1].import_stack(config.book) == 0, "Whole blueprint book import failed")
+  assert(book_inventory[1].is_blueprint_book, "Imported item is not a blueprint book")
+  local book_export = book_inventory[1].export_stack()
+  book_inventory.destroy()
+  local nodes = {}
+  for _, entity in pairs(surface.find_entities_filtered {force = force}) do
+    if entity.fluids_count > 0 then
+      local storages = {}
+      for index = 1, entity.fluids_count do
+        local neighbours = {}
+        for _, n in pairs(entity.get_fluid_box_neighbours(index) or {}) do
+          neighbours[#neighbours+1] = {position=n.entity.position,index=n.index,name=n.entity.name}
+        end
+        storages[index] = {segment = entity.has_fluid_segment(index) and entity.get_fluid_segment_id(index) or nil, neighbours=neighbours}
+      end
+      nodes[#nodes + 1] = {name = entity.name, position = entity.position,
+        direction = entity.direction, storages = storages}
+    end
+  end
+  helpers.write_file("bootstrap-result.json", helpers.table_to_json {passed = true, nodes = nodes, book_export = book_export})
+  return
 end
 
 local function totals()
@@ -141,7 +178,7 @@ script.on_event(defines.events.on_tick, function()
       for name, count in pairs(finish) do
         produced[name] = count - baseline[name]
         rates[name] = produced[name] / config.sample_minutes
-        if rates[name] < 44.5 then passed = false end
+        if rates[name] < (config.minimum_spm or 44.5) then passed = false end
       end
       local unpowered = 0
       for _, machine in pairs(machines) do

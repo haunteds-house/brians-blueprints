@@ -1,12 +1,12 @@
 # Bootstrap connections
 
-Coordinates are local tile positions in the exported blueprint. Align its absolute 32-tile grid first; apply the same translation to every coordinate below. South means increasing y, east increasing x. Connect power and unlock the recipes before commissioning a district. Later modules are separate placements and require connecting belts/pipes manually.
+All coordinates are local to the **same 160×128 bootstrap anchor**. South increases y; east increases x. Every phase snaps to the same 32-tile grid. Bring external feeds to the existing ports as the relevant production chain is added. Some ports are not present in the earliest phases.
 
-## Science campus — 192×160 reservation
+## Material inputs
 
-This district receives externally smelted material. There is no ore or fuel-smelting input. Multiple ports for one material feed different production branches; supply every listed port. Do not replace them with a single belt feeding only the first port.
+Multiple ports for one material feed different shared production branches. Supply all ports present in the phase; feeding only the first one does not supply the entire factory. These are plates, steel and bricks, not ore.
 
-| Input | Local belt position(s) | Direction |
+| Material | Belt position(s) | Direction |
 |---|---|---|
 | Iron plate | (2.5,0.5), (3.5,0.5), (4.5,0.5), (5.5,0.5) | South |
 | Iron plate | (4.5,11.5), (4.5,12.5) | East |
@@ -17,30 +17,39 @@ This district receives externally smelted material. There is no ore or fuel-smel
 | Coal | (19.5,3.5) | South |
 | Stone | (85.5,3.5) | South |
 | Stone brick | (108.5,3.5) | South |
-| Water | Pipe (0.5,137.5) | Into district |
-| Crude oil | Pipe (0.5,143.5) | Into district |
+| Water | Pipe (0.5,97.5) | Into factory |
+| Crude oil | Pipe (0.5,99.5) | Into factory |
 
-Some belt ports sit inside the reserved rectangle because the former railway/smelting district was removed. Bring feeds through that cleared western/northern space. Split supply between ports without starving the far end of a shared belt. The acceptance test saturates all ports independently; it does not demonstrate a particular upstream belt bus.
+Use the cleared northern/western access corridors for feeds to the internal belt ports. Split supplies without starving downstream branches. The acceptance tests saturate each port independently; they do not demonstrate a particular supply-bus arrangement.
 
-Connect the campus power poles to the external power supply. There is no power plant in this module. Final science belts feed the retained labs; the engine benchmark removes packs at the labs to measure production without a research queue limiting demand.
+Connect external power at the pole **(1.5,1.5)**. Steam/solar/nuclear power plants are outside the bootstrap. At the green-science milestone, upgrade the pole **(18.5,26.5)** to medium for the military input inserters. Use the later phase's additional marked medium poles as shown.
 
-## External electric smelting
+## Construction bay
 
-| Bank | Input, southbound | Output, southbound | Reservation |
-|---|---|---|---|
-| 48 furnaces: iron/copper/steel | (16.5,0.5) | (9.5,127.5), (23.5,127.5) | 32×128 |
-| 24 furnaces: stone brick | (16.5,0.5) | (9.5,63.5), (23.5,63.5) | 32×64 |
+The ten integrated batch cells have centers at x=111.5, 117.5, 123.5, 147.5 and 153.5, on rows y=108.5 and 120.5. Their ordinary input chests are three tiles north of the assembler; limited output chests are three tiles south. Supply ingredients manually or through local belts. The rest of the science production is belt-fed.
 
-Use iron ore for iron plate, copper ore for copper plate, iron plate for steel, and stone for bricks. Furnace recipes select automatically. Keep the two outputs separate to preserve lane capacity. Connect the central medium-pole chain to electricity.
+The first-smelting cell occupies the southwest pocket and accepts hand-fed ore/coal in its ordinary chests. It is retained through phase 4 and retired in phase 5. Expand ore smelting outside this cell before trying to sustain science. Later phases do not automatically remove omitted entities.
+
+## Electric-furnace banks
+
+The supplied 6×8 electric tile repeats six times per short row. The 48-furnace bank is physically 40×32; the 24-furnace brick bank is 40×16. Both reserve **64×32** on the chunk grid.
+
+| Interface | Position | Direction |
+|---|---|---|
+| Ore/plate input, both banks | (39.5,0.5) | South |
+| Row 1 output | (0.5,6.5) | West |
+| Row 2 output | (0.5,14.5) | West |
+| Row 3 output, 48-furnace bank | (0.5,22.5) | West |
+| Row 4 output, 48-furnace bank | (0.5,30.5) | West |
+
+Input iron ore, copper ore, iron plates for steel, or stone for bricks. Connect the medium-pole network to electricity. Keep row outputs separate or merge with splitters. All four row outputs side-loaded onto the same lane would bottleneck the bank.
 
 ## Raw train imports
 
-Each solid unloading station exposes southbound red belts at **(18.5,63.5), (22.5,63.5), (27.5,63.5)**. Connect all three. Crude oil uses the pipe at **(22.5,63.5)**. Connect electricity to the station poles and join the rail approaches to your railway. Stations are sized for the supplied two-locomotive/two-wagon trains. Outpost loading stations are site-specific and must match those wagon positions.
+Each solid unloading station has southbound belts at **(18.5,63.5), (22.5,63.5), (27.5,63.5)**. Connect all three. Crude uses the pipe at **(22.5,63.5)**. Connect station electricity and rail approaches. Match outpost loaders to the supplied two-locomotive/two-wagon train positions and schedule names.
 
-## Batch infrastructure and uranium
+## Other infrastructure
 
-Small assembler cells take ingredients in the north iron chest **(8.5,5.5)** and place one stack of output in the south wooden chest **(8.5,11.5)**. Concrete/refined-concrete cells take water through the east pipe **(11.5,8.5)**. Connect the small pole to electricity. These are manual or locally belt-supplied cells, with no requester-chest dependency.
+Optional batch cells take ingredients in the north iron chest **(8.5,5.5)** and place one stack of output in the south wooden chest **(8.5,11.5)**. Concrete/refined-concrete cells take water through **(11.5,8.5)**. Connect their poles to electricity. These cells have no requester-chest dependency.
 
-The four-centrifuge module takes uranium ore southbound at **(10.5,0.5)**. Each centrifuge outputs U-238 into the upper steel chest and U-235 into the chest one tile below it. Collect both isotopes; a full output chest eventually stops processing. Connect the medium-pole chain to electricity.
-
-The large infrastructure mall retains the original red-mall resource interfaces and includes ordinary chests at former requester inputs. Refill these locally. It is a separate later district, not a fully connected extension of the 96×96 starter. Build only the recipes you have unlocked and need.
+The four-centrifuge module takes uranium ore southbound at **(10.5,0.5)**. Each centrifuge outputs U-238 into the upper steel chest and U-235 into the chest immediately below. Collect both isotopes before storage fills. Connect the pole chain to electricity; the module does not include a uranium mine or reactor plant.

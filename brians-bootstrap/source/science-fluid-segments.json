@@ -1,0 +1,2947 @@
+[
+  {
+    "x": 7.5,
+    "y": 119.5,
+    "fluid": "other"
+  },
+  {
+    "x": 7.5,
+    "y": 122.5,
+    "fluid": "other"
+  },
+  {
+    "x": 8.5,
+    "y": 119.5,
+    "fluid": "other"
+  },
+  {
+    "x": 8.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 8.5,
+    "y": 122.5,
+    "fluid": "other"
+  },
+  {
+    "x": 18.5,
+    "y": 119.5,
+    "fluid": "other"
+  },
+  {
+    "x": 18.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 18.5,
+    "y": 122.5,
+    "fluid": "other"
+  },
+  {
+    "x": 19.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 19.5,
+    "y": 124.5,
+    "fluid": "water"
+  },
+  {
+    "x": 18.5,
+    "y": 127.5,
+    "fluid": "other"
+  },
+  {
+    "x": 19.5,
+    "y": 126.5,
+    "fluid": "other"
+  },
+  {
+    "x": 18.5,
+    "y": 126.5,
+    "fluid": "other"
+  },
+  {
+    "x": 21.5,
+    "y": 119.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 22.5,
+    "y": 121.5,
+    "fluid": "other"
+  },
+  {
+    "x": 20.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 21.5,
+    "y": 127.5,
+    "fluid": "other"
+  },
+  {
+    "x": 22.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 23.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 22.5,
+    "y": 119.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 22.5,
+    "y": 118.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 24.5,
+    "y": 99.5,
+    "fluid": "other"
+  },
+  {
+    "x": 25.5,
+    "y": 98.5,
+    "fluid": "other"
+  },
+  {
+    "x": 24.5,
+    "y": 98.5,
+    "fluid": "other"
+  },
+  {
+    "x": 24.5,
+    "y": 109.5,
+    "fluid": "other"
+  },
+  {
+    "x": 24.5,
+    "y": 110.5,
+    "fluid": "other"
+  },
+  {
+    "x": 26.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 24.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 24.5,
+    "y": 119.5,
+    "fluid": "other"
+  },
+  {
+    "x": 24.5,
+    "y": 121.5,
+    "fluid": "other"
+  },
+  {
+    "x": 24.5,
+    "y": 120.5,
+    "fluid": "other"
+  },
+  {
+    "x": 25.5,
+    "y": 122.5,
+    "fluid": "other"
+  },
+  {
+    "x": 24.5,
+    "y": 122.5,
+    "fluid": "other"
+  },
+  {
+    "x": 25.5,
+    "y": 127.5,
+    "fluid": "other"
+  },
+  {
+    "x": 27.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 26.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 26.5,
+    "y": 114.5,
+    "fluid": "other"
+  },
+  {
+    "x": 28.5,
+    "y": 127.5,
+    "fluid": "other"
+  },
+  {
+    "x": 29.5,
+    "y": 110.5,
+    "fluid": "other"
+  },
+  {
+    "x": 28.5,
+    "y": 110.5,
+    "fluid": "other"
+  },
+  {
+    "x": 29.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 29.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 28.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 31.5,
+    "y": 110.5,
+    "fluid": "other"
+  },
+  {
+    "x": 30.5,
+    "y": 110.5,
+    "fluid": "other"
+  },
+  {
+    "x": 30.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 31.5,
+    "y": 114.5,
+    "fluid": "other"
+  },
+  {
+    "x": 30.5,
+    "y": 114.5,
+    "fluid": "other"
+  },
+  {
+    "x": 31.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 30.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 30.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 30.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 31.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 32.5,
+    "y": 127.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 1.5,
+    "y": 137.5,
+    "fluid": "water"
+  },
+  {
+    "x": 0.5,
+    "y": 137.5,
+    "fluid": "water"
+  },
+  {
+    "x": 1.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 0.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 3.5,
+    "y": 137.5,
+    "fluid": "water"
+  },
+  {
+    "x": 2.5,
+    "y": 137.5,
+    "fluid": "water"
+  },
+  {
+    "x": 3.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 2.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 5.5,
+    "y": 137.5,
+    "fluid": "water"
+  },
+  {
+    "x": 4.5,
+    "y": 137.5,
+    "fluid": "water"
+  },
+  {
+    "x": 5.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 4.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 7.5,
+    "y": 137.5,
+    "fluid": "water"
+  },
+  {
+    "x": 6.5,
+    "y": 137.5,
+    "fluid": "water"
+  },
+  {
+    "x": 7.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 6.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 9.5,
+    "y": 137.5,
+    "fluid": "water"
+  },
+  {
+    "x": 8.5,
+    "y": 137.5,
+    "fluid": "water"
+  },
+  {
+    "x": 9.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 8.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 11.5,
+    "y": 137.5,
+    "fluid": "water"
+  },
+  {
+    "x": 10.5,
+    "y": 137.5,
+    "fluid": "water"
+  },
+  {
+    "x": 11.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 10.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 13.5,
+    "y": 137.5,
+    "fluid": "water"
+  },
+  {
+    "x": 12.5,
+    "y": 137.5,
+    "fluid": "water"
+  },
+  {
+    "x": 13.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 12.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 15.5,
+    "y": 137.5,
+    "fluid": "water"
+  },
+  {
+    "x": 14.5,
+    "y": 137.5,
+    "fluid": "water"
+  },
+  {
+    "x": 15.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 14.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 17.5,
+    "y": 137.5,
+    "fluid": "water"
+  },
+  {
+    "x": 16.5,
+    "y": 137.5,
+    "fluid": "water"
+  },
+  {
+    "x": 17.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 16.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 19.5,
+    "y": 131.5,
+    "fluid": "water"
+  },
+  {
+    "x": 19.5,
+    "y": 130.5,
+    "fluid": "water"
+  },
+  {
+    "x": 19.5,
+    "y": 133.5,
+    "fluid": "water"
+  },
+  {
+    "x": 19.5,
+    "y": 132.5,
+    "fluid": "water"
+  },
+  {
+    "x": 19.5,
+    "y": 135.5,
+    "fluid": "water"
+  },
+  {
+    "x": 19.5,
+    "y": 134.5,
+    "fluid": "water"
+  },
+  {
+    "x": 18.5,
+    "y": 137.5,
+    "fluid": "water"
+  },
+  {
+    "x": 19.5,
+    "y": 137.5,
+    "fluid": "water"
+  },
+  {
+    "x": 19.5,
+    "y": 136.5,
+    "fluid": "water"
+  },
+  {
+    "x": 19.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 18.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 21.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 20.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 23.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 22.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 25.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 24.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 27.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 26.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 29.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 28.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 129.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 131.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 130.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 133.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 132.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 135.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 134.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 137.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 136.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 139.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 138.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 141.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 140.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 30.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 143.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 142.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 145.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 144.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 147.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 146.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 149.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 148.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 151.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 31.5,
+    "y": 150.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 43.5,
+    "y": 69.5,
+    "fluid": "other"
+  },
+  {
+    "x": 42.5,
+    "y": 69.5,
+    "fluid": "other"
+  },
+  {
+    "x": 42.5,
+    "y": 70.5,
+    "fluid": "other"
+  },
+  {
+    "x": 42.5,
+    "y": 77.5,
+    "fluid": "other"
+  },
+  {
+    "x": 42.5,
+    "y": 76.5,
+    "fluid": "other"
+  },
+  {
+    "x": 42.5,
+    "y": 87.5,
+    "fluid": "other"
+  },
+  {
+    "x": 42.5,
+    "y": 88.5,
+    "fluid": "other"
+  },
+  {
+    "x": 49.5,
+    "y": 69.5,
+    "fluid": "other"
+  },
+  {
+    "x": 48.5,
+    "y": 69.5,
+    "fluid": "other"
+  },
+  {
+    "x": 59.5,
+    "y": 69.5,
+    "fluid": "other"
+  },
+  {
+    "x": 61.5,
+    "y": 69.5,
+    "fluid": "other"
+  },
+  {
+    "x": 60.5,
+    "y": 69.5,
+    "fluid": "other"
+  },
+  {
+    "x": 63.5,
+    "y": 69.5,
+    "fluid": "other"
+  },
+  {
+    "x": 62.5,
+    "y": 69.5,
+    "fluid": "other"
+  },
+  {
+    "x": 62.5,
+    "y": 68.5,
+    "fluid": "other"
+  },
+  {
+    "x": 33.5,
+    "y": 98.5,
+    "fluid": "other"
+  },
+  {
+    "x": 33.5,
+    "y": 110.5,
+    "fluid": "other"
+  },
+  {
+    "x": 32.5,
+    "y": 110.5,
+    "fluid": "other"
+  },
+  {
+    "x": 33.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 32.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 32.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 33.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 33.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 32.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 32.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 32.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 33.5,
+    "y": 123.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 33.5,
+    "y": 125.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 33.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 34.5,
+    "y": 98.5,
+    "fluid": "other"
+  },
+  {
+    "x": 35.5,
+    "y": 110.5,
+    "fluid": "other"
+  },
+  {
+    "x": 34.5,
+    "y": 110.5,
+    "fluid": "other"
+  },
+  {
+    "x": 34.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 35.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 35.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 34.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 34.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 35.5,
+    "y": 127.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 36.5,
+    "y": 111.5,
+    "fluid": "other"
+  },
+  {
+    "x": 36.5,
+    "y": 110.5,
+    "fluid": "other"
+  },
+  {
+    "x": 36.5,
+    "y": 113.5,
+    "fluid": "other"
+  },
+  {
+    "x": 36.5,
+    "y": 112.5,
+    "fluid": "other"
+  },
+  {
+    "x": 37.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 37.5,
+    "y": 114.5,
+    "fluid": "other"
+  },
+  {
+    "x": 36.5,
+    "y": 114.5,
+    "fluid": "other"
+  },
+  {
+    "x": 37.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 36.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 36.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 36.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 37.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 39.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 39.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 38.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 38.5,
+    "y": 114.5,
+    "fluid": "other"
+  },
+  {
+    "x": 39.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 38.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 38.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 38.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 39.5,
+    "y": 123.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 38.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 39.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 39.5,
+    "y": 127.5,
+    "fluid": "other"
+  },
+  {
+    "x": 41.5,
+    "y": 98.5,
+    "fluid": "other"
+  },
+  {
+    "x": 41.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 40.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 41.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 40.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 41.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 41.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 40.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 40.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 42.5,
+    "y": 127.5,
+    "fluid": "other"
+  },
+  {
+    "x": 42.5,
+    "y": 97.5,
+    "fluid": "other"
+  },
+  {
+    "x": 42.5,
+    "y": 98.5,
+    "fluid": "other"
+  },
+  {
+    "x": 43.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 42.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 43.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 43.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 42.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 42.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 42.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 43.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 45.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 44.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 45.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 45.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 44.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 44.5,
+    "y": 114.5,
+    "fluid": "other"
+  },
+  {
+    "x": 45.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 44.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 44.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 44.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 45.5,
+    "y": 123.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 44.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 45.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 46.5,
+    "y": 127.5,
+    "fluid": "other"
+  },
+  {
+    "x": 47.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 46.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 47.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 46.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 47.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 47.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 46.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 46.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 49.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 48.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 49.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 49.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 48.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 48.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 48.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 49.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 48.5,
+    "y": 127.5,
+    "fluid": "other"
+  },
+  {
+    "x": 49.5,
+    "y": 126.5,
+    "fluid": "other"
+  },
+  {
+    "x": 48.5,
+    "y": 126.5,
+    "fluid": "other"
+  },
+  {
+    "x": 51.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 50.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 51.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 51.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 50.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 50.5,
+    "y": 114.5,
+    "fluid": "other"
+  },
+  {
+    "x": 51.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 50.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 50.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 50.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 51.5,
+    "y": 123.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 50.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 51.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 53.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 52.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 53.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 52.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 53.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 53.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 52.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 52.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 53.5,
+    "y": 127.5,
+    "fluid": "other"
+  },
+  {
+    "x": 52.5,
+    "y": 126.5,
+    "fluid": "other"
+  },
+  {
+    "x": 53.5,
+    "y": 126.5,
+    "fluid": "other"
+  },
+  {
+    "x": 55.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 54.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 55.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 55.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 54.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 54.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 54.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 55.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 56.5,
+    "y": 127.5,
+    "fluid": "other"
+  },
+  {
+    "x": 54.5,
+    "y": 126.5,
+    "fluid": "other"
+  },
+  {
+    "x": 57.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 56.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 57.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 57.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 56.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 56.5,
+    "y": 114.5,
+    "fluid": "other"
+  },
+  {
+    "x": 57.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 56.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 56.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 56.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 57.5,
+    "y": 123.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 56.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 57.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 59.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 58.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 59.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 58.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 59.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 59.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 58.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 58.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 60.5,
+    "y": 127.5,
+    "fluid": "other"
+  },
+  {
+    "x": 61.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 60.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 61.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 61.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 60.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 60.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 60.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 61.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 63.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 62.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 63.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 63.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 62.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 62.5,
+    "y": 114.5,
+    "fluid": "other"
+  },
+  {
+    "x": 63.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 62.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 62.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 62.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 63.5,
+    "y": 123.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 62.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 63.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 63.5,
+    "y": 127.5,
+    "fluid": "other"
+  },
+  {
+    "x": 33.5,
+    "y": 151.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 32.5,
+    "y": 151.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 35.5,
+    "y": 151.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 34.5,
+    "y": 151.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 37.5,
+    "y": 151.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 36.5,
+    "y": 151.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 39.5,
+    "y": 151.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 38.5,
+    "y": 151.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 41.5,
+    "y": 147.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 41.5,
+    "y": 146.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 41.5,
+    "y": 149.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 41.5,
+    "y": 148.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 41.5,
+    "y": 150.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 41.5,
+    "y": 151.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 40.5,
+    "y": 151.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 42.5,
+    "y": 135.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 43.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 42.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 42.5,
+    "y": 137.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 42.5,
+    "y": 136.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 42.5,
+    "y": 139.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 42.5,
+    "y": 138.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 42.5,
+    "y": 140.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 45.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 44.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 47.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 46.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 49.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 48.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 51.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 50.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 53.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 52.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 55.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 54.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 57.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 56.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 59.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 58.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 61.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 60.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 63.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 62.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 65.5,
+    "y": 69.5,
+    "fluid": "other"
+  },
+  {
+    "x": 64.5,
+    "y": 69.5,
+    "fluid": "other"
+  },
+  {
+    "x": 65.5,
+    "y": 68.5,
+    "fluid": "other"
+  },
+  {
+    "x": 67.5,
+    "y": 69.5,
+    "fluid": "other"
+  },
+  {
+    "x": 66.5,
+    "y": 69.5,
+    "fluid": "other"
+  },
+  {
+    "x": 69.5,
+    "y": 69.5,
+    "fluid": "other"
+  },
+  {
+    "x": 68.5,
+    "y": 69.5,
+    "fluid": "other"
+  },
+  {
+    "x": 68.5,
+    "y": 68.5,
+    "fluid": "other"
+  },
+  {
+    "x": 71.5,
+    "y": 69.5,
+    "fluid": "other"
+  },
+  {
+    "x": 70.5,
+    "y": 69.5,
+    "fluid": "other"
+  },
+  {
+    "x": 71.5,
+    "y": 68.5,
+    "fluid": "other"
+  },
+  {
+    "x": 93.5,
+    "y": 95.5,
+    "fluid": "other"
+  },
+  {
+    "x": 95.5,
+    "y": 95.5,
+    "fluid": "other"
+  },
+  {
+    "x": 94.5,
+    "y": 95.5,
+    "fluid": "other"
+  },
+  {
+    "x": 65.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 64.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 65.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 64.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 65.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 65.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 64.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 64.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 67.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 66.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 67.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 67.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 66.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 66.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 66.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 67.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 67.5,
+    "y": 127.5,
+    "fluid": "other"
+  },
+  {
+    "x": 69.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 68.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 69.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 69.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 68.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 68.5,
+    "y": 114.5,
+    "fluid": "other"
+  },
+  {
+    "x": 69.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 68.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 68.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 68.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 69.5,
+    "y": 123.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 68.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 69.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 70.5,
+    "y": 127.5,
+    "fluid": "other"
+  },
+  {
+    "x": 71.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 70.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 71.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 70.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 71.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 71.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 70.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 70.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 73.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 72.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 73.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 72.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 72.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 72.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 73.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 74.5,
+    "y": 127.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 75.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 74.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 75.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 74.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 74.5,
+    "y": 114.5,
+    "fluid": "other"
+  },
+  {
+    "x": 75.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 74.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 74.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 74.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 75.5,
+    "y": 123.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 74.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 75.5,
+    "y": 125.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 75.5,
+    "y": 124.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 77.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 76.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 77.5,
+    "y": 115.5,
+    "fluid": "water"
+  },
+  {
+    "x": 77.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 76.5,
+    "y": 114.5,
+    "fluid": "water"
+  },
+  {
+    "x": 77.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 76.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 76.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 77.5,
+    "y": 122.5,
+    "fluid": "water"
+  },
+  {
+    "x": 77.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 77.5,
+    "y": 127.5,
+    "fluid": "crude-oil"
+  },
+  {
+    "x": 78.5,
+    "y": 111.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 78.5,
+    "y": 110.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 78.5,
+    "y": 116.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 78.5,
+    "y": 117.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 78.5,
+    "y": 119.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 78.5,
+    "y": 118.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 78.5,
+    "y": 121.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 79.5,
+    "y": 120.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 78.5,
+    "y": 120.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 79.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 78.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 81.5,
+    "y": 109.5,
+    "fluid": "other"
+  },
+  {
+    "x": 80.5,
+    "y": 109.5,
+    "fluid": "other"
+  },
+  {
+    "x": 80.5,
+    "y": 111.5,
+    "fluid": "other"
+  },
+  {
+    "x": 80.5,
+    "y": 110.5,
+    "fluid": "other"
+  },
+  {
+    "x": 80.5,
+    "y": 113.5,
+    "fluid": "other"
+  },
+  {
+    "x": 80.5,
+    "y": 112.5,
+    "fluid": "other"
+  },
+  {
+    "x": 80.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 80.5,
+    "y": 114.5,
+    "fluid": "other"
+  },
+  {
+    "x": 80.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 80.5,
+    "y": 120.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 81.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 80.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 80.5,
+    "y": 122.5,
+    "fluid": "water"
+  },
+  {
+    "x": 81.5,
+    "y": 127.5,
+    "fluid": "other"
+  },
+  {
+    "x": 83.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 82.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 83.5,
+    "y": 127.5,
+    "fluid": "other"
+  },
+  {
+    "x": 83.5,
+    "y": 126.5,
+    "fluid": "other"
+  },
+  {
+    "x": 84.5,
+    "y": 119.5,
+    "fluid": "water"
+  },
+  {
+    "x": 84.5,
+    "y": 118.5,
+    "fluid": "water"
+  },
+  {
+    "x": 84.5,
+    "y": 121.5,
+    "fluid": "water"
+  },
+  {
+    "x": 84.5,
+    "y": 120.5,
+    "fluid": "water"
+  },
+  {
+    "x": 84.5,
+    "y": 123.5,
+    "fluid": "water"
+  },
+  {
+    "x": 84.5,
+    "y": 122.5,
+    "fluid": "water"
+  },
+  {
+    "x": 87.5,
+    "y": 109.5,
+    "fluid": "other"
+  },
+  {
+    "x": 87.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 86.5,
+    "y": 119.5,
+    "fluid": "other"
+  },
+  {
+    "x": 87.5,
+    "y": 119.5,
+    "fluid": "other"
+  },
+  {
+    "x": 87.5,
+    "y": 118.5,
+    "fluid": "other"
+  },
+  {
+    "x": 86.5,
+    "y": 121.5,
+    "fluid": "other"
+  },
+  {
+    "x": 86.5,
+    "y": 120.5,
+    "fluid": "other"
+  },
+  {
+    "x": 89.5,
+    "y": 107.5,
+    "fluid": "other"
+  },
+  {
+    "x": 88.5,
+    "y": 107.5,
+    "fluid": "other"
+  },
+  {
+    "x": 88.5,
+    "y": 109.5,
+    "fluid": "other"
+  },
+  {
+    "x": 88.5,
+    "y": 108.5,
+    "fluid": "other"
+  },
+  {
+    "x": 88.5,
+    "y": 111.5,
+    "fluid": "other"
+  },
+  {
+    "x": 88.5,
+    "y": 110.5,
+    "fluid": "other"
+  },
+  {
+    "x": 88.5,
+    "y": 113.5,
+    "fluid": "other"
+  },
+  {
+    "x": 88.5,
+    "y": 112.5,
+    "fluid": "other"
+  },
+  {
+    "x": 88.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 88.5,
+    "y": 114.5,
+    "fluid": "other"
+  },
+  {
+    "x": 88.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 88.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 89.5,
+    "y": 121.5,
+    "fluid": "other"
+  },
+  {
+    "x": 91.5,
+    "y": 107.5,
+    "fluid": "other"
+  },
+  {
+    "x": 90.5,
+    "y": 107.5,
+    "fluid": "other"
+  },
+  {
+    "x": 91.5,
+    "y": 111.5,
+    "fluid": "other"
+  },
+  {
+    "x": 91.5,
+    "y": 110.5,
+    "fluid": "other"
+  },
+  {
+    "x": 91.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 91.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 91.5,
+    "y": 119.5,
+    "fluid": "other"
+  },
+  {
+    "x": 91.5,
+    "y": 118.5,
+    "fluid": "other"
+  },
+  {
+    "x": 91.5,
+    "y": 121.5,
+    "fluid": "other"
+  },
+  {
+    "x": 90.5,
+    "y": 121.5,
+    "fluid": "other"
+  },
+  {
+    "x": 91.5,
+    "y": 120.5,
+    "fluid": "other"
+  },
+  {
+    "x": 93.5,
+    "y": 96.5,
+    "fluid": "other"
+  },
+  {
+    "x": 93.5,
+    "y": 106.5,
+    "fluid": "other"
+  },
+  {
+    "x": 93.5,
+    "y": 107.5,
+    "fluid": "other"
+  },
+  {
+    "x": 92.5,
+    "y": 107.5,
+    "fluid": "other"
+  },
+  {
+    "x": 92.5,
+    "y": 111.5,
+    "fluid": "other"
+  },
+  {
+    "x": 92.5,
+    "y": 110.5,
+    "fluid": "other"
+  },
+  {
+    "x": 93.5,
+    "y": 113.5,
+    "fluid": "other"
+  },
+  {
+    "x": 92.5,
+    "y": 113.5,
+    "fluid": "other"
+  },
+  {
+    "x": 92.5,
+    "y": 112.5,
+    "fluid": "other"
+  },
+  {
+    "x": 92.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 92.5,
+    "y": 114.5,
+    "fluid": "other"
+  },
+  {
+    "x": 93.5,
+    "y": 114.5,
+    "fluid": "other"
+  },
+  {
+    "x": 92.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 92.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 92.5,
+    "y": 119.5,
+    "fluid": "other"
+  },
+  {
+    "x": 65.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 64.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 67.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 66.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 69.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 68.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 71.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 70.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 73.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 72.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 75.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 74.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 77.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 76.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 78.5,
+    "y": 131.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 78.5,
+    "y": 130.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 78.5,
+    "y": 133.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 78.5,
+    "y": 132.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 78.5,
+    "y": 134.5,
+    "fluid": "petroleum-gas"
+  },
+  {
+    "x": 97.5,
+    "y": 95.5,
+    "fluid": "other"
+  },
+  {
+    "x": 96.5,
+    "y": 95.5,
+    "fluid": "other"
+  },
+  {
+    "x": 99.5,
+    "y": 95.5,
+    "fluid": "other"
+  },
+  {
+    "x": 98.5,
+    "y": 95.5,
+    "fluid": "other"
+  },
+  {
+    "x": 101.5,
+    "y": 95.5,
+    "fluid": "other"
+  },
+  {
+    "x": 100.5,
+    "y": 95.5,
+    "fluid": "other"
+  },
+  {
+    "x": 103.5,
+    "y": 95.5,
+    "fluid": "other"
+  },
+  {
+    "x": 102.5,
+    "y": 95.5,
+    "fluid": "other"
+  },
+  {
+    "x": 105.5,
+    "y": 95.5,
+    "fluid": "other"
+  },
+  {
+    "x": 104.5,
+    "y": 95.5,
+    "fluid": "other"
+  },
+  {
+    "x": 107.5,
+    "y": 95.5,
+    "fluid": "other"
+  },
+  {
+    "x": 106.5,
+    "y": 95.5,
+    "fluid": "other"
+  },
+  {
+    "x": 109.5,
+    "y": 95.5,
+    "fluid": "other"
+  },
+  {
+    "x": 108.5,
+    "y": 95.5,
+    "fluid": "other"
+  },
+  {
+    "x": 111.5,
+    "y": 95.5,
+    "fluid": "other"
+  },
+  {
+    "x": 110.5,
+    "y": 95.5,
+    "fluid": "other"
+  },
+  {
+    "x": 112.5,
+    "y": 95.5,
+    "fluid": "other"
+  },
+  {
+    "x": 99.5,
+    "y": 114.5,
+    "fluid": "other"
+  },
+  {
+    "x": 99.5,
+    "y": 115.5,
+    "fluid": "other"
+  },
+  {
+    "x": 99.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 100.5,
+    "y": 110.5,
+    "fluid": "other"
+  },
+  {
+    "x": 101.5,
+    "y": 111.5,
+    "fluid": "other"
+  },
+  {
+    "x": 101.5,
+    "y": 110.5,
+    "fluid": "other"
+  },
+  {
+    "x": 100.5,
+    "y": 113.5,
+    "fluid": "other"
+  },
+  {
+    "x": 100.5,
+    "y": 112.5,
+    "fluid": "other"
+  },
+  {
+    "x": 101.5,
+    "y": 112.5,
+    "fluid": "other"
+  },
+  {
+    "x": 100.5,
+    "y": 114.5,
+    "fluid": "other"
+  },
+  {
+    "x": 100.5,
+    "y": 117.5,
+    "fluid": "other"
+  },
+  {
+    "x": 100.5,
+    "y": 116.5,
+    "fluid": "other"
+  },
+  {
+    "x": 101.5,
+    "y": 118.5,
+    "fluid": "other"
+  },
+  {
+    "x": 100.5,
+    "y": 118.5,
+    "fluid": "other"
+  },
+  {
+    "x": 100.5,
+    "y": 119.5,
+    "fluid": "other"
+  },
+  {
+    "x": 101.5,
+    "y": 119.5,
+    "fluid": "other"
+  }
+]

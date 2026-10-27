@@ -2,6 +2,16 @@
 
 Don't update to a new version that is different in the first or second digit when in the process of building a base. Though very similar, they are **not** compatible!
 
+## Integrated bootstrap revision
+
+- Replaced separate starter/campus placement with seven phases at one 160×128 anchor.
+- Uniform yellow, then red, then blue belts, including all undergrounds and splitters; no belt weaving.
+- Corrected the 2.1 science-capacity calculation: all six requested machine counts give 45/min with assembler 2s.
+- Reduced early circuit-machine construction and added sciences in their final positions.
+- Replaced the previous external furnaces with compact banks based on the supplied EFurnace Tile.
+- Removed advanced-module dependencies from those furnace tiles and added vanilla tier planners.
+- Replaced the large separate infrastructure district with the integrated construction bay and optional batch cells.
+
 ## Space Age 2.1 development overhaul
 
 - Shared chunk-grid anchor for five starter phases and a routing-safe tier upgrade.

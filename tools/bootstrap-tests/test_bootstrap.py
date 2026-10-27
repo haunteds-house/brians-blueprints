@@ -1,4 +1,4 @@
-"""Blueprint contract checks; sustained throughput is a separate engine test."""
+"""Blueprint contracts; throughput is checked independently by the real engine."""
 import copy
 import importlib.util
 import json
@@ -9,6 +9,7 @@ import unittest
 TOOLS = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(TOOLS))
 from fatul import Processor, read_files
+from compact_bootstrap import BELTS, DIRECTIONS, footprint, tier
 
 spec = importlib.util.spec_from_file_location('bootstrap', TOOLS / 'build-bootstrap.py')
 bootstrap = importlib.util.module_from_spec(spec)
@@ -20,6 +21,22 @@ def get(name):
     return json.loads((BOOK / name).read_text())['blueprint']
 
 
+def tunnels(bp):
+    es = bp['entities']
+    endpoints = {(e['position']['x'], e['position']['y']):e for e in es
+                 if 'underground-belt' in e['name']}
+    pairs = set()
+    for p,e in endpoints.items():
+        if e.get('type') != 'input': continue
+        d=e.get('direction',0);dx,dy=DIRECTIONS[d]
+        for distance in range(1,10):
+            q=(p[0]+dx*distance,p[1]+dy*distance)
+            other=endpoints.get(q)
+            if other and other['name']==e['name'] and other.get('type')=='output' and other.get('direction',0)==d:
+                pairs.add((p,q));break
+    return endpoints,pairs
+
+
 class BootstrapBook(unittest.TestCase):
     def test_book_round_trip_and_reference_integrity(self):
         data = read_files(BOOK, False)
@@ -27,88 +44,132 @@ class BootstrapBook(unittest.TestCase):
         result = Processor(False, ids_mode='keep').decode(packed)
         self.assertEqual(result['blueprint_book']['label'], data['blueprint_book']['label'])
 
-    def test_science_counts_and_external_smelting(self):
-        bp = get('phase-7-science-campus.json')
-        for name, count in bootstrap.SCIENCE.items():
-            machines = [e for e in bp['entities'] if e.get('recipe') == name + '-science-pack']
-            self.assertEqual(len(machines), count, name)
-            self.assertTrue(all(e['name'] == 'assembling-machine-2' for e in machines))
-        self.assertFalse(any(e['name'] in {'stone-furnace', 'steel-furnace'} for e in bp['entities']))
+    def test_book_indices_are_unique(self):
+        def check(value):
+            entries=value.get('blueprint_book',{}).get('blueprints',[])
+            indices=[e['index'] for e in entries]
+            self.assertEqual(len(indices),len(set(indices)))
+            for entry in entries:check(entry)
+        check(read_files(BOOK,False))
 
-    def test_starter_overlay_alignment(self):
-        phases = [get(f'phase-{i}.json') for i in range(1, 6)]
-        def positions(bp, name):
-            return {tuple(e['position'].values()) for e in bp['entities'] if e['name'] == name}
-        self.assertTrue(positions(phases[0], 'stone-furnace') <= positions(phases[1], 'stone-furnace'))
-        gears = [{tuple(e['position'].values()) for e in bp['entities']
-                  if e.get('recipe') == 'iron-gear-wheel'} for bp in phases[1:]]
-        self.assertTrue(gears[0] <= gears[1])
-        self.assertTrue(gears[1] <= gears[2])
-        self.assertEqual(gears[2], gears[3])
+    def test_science_capacity_uses_actual_21_second_recipes(self):
+        recipes=bootstrap.read('brians-bootstrap/source/science-recipes.json')
+        for name,count in bootstrap.SCIENCE.items():
+            recipe=recipes[name+'-science-pack']
+            self.assertAlmostEqual(count*.75*60*recipe['amount']/recipe['energy'],45)
+            self.assertEqual(67200 % int(recipe['energy']*60/.75),0)
+            self.assertAlmostEqual(count*.5*60*recipe['amount']/recipe['energy'],30)
 
-    def test_tier_upgrade_preserves_braided_tunnels(self):
-        old, new = get('phase-4.json'), get('phase-5.json')
-        self.assertFalse(any(e['name'] in {'assembling-machine-1', 'transport-belt',
-            'splitter', 'inserter'} for e in new['entities']))
-        def tunnels(bp):
-            return [(e['name'], e['position'], e.get('type')) for e in bp['entities']
-                    if 'underground-belt' in e['name']]
-        self.assertEqual(tunnels(old), tunnels(new))
+    def test_blue_upgrade_changes_only_the_belt_tier(self):
+        red=get('phase-6.json');blue=get('phase-7.json')
+        self.assertEqual(tier(red,'blue')['entities'],blue['entities'])
+        self.assertEqual(red['wires'],blue['wires'])
 
-    def test_external_bank(self):
-        bp = get('phase-6-external-resources/electric-smelting.json')
-        self.assertEqual(sum(e['name'] == 'electric-furnace' for e in bp['entities']), 48)
-        self.assertFalse(any(e['name'] in {'stone-furnace', 'steel-furnace', 'burner-inserter'}
-                             for e in bp['entities']))
-        self.assertTrue(all(0 <= e['position']['x'] < 32 and 0 <= e['position']['y'] < 128
-                            for e in bp['entities']))
+    def test_all_sciences_share_bootstrap_and_machine_ratio(self):
+        bp=get('phase-6.json')
+        for name,count in bootstrap.SCIENCE.items():
+            machines=[e for e in bp['entities'] if e.get('recipe')==name+'-science-pack']
+            self.assertEqual(len(machines),count,name)
+            self.assertTrue(all(e['name']=='assembling-machine-2' for e in machines))
+        self.assertFalse((BOOK/'phase-7-science-campus.json').exists())
+        self.assertFalse((BOOK/'phase-8-infrastructure-mall.json').exists())
+        self.assertTrue({'solar-panel','gun-turret','repair-pack','transport-belt'} <=
+                        {e.get('recipe') for e in bp['entities']})
 
-    def test_brick_bank_and_batch_power(self):
-        bp = get('phase-6-external-resources/brick-smelting.json')
-        self.assertEqual(sum(e['name'] == 'electric-furnace' for e in bp['entities']), 24)
-        self.assertTrue(all(0 <= e['position']['x'] < 32 and 0 <= e['position']['y'] < 64
-                            for e in bp['entities']))
-        cell = get('early-support/solar-panel.json')
-        self.assertEqual(sum(e['name'] == 'small-electric-pole' for e in cell['entities']), 2)
-        self.assertTrue(cell.get('wires'))
-        self.assertTrue(all(e.get('direction') == 0 for e in cell['entities']
-                            if e['name'] == 'inserter'))
+    def test_uniform_belt_tiers_in_every_export(self):
+        for path in BOOK.rglob('*.json'):
+            bp=json.loads(path.read_text()).get('blueprint',{})
+            names={e['name'] for e in bp.get('entities',[])}
+            present={name for name,values in BELTS.items() if names&set(values)}
+            self.assertLessEqual(len(present),1,str(path))
+        for stage in range(2,8):
+            expected='yellow' if stage<5 else 'red' if stage<7 else 'blue'
+            names={e['name'] for e in get(f'phase-{stage}.json')['entities']}
+            self.assertTrue(names&set(BELTS[expected]))
 
-    def test_vanilla_imports_and_scheduled_trains(self):
-        names = set()
-        for path in (BOOK / 'phase-6-external-resources').glob('import-*.json'):
-            bp = json.loads(path.read_text())['blueprint']
-            stops = [e for e in bp['entities'] if e['name'] == 'train-stop']
-            self.assertEqual(len(stops), 1)
-            self.assertEqual(stops[0]['manual_trains_limit'], 1)
-            names.add(stops[0]['station'])
-        self.assertEqual(len(names), 5)
-        for path in (BOOK / 'phase-6-external-resources').glob('train-*.json'):
-            bp = json.loads(path.read_text())['blueprint']
-            self.assertEqual(len(bp['entities']), 4)
-            for s in bp['schedules']:
-                self.assertEqual(len(s['schedule']['records']), 2)
-                self.assertNotIn('interrupts', s['schedule'])
-                self.assertIn(s['schedule']['records'][1]['station'], names)
+    def test_tunnels_are_paired_short_and_upgrade_without_reconnection(self):
+        for stage in range(2,8):
+            bp=get(f'phase-{stage}.json');ends,pairs=tunnels(bp)
+            paired={p for pair in pairs for p in pair}
+            self.assertEqual(set(ends),paired,f'Unpaired tunnel in phase {stage}')
+            self.assertTrue(all(abs(a[0]-b[0])+abs(a[1]-b[1])<=5 for a,b in pairs))
+            for color in BELTS:
+                self.assertEqual(tunnels(tier(bp,color))[1],pairs,f'{stage}/{color}')
+            intervals=list(pairs)
+            for i,(a,b) in enumerate(intervals):
+                for c,d in intervals[:i]:
+                    if a[0]==b[0]==c[0]==d[0]:
+                        self.assertGreaterEqual(max(min(a[1],b[1]),min(c[1],d[1])),min(max(a[1],b[1]),max(c[1],d[1])))
+                    if a[1]==b[1]==c[1]==d[1]:
+                        self.assertGreaterEqual(max(min(a[0],b[0]),min(c[0],d[0])),min(max(a[0],b[0]),max(c[0],d[0])))
 
-    def test_no_space_logistics_entities_in_nauvis_mall(self):
-        bp = get('phase-8-infrastructure-mall.json')
-        self.assertFalse(any(e['name'] in {'requester-chest', 'buffer-chest',
-            'active-provider-chest'} for e in bp['entities']))
-        recipes = {e.get('recipe') for e in bp['entities']}
-        self.assertTrue({'concrete', 'refined-concrete', 'gun-turret',
-            'laser-turret', 'flamethrower-turret', 'nuclear-reactor', 'electric-furnace'} <= recipes)
-        self.assertFalse(recipes & set(bootstrap.read(
-            'brians-bootstrap/source/space-age-gated-recipes.json')['recipes']))
-
-    def test_chunk_grid(self):
-        for name in ['phase-5.json', 'phase-7-science-campus.json',
-                'phase-8-infrastructure-mall.json',
-                'phase-6-external-resources/electric-smelting.json']:
-            bp = get(name)
-            self.assertEqual(bp['snap-to-grid'], {'x': 32, 'y': 32})
+    def test_phase_geometry_and_retirement(self):
+        for stage in range(1,8):
+            bp=get(f'phase-{stage}.json')
+            cells=set()
+            for entity in bp['entities']:
+                area=footprint(entity)
+                self.assertFalse(cells&area,f'Overlapping entity in phase {stage}: {entity}')
+                cells|=area
+                self.assertTrue(all(0<=x<160 and 0<=y<128 for x,y in area),entity)
+                self.assertFalse(any(k.startswith('_') for k in entity))
+            fuels=[e for e in bp['entities'] if e['name'] in {'stone-furnace','steel-furnace','burner-inserter'}]
+            self.assertEqual(bool(fuels),stage<5)
+            self.assertEqual(bp['snap-to-grid'],{'x':32,'y':32})
             self.assertTrue(bp['absolute-snapping'])
 
+    def test_progression_is_not_a_second_science_factory(self):
+        for stage in range(2,7):
+            expected={'automation'} if stage==2 else {'automation','logistic','military'} if stage==3 else {'automation','logistic','military','chemical'} if stage<6 else set(bootstrap.SCIENCE)
+            current=get(f'phase-{stage}.json')
+            for name,count in bootstrap.SCIENCE.items():
+                self.assertEqual(sum(e.get('recipe')==name+'-science-pack' for e in current['entities']),count if name in expected else 0)
+        final=get('phase-6.json')['entities']
+        final_positions={(e['position']['x'],e['position']['y']) for e in final}
+        for stage in range(2,6):
+            for e in get(f'phase-{stage}.json')['entities']:
+                if e['name'] in {'stone-furnace','steel-furnace','burner-inserter','wooden-chest'}:continue
+                # The temporary iron/copper cell's electric inserter is retired.
+                if e['position']['x']<7 and e['position']['y']>=100:continue
+                self.assertIn((e['position']['x'],e['position']['y']),final_positions)
 
-if __name__ == '__main__':
-    unittest.main()
+    def test_oil_milestones_and_early_power(self):
+        self.assertFalse(any(e['name']=='medium-electric-pole' for e in get('phase-2.json')['entities']))
+        self.assertFalse(any(e['name']=='oil-refinery' for e in get('phase-3.json')['entities']))
+        recipes={e.get('recipe') for e in get('phase-4.json')['entities']}
+        self.assertIn('basic-oil-processing',recipes)
+        self.assertFalse(recipes&{'advanced-oil-processing','heavy-oil-cracking','light-oil-cracking','lubricant'})
+
+    def test_user_electric_tile_banks(self):
+        for name,count,rows in [('electric-smelting',48,4),('brick-smelting',24,2)]:
+            bp=get(f'phase-6-external-resources/{name}.json')
+            self.assertEqual(sum(e['name']=='electric-furnace' for e in bp['entities']),count)
+            self.assertEqual(sum(e['name']=='medium-electric-pole' for e in bp['entities']),6*rows)
+            self.assertFalse(any(e.get('items') for e in bp['entities']))
+            self.assertTrue(all(0<=x<40 and 0<=y<32 for e in bp['entities'] for x,y in footprint(e)))
+            ends,pairs=tunnels(bp)
+            self.assertEqual(set(ends),{p for pair in pairs for p in pair})
+            for color in BELTS:self.assertEqual(tunnels(tier(bp,color))[1],pairs)
+
+    def test_scheduled_vanilla_resource_trains(self):
+        stations=set()
+        for path in (BOOK/'phase-6-external-resources').glob('import-*.json'):
+            stops=[e for e in json.loads(path.read_text())['blueprint']['entities'] if e['name']=='train-stop']
+            self.assertEqual(len(stops),1);self.assertEqual(stops[0]['manual_trains_limit'],1)
+            stations.add(stops[0]['station'])
+        self.assertEqual(len(stations),5)
+        for path in (BOOK/'phase-6-external-resources').glob('train-*.json'):
+            bp=json.loads(path.read_text())['blueprint'];self.assertEqual(len(bp['entities']),4)
+            for s in bp['schedules']:
+                self.assertEqual(len(s['schedule']['records']),2)
+                self.assertIn(s['schedule']['records'][1]['station'],stations)
+
+    def test_nauvis_only_without_space_logistics(self):
+        gated=set(bootstrap.read('brians-bootstrap/source/space-age-gated-recipes.json')['recipes'])
+        for path in BOOK.rglob('*.json'):
+            bp=json.loads(path.read_text()).get('blueprint',{})
+            self.assertFalse(any(e.get('recipe') in gated for e in bp.get('entities',[])),path)
+            self.assertFalse(any(e['name'] in {'requester-chest','buffer-chest','active-provider-chest'} for e in bp.get('entities',[])),path)
+
+
+if __name__=='__main__':unittest.main()

@@ -1,0 +1,162 @@
+{
+  "blueprint": {
+    "snap-to-grid": {
+      "x": 6,
+      "y": 8
+    },
+    "absolute-snapping": true,
+    "position-relative-to-grid": {
+      "x": 4,
+      "y": 0
+    },
+    "icons": [
+      {
+        "signal": {
+          "name": "electric-furnace"
+        },
+        "index": 1
+      }
+    ],
+    "entities": [
+      {
+        "entity_number": 1,
+        "name": "bulk-inserter",
+        "position": {
+          "x": 0.5,
+          "y": 3.5
+        }
+      },
+      {
+        "entity_number": 2,
+        "name": "turbo-underground-belt",
+        "position": {
+          "x": 0.5,
+          "y": 4.5
+        },
+        "direction": 12,
+        "type": "input"
+      },
+      {
+        "entity_number": 3,
+        "name": "electric-furnace",
+        "position": {
+          "x": 1.5,
+          "y": 1.5
+        },
+        "items": [
+          {
+            "id": {
+              "name": "efficiency-module-3"
+            },
+            "items": {
+              "in_inventory": [
+                {
+                  "inventory": 4,
+                  "stack": 0
+                },
+                {
+                  "inventory": 4,
+                  "stack": 1
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "entity_number": 4,
+        "name": "turbo-underground-belt",
+        "position": {
+          "x": 1.5,
+          "y": 4.5
+        },
+        "direction": 12,
+        "type": "output"
+      },
+      {
+        "entity_number": 5,
+        "name": "medium-electric-pole",
+        "position": {
+          "x": 2.5,
+          "y": 3.5
+        }
+      },
+      {
+        "entity_number": 6,
+        "name": "bulk-inserter",
+        "position": {
+          "x": 2.5,
+          "y": 4.5
+        },
+        "direction": 4
+      },
+      {
+        "entity_number": 7,
+        "name": "bulk-inserter",
+        "position": {
+          "x": 3.5,
+          "y": 0.5
+        },
+        "direction": 4
+      },
+      {
+        "entity_number": 8,
+        "name": "turbo-underground-belt",
+        "position": {
+          "x": 4.5,
+          "y": 0.5
+        },
+        "direction": 12,
+        "type": "input"
+      },
+      {
+        "entity_number": 9,
+        "name": "electric-furnace",
+        "position": {
+          "x": 4.5,
+          "y": 3.5
+        },
+        "items": [
+          {
+            "id": {
+              "name": "efficiency-module-3"
+            },
+            "items": {
+              "in_inventory": [
+                {
+                  "inventory": 4,
+                  "stack": 0
+                },
+                {
+                  "inventory": 4,
+                  "stack": 1
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "entity_number": 10,
+        "name": "turbo-underground-belt",
+        "position": {
+          "x": 5.5,
+          "y": 0.5
+        },
+        "direction": 12,
+        "type": "output"
+      },
+      {
+        "entity_number": 11,
+        "name": "bulk-inserter",
+        "position": {
+          "x": 5.5,
+          "y": 1.5
+        }
+      }
+    ],
+    "item": "blueprint",
+    "label": "EFurnace Tile",
+    "version": 562954249895938
+  }
+}

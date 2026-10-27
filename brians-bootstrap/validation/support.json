@@ -8,34 +8,34 @@
     {
       "name": "iron",
       "passed": true,
-      "rate_per_minute": 1794.6666666666667,
+      "rate_per_minute": 1793.3333333333333,
       "required_rate": 1800,
-      "blueprint_entities": 704,
-      "placed_entities": 704
+      "blueprint_entities": 312,
+      "placed_entities": 312
     },
     {
       "name": "copper",
       "passed": true,
-      "rate_per_minute": 1794.6666666666667,
+      "rate_per_minute": 1793.3333333333333,
       "required_rate": 1800,
-      "blueprint_entities": 704,
-      "placed_entities": 704
+      "blueprint_entities": 312,
+      "placed_entities": 312
     },
     {
       "name": "steel",
       "passed": true,
-      "rate_per_minute": 358.3333333333333,
+      "rate_per_minute": 357,
       "required_rate": 360,
-      "blueprint_entities": 704,
-      "placed_entities": 704
+      "blueprint_entities": 312,
+      "placed_entities": 312
     },
     {
       "name": "brick",
       "passed": true,
       "rate_per_minute": 899.6666666666666,
       "required_rate": 900,
-      "blueprint_entities": 352,
-      "placed_entities": 352
+      "blueprint_entities": 156,
+      "placed_entities": 156
     },
     {
       "name": "solid-import",
@@ -82,65 +82,83 @@
       "passed": true,
       "rate_per_minute": 0,
       "required_rate": 0,
-      "blueprint_entities": 17185,
-      "placed_entities": 17185
+      "blueprint_entities": 7514,
+      "placed_entities": 7514
     },
     {
       "name": "phase-1",
       "passed": true,
       "rate_per_minute": 0,
       "required_rate": 0,
-      "blueprint_entities": 13,
-      "placed_entities": 13
+      "blueprint_entities": 10,
+      "placed_entities": 10
     },
     {
       "name": "phase-2",
       "passed": true,
       "rate_per_minute": 0,
       "required_rate": 0,
-      "blueprint_entities": 42,
-      "placed_entities": 42
+      "blueprint_entities": 623,
+      "placed_entities": 623
     },
     {
       "name": "phase-3",
       "passed": true,
       "rate_per_minute": 0,
       "required_rate": 0,
-      "blueprint_entities": 747,
-      "placed_entities": 747
+      "blueprint_entities": 1954,
+      "placed_entities": 1954
     },
     {
       "name": "phase-4",
       "passed": true,
       "rate_per_minute": 0,
       "required_rate": 0,
-      "blueprint_entities": 1849,
-      "placed_entities": 1849
+      "blueprint_entities": 3694,
+      "placed_entities": 3694
     },
     {
       "name": "phase-5",
       "passed": true,
       "rate_per_minute": 0,
       "required_rate": 0,
-      "blueprint_entities": 1849,
-      "placed_entities": 1849
+      "blueprint_entities": 3692,
+      "placed_entities": 3692
+    },
+    {
+      "name": "phase-6",
+      "passed": true,
+      "rate_per_minute": 0,
+      "required_rate": 0,
+      "blueprint_entities": 7514,
+      "placed_entities": 7514
+    },
+    {
+      "name": "phase-7",
+      "passed": true,
+      "rate_per_minute": 0,
+      "required_rate": 0,
+      "blueprint_entities": 7514,
+      "placed_entities": 7514
     }
   ],
   "note": "Import throughput uses a continuously supplied stationary 2-2 train; travel time is excluded.",
   "blueprint_sha256": {
-    "iron": "a0a701df430eca4210ed2827fe74178c6fbb4ef33633e74fcc94c7b2515ce3f4",
-    "copper": "a0a701df430eca4210ed2827fe74178c6fbb4ef33633e74fcc94c7b2515ce3f4",
-    "steel": "a0a701df430eca4210ed2827fe74178c6fbb4ef33633e74fcc94c7b2515ce3f4",
-    "brick": "b34a89b792364abf18ff4bb66c8a6251f86118c90d3bc77ed6b9f3b775403819",
+    "iron": "7c2e05273725cc002b54bc7c7845379aa4031f68e249b60621cd2c693d7d1f4a",
+    "copper": "7c2e05273725cc002b54bc7c7845379aa4031f68e249b60621cd2c693d7d1f4a",
+    "steel": "7c2e05273725cc002b54bc7c7845379aa4031f68e249b60621cd2c693d7d1f4a",
+    "brick": "ec62e51a734ca35f11cd7e0de96b3d6b41c264da11dc898570acd83a714097c4",
     "solid-import": "6a1817e820d94f85901f01c893af8a0e24409647a48f1b10eaae827788eed6f2",
     "fluid-import": "e6ef696fdb9dcda24c1548b9c5b1197a8687643e7548112b2f341dd854336e98",
     "uranium": "aa1751e620f9d2fbd39d0a7271e335bb4bfa34e842a7d7b36fc1c1cc6b11d623",
     "solar": "6b3358c33c0170ea386b5ccb3b052c5658b3ee342d48dd261682cfc2bbb71c57",
-    "placement": "c46604fb07001259e87764c41b2470c54b54cda259cfe02704bf8cef472f228c",
-    "phase-1": "2890d73a95478e2acb80d37c0d15c0f3101953c3a46b9e2e857f102f71496a4c",
-    "phase-2": "b29f6ca51f8198d993ae6a90bf67e0306f33291f8db62e7e9d2e125da2f8d958",
-    "phase-3": "b9c17f317b384e07e801829651edb516be24d7642f89f54533f5faa4ab2b94e7",
-    "phase-4": "37c4a79797e7b139ad789eead1e2683fcd1f9e9f672ee5c322b4a7f9e0cb1110",
-    "phase-5": "6d37d11093aa5f64784cf324a125efc6aabe42b470db5f0f20713b4f3d40844d"
+    "placement": "90dbaebf520f572df47ce0e1205ae19ff921e5eed7750ae599c3ddcdccc67a9e",
+    "phase-1": "126d5c5d3d9125b57c35501d064130038d75750087e5ef751bb769315788db9b",
+    "phase-2": "0c485783c40f2c60ff23b52e4ec0b9a92348464ea3a662f2901ca34876e7d50d",
+    "phase-3": "93798a162a2f3b81a141f267bfe1f17b6e4247d2e210cdc404baba77d9d078e8",
+    "phase-4": "34446c5fce19afe6dd951e66d4b3478556538b41e28ec5952e285d8dbf428743",
+    "phase-5": "8bbba96621620b55d7c233f34ffa6350d82486d10291059f8d74fcb1678b1474",
+    "phase-6": "90dbaebf520f572df47ce0e1205ae19ff921e5eed7750ae599c3ddcdccc67a9e",
+    "phase-7": "73faccc0b1ec653d418440dfd3ff629a90b60d9f1358fa4de2e21daea0b1d0b2"
   }
 }

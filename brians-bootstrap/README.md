@@ -1,108 +1,92 @@
 # Brian's Bootstrap — Space Age 2.1
 
-Development revision for **Factorio 2.1.23 + Space Age, Quality, Elevated Rails and Recycler**, with **no third-party mods**. The earlier editable starter is preserved in `source/early-game`. Do not mix these phases with an already-built older version: the exports now share an explicit chunk-grid anchor.
+One **160×128** bootstrap reservation, aligned to the 32-tile chunk grid. Red, green, military, blue, purple and yellow science all belong to this factory. Later phases extend the same layout at the same anchor; there is no separate science campus.
 
-[Import string](space-age-bootstrap.txt) · [Connection coordinates](PORTS.md) · [Native validation reports](validation/)
+[Import string](space-age-bootstrap.txt) · [Connection coordinates](PORTS.md) · [Validation reports](validation/)
 
-## Progression
+This revision targets Factorio 2.1.23 with the official Space Age expansion components and no third-party mods. It replaces the previous development layout. Do not overlay it on that earlier revision: start a fresh placement or move the existing factory deliberately.
 
-Reserve 96×96 tiles for the starter. Align phases 1–5 to the same chunk intersection. Later districts are **separate modules**, not overlays that demolish and reconnect the old factory automatically. Leave corridors between them for belts, power and access.
+![Actual entity layout of the integrated red-belt bootstrap](layout.svg)
 
-| Stage | Purpose |
-|---|---|
-| 1 | Hand-fed smelting and first electricity |
-| 2 | Belts, gears and automation science |
-| 3 | Construction supplies and logistic science; start solar-panel production |
-| 4 | Oil, chemical science, railway supplies and construction robots |
-| 5 | Upgrade to assembler 2s, red surface belts/splitters and fast inserters |
-| 6 | Raw-resource trains and external electric smelting |
-| 7 | Separate six-science campus, reserving 192×160 tiles |
-| 8 | Separate infrastructure mall, including defenses, concrete and nuclear supplies |
-| Early/support cells | Small batch producers for solar, defenses and infrastructure before the large mall is built |
+The grid lines mark 32-tile chunks. Blue shapes are assemblers, purple shapes are chemical plants, gold shapes are refineries, and pale blue shapes are labs.
 
-Use the upgrade planner on existing entities in phase 5; placing a later blueprint alone does not upgrade a built machine. **Underground belts retain their tiers** because some routes braid yellow and red tunnels. A blanket tunnel upgrade can silently connect different endpoints. Long-handed inserters also retain their reach.
+## Build phases
 
-The larger infrastructure mall is deliberately a later district, not something to construct before green science. Its former requester inputs are ordinary chests, and its active-provider/buffer chests have been replaced. It requires no Logistics System or third-party mod. Local feed belts or manual supplies are still needed at those former requester inputs; the small support cells explicitly use batch input chests.
+Reserve five chunks east–west and four north–south from the beginning. Align every phase to that same chunk intersection. Recipe settings and ghosts do not bypass research prerequisites; build each part as it unlocks.
 
-## Science scale
+| Phase | Production | Machines and belts |
+|---|---|---|
+| 1 | First hand-fed iron/copper smelting | Temporary fuel furnaces inside the reservation |
+| 2 | Automation science | Assembler 1s; yellow belts, undergrounds and splitters |
+| 3 | Logistic and military science; construction/defense bay | Yellow throughout; add medium power where marked after its green-science unlock |
+| 4 | Oil pumping, basic refining and chemical science | Yellow throughout; basic oil works before advanced refining is researched |
+| 5 | Tier upgrade and external electric-smelting handoff | Assembler 2s, fast inserters and red belts throughout; advanced refining/cracking |
+| 6 | Production and utility science | All six science chains inside the bootstrap; red throughout |
+| 7 | Belt upgrade | Blue throughout, including every underground and splitter; assembler 2s retained |
 
-Normal-quality assembler 2s, no modules or beacons:
+The ten construction-bay cells produce belts, undergrounds, splitters, inserters, poles, gun turrets, ammunition, walls, repair packs and solar panels. They use ordinary ingredient chests and limited output chests. These are **batch producers**; supply them manually or connect local ingredient belts. They do not require requester chests or continuously divert the science supply. Additional power, rail, concrete, defense and nuclear batch cells are supplied as optional modules.
 
-| Science | Assemblers | Machine capacity, packs/min |
-|---|---:|---:|
-| Automation | 5 | 45 |
-| Logistic | 6 | 45 |
-| Military | 5 | 45 |
-| Chemical | 12 | 45 |
-| Production | 7 | 47.25 |
-| Utility | 7 | 47.25 |
+Apply the provided upgrade planners to existing entities. Placing later ghosts alone does not upgrade built machines. At phase 3, research Electric Energy Distribution 1 using the first green packs, then replace the pole at **(18.5,26.5)** with a medium pole for the military input inserters. The supplied pole planner can be used over that single position. Other poles can remain small. Long-handed inserters retain their reach.
 
-Size supporting supply for **45/min of each**. Purple/yellow have 5% machine headroom because their exact 45/min count is fractional. These are machine capacities, not measured sustained rates when supply, routing or power is insufficient. Producing 1,000 packs at 45/min takes 22 minutes 13 seconds; lab capacity and research speed may impose further limits.
+Every phase has one belt tier. Underground connections are at most five tiles long, have both endpoints in the phase, and do not overlap along the same axis. Their connections remain the same when the entire network is changed from yellow to red to blue. Belt tier is never used to separate overlapping tunnels.
 
-At simultaneous 45/min of all six, normal recipes without productivity need approximately **37.375 iron plates/s, 59.625 copper plates/s, 9.1875 steel/s, 6.25 bricks/s, 3.75 raw stone/s and 10.25 coal/s** at the production interfaces. Including steel's iron, this is **83.3125 iron ore/s**. Water, oil and electricity are additional requirements. Coal here is an ingredient and excludes boiler/furnace fuel. Actual research does not continuously consume every science equally.
+## Science and scale
 
-The scale is appropriate for a bootstrap: enlarge its supply progressively rather than constructing all purple/yellow support production early. Utility science's processing units, robot frames and low-density structures are particularly expensive. Keep mall buffers limited so stockpiling does not consume every circuit and plate needed for research.
+| Science | Assemblers | Assembler 1 capacity/min | Assembler 2 capacity/min |
+|---|---:|---:|---:|
+| Automation | 5 | 30 | 45 |
+| Logistic | 6 | 30 | 45 |
+| Military | 5 | 30 | 45 |
+| Chemical | 12 | 30 | 45 |
+| Production | 7 | — | 45 |
+| Utility | 7 | — | 45 |
 
-## Recommended technology and milestone order
+Purple/yellow machines are added in phase 6, after the assembler-2 upgrade. The complete bootstrap targets **45/min of each science**, without modules or beacons. The 2.1 purple/yellow recipes take 21 seconds, so these counts give exactly 45/min too; the earlier 47.25/min calculation was incorrect. Blue belts add transport capacity; they do not increase crafting speed. An assembler-3/beacon expansion would also need its oil, chemical and intermediate production resized.
 
-Follow technology prerequisites; the following is a priority order, not a replacement for the technology tree. Reapply recipe settings after unlocks where necessary.
+Early phases build fewer circuit producers: phase 3 uses two green-circuit assemblers, and phases 4–5 use four green-circuit and twelve red-circuit assemblers. Phase 6 expands those shared production lines to supply purple/yellow as well. The layout avoids constructing a second set of red/green/blue science chains later.
 
-1. **First smelting:** smelt 50 iron plates for Steam Power and 10 copper plates for Electronics. Build the first power plant and lab, and handcraft the initial science needed for Automation. Research Logistics and establish powered mining.
-2. **Construction/green:** Steel Processing, Logistic Science Pack, Automation 2 and Fast Inserter. Research gun turrets, walls and ammunition improvements early if enemies threaten the starting deposits. Use a dedicated turret cell instead of repeatedly changing the repair-pack assembler's recipe.
-3. **Early solar:** prioritize Solar Energy once green science and steel are available. The batch cell makes panels immediately; continue steam at night until batteries and accumulators are available. No solar/accumulator field is included inside the bootstrap.
-4. **Rail and oil:** Railway, engines, rail signals and fluid handling as needed for remote deposits. Research **Oil Gathering**, place and power a pumpjack on actual crude, and **extract oil** to unlock **Oil Processing**. Start with basic refining; do not wait for blue science or advanced refining to bootstrap petroleum.
-5. **Blue and tier upgrade:** plastics, sulfur, engines and advanced circuits → Chemical Science Pack. Prioritize Logistics 2, Advanced Oil Processing, Advanced Material Processing 2 and construction robotics as their prerequisites allow. Research inserter capacity bonuses 1–3. Switch to advanced refining with cracking and a lubricant reserve.
-6. **External electric smelting/defense:** provide sufficient electricity before replacing fuel smelting. Produce electric furnaces, then connect external plates/steel/bricks. Add flamethrower and laser turret production as unlocked; allow for laser power demand. Begin accumulator production once batteries are available.
-7. **Nuclear/purple/yellow:** supply sulfuric acid to uranium miners and mine actual uranium ore for the **Uranium Processing** trigger. Conventional processing and fuel cells can start nuclear power before Kovarex. Build reactor, centrifuge, heat exchanger, heat pipe and steam turbine supplies as needed. Production science needs productivity modules/electric furnaces/rails; utility science needs robotics, processing units and low-density structures.
-8. **Space handoff:** Space Age's rocket route can use red/green/blue science; purple/yellow are not rocket prerequisites. Logistics System requires space science. Cliff explosives and artillery require Vulcanus progression and are omitted from the Nauvis-only mall. Other space/planet-gated recipes are filtered using a snapshot of the official 2.1.23 technology graph, including prerequisites.
+At simultaneous 45/min of all six sciences, normal recipes without productivity need approximately **37.375 iron plates/s, 59.625 copper plates/s, 9.1875 steel/s, 6.25 bricks/s, 3.75 raw stone/s and 10.25 coal/s**. Including steel's iron, this is **83.3125 iron ore/s**. Oil, water and electricity are additional. Coal here is an ingredient, excluding boiler/furnace fuel. Do not size the starter's first smelting cell for the final six-science load.
 
-Do not delete refinery fluids as the normal balancing mechanism. Commission advanced oil, cracking and lubricant storage before retiring the temporary starter refinery.
+Producing 1,000 packs at 45/min takes 22 minutes 13 seconds once supply has settled. Build the expensive purple/yellow chains when their research becomes useful, rather than paying for the entire final factory before green science.
 
-The science district accepts water at **(0.5,137.5)** and crude at **(0.5,143.5)**. Its eight advanced refineries plus one basic refinery provide petroleum headroom without changing the science-machine counts. Allow up to 180 crude/s with all refineries active. Heavy-oil and lubricant working reserves are limited to 1,000 fluid each; obsolete acid export buffers are replaced by pipes so batteries do not wait for 125,000 fluid of storage to fill.
+The previous starter plus separate campus reserved 39 chunks in total; this integrated layout reserves 20. It uses 5,335 belt/splitter entities, compared with 6,351 across the previous starter plus campus. The old 96×96 starter and its later campus are retained in Git history, not exported alongside the new phases.
 
-## External smelting
+## Smelting and raw imports
 
-The iron/copper/steel bank occupies **32×128** tiles and contains **48 electric furnaces**, with no fuel belt. The dedicated brick bank is **32×64** with **24 furnaces**, avoiding an idle extra column length.
+The first hand-fed furnaces cover the initial milestones, not sustained science. Feed the plate ports from expanding fuel stacks during the early phases. At phase 5, commission external electric smelting and retire the internal hand-fed cell. Ore-processing capacity is expanded outside the bootstrap; science stays inside it.
 
-| Local interface | Use |
-|---|---|
-| (16.5, 0.5), southbound | One red input belt |
-| (9.5, 127.5), southbound | Left output belt |
-| (23.5, 127.5), southbound | Right output belt |
+The electric stacks use the supplied **6×8 EFurnace Tile**, with fast inserters and no advanced-module requests. Interior underground spans are five tiles and use the same belt tier as the rest of the bank.
 
-Iron/copper output is 15/s per belt. For steel, feed **iron plates**, giving 3 steel/s per belt. The shorter brick bank accepts 30 stone/s and produces 15 bricks/s; its output ports are at y=63.5. Outputs remain separate; do not merge both onto the same lane. Fully active furnaces alone use **8.64 MW per bank**, plus inserters and drain; the brick bank uses 4.32 MW.
+| Bank | Furnaces | Actual footprint | Chunk reservation | Capacity |
+|---|---:|---|---|---|
+| Iron/copper/steel | 48 | 40×32 | 64×32 | 30 plates/s or 6 steel/s |
+| Stone brick | 24 | 40×16 | 64×32 | 15 bricks/s from 30 stone/s |
 
-For the six sciences alone, allow roughly three iron-plate banks (split between direct iron demand and steel input), two copper banks, two steel banks and one brick bank. Mall demand needs additional supply. Install banks progressively as demand grows.
+Both use one southbound input at **(39.5,0.5)**. Four short furnace rows have westbound outputs **(0.5,6.5), (0.5,14.5), (0.5,22.5), (0.5,30.5)**; the brick bank uses the first two. Keep the row outputs separate or merge them with splitters. Side-loading all four onto one lane would cap it at half a belt. Use iron ore, copper ore, iron plates for steel, or stone for bricks. Furnace recipes select automatically.
 
-Electric furnaces are 3×3, so they do not directly fit the old 2×2 furnace positions. Commission external smelting first, connect its outputs to the existing plate/steel/brick belts, and disconnect old ore/fuel inputs. Use the furnace-only deconstruction planner over the starter, then remove disused fuel inserters and coal branches manually. Coal remains for plastic, grenades/explosives and any retained backup boilers. Once the new science district works, retire the starter science/labs so both installations are not counted as the 5/6/5/12/7/7 layout.
+The 48-furnace bank uses 8.64 MW of active furnace power; the 24-furnace bank uses 4.32 MW, plus inserters and drain. For the sciences alone, roughly three iron banks, two copper banks, two steel banks and one brick bank provide the required capacity. Mall demand needs additional supply. Install banks progressively.
 
-## Raw-resource trains
+Connect and power the new stacks before retiring fuel smelting. Phase 5 omits the temporary furnaces; omission does not demolish them. Use the furnace-only deconstruction planner and remove their obsolete chests/inserters manually. Coal then remains for recipe consumers and any backup boilers.
 
-Five unloading stations use geometry from `LTN Style Train System Blueprint.txt`: iron ore, copper ore, coal, stone and crude oil. They use vanilla train stops, resource-specific names and train limit one. Solid unloaders have three red output belts; connect southbound ports **(18.5,63.5), (22.5,63.5), (27.5,63.5)**. Crude has a pipe outlet at **(22.5,63.5)**. Supply electricity to each station.
+Five resource-specific vanilla **2-2** unloading stations import iron ore, copper ore, coal, stone and crude. The geometry comes from the supplied train reference. Stops have train limit one, and schedules depart the outpost full and the bootstrap empty. Fuel locomotives with coal until you provide automated fuel loading. Connect rail approaches and station outputs manually.
 
-At inserter-capacity bonuses 1–3, the solid unloader measured about **71.7 items/s**, below the three belts' combined 90/s capacity. The all-six-science iron requirement exceeds one such unloader: use parallel iron unloading or verify higher inserter-capacity upgrades before relying on one station. Station limits and fleet size must support that expansion.
+At inserter-capacity bonuses 1–3, the solid unloader measured about **71.7 items/s**, below its three red belts' combined 90/s capacity. The final science iron demand therefore needs parallel unloading or verified later inserter upgrades. Two cargo wagons carry 4,000 ordinary ore; at 83.3 ore/s and a 120-second round trip, allow at least three trains before delays. Travel time is separate from unloading capacity.
 
-The resource-specific **2-2 trains** have explicit schedules:
+The full city-block dispatch overhaul remains the subsequent task.
 
-- `[item=RESOURCE] Outpost load` → depart full.
-- `[item=RESOURCE] Bootstrap unload` → depart empty.
-- Crude uses `[fluid=crude-oil]` names.
+## Recommended research order
 
-Fuel locomotives with coal until an automated fuel-loading point is built. These starter trains do not require the reference book's rocket-fuel interrupt or its generic dispatcher. Place them on compatible existing rails, and match outpost loaders to their wagon positions.
+1. **First milestones:** smelt 50 iron plates for Steam Power and 10 copper plates for Electronics. Build external steam power, the first lab and powered mining. Research Automation and Logistics; the phase-2 machines make red science.
+2. **Green and military:** Logistic Science Pack, steel, ammunition, walls and turrets as needed. Use the first green packs for Electric Energy Distribution 1 and commission the marked medium pole. Research inserter-capacity bonuses 1–3 as prerequisites allow. The bootstrap assumes enemies may be present. On rail worlds, prioritize Railway, engines and fluid handling during green science when distant deposits require them; the raw-import modules can be commissioned as their prerequisites become available.
+3. **Early solar:** prioritize Solar Energy once green science and steel are available. The integrated batch cell makes panels with assembler 1s. Keep steam for nighttime until batteries and accumulators become available. No solar/accumulator field is included.
+4. **Oil milestone:** Oil Gathering → power a pumpjack on actual crude → extract oil → Oil Processing. Phase 4 uses basic refining and can make blue science before Advanced Oil Processing. Unlock plastics, sulfur, engines and advanced circuits as needed.
+5. **Red tier and smelting:** Automation 2, Fast Inserter, Logistics 2, Advanced Oil Processing and Advanced Material Processing 2. Provide enough power for electric furnaces. Apply the tier planner, commission external plate/steel/brick supply, set the main refineries to advanced processing, then enable cracking/lubricant as unlocked. Do not delete fluids as the normal balancing mechanism.
+6. **Infrastructure and later sciences:** construction robotics, concrete, accumulator production, flamethrower/laser turret supplies and railway equipment as needed. Add production/utility machines in their reserved positions. Conventional uranium processing can supply nuclear fuel before Kovarex: deliver sulfuric acid to uranium miners, mine actual uranium ore for the Uranium Processing trigger, then run the provided centrifuges and fuel-cell cells.
+7. **Blue belts and space:** research Logistics 3 after utility science and apply the blue planner to the entire belt network. Space Age's rocket route uses red/green/blue science; purple/yellow are not rocket prerequisites. Logistics System requires space science. Cliff explosives and artillery require Vulcanus progression and are omitted from these Nauvis modules.
 
-Connect the rail approaches and output belts/pipes manually. Ore goes to external smelting; stone goes to bricks and raw-stone consumers; coal goes to chemistry/military and backup boilers; crude goes to the oil district. Remote mining, power and perimeter defenses remain site-specific.
+All fluid inputs and working reserves are inside the 160×128 boundary. The main oil section has eight advanced refineries plus one basic refinery for petroleum headroom. Heavy-oil and lubricant working reserves remain 1,000 fluid each; large export-storage buffers are removed. Supply water at **(0.5,97.5)** and crude at **(0.5,99.5)**. See [PORTS.md](PORTS.md) for every plate and fluid port.
 
-Size the fleet for the actual round trip: required trains ≈ ceil(items/s × trip seconds ÷ cargo per train). Two ordinary cargo wagons hold 4,000 iron/copper ore. At the six-science iron demand, a 120-second round trip needs three such trains before allowing for delays. Belt capacity alone does not guarantee train throughput.
-
-The existing overall city-block books and their dispatch logic are unchanged. Their migration to the newer interrupt-based system is the subsequent task.
-
-## Infrastructure
-
-The large belt mall includes concrete/refined concrete, gun/flamethrower/laser turrets, ammunition, electric furnaces, solar/accumulators, robots, nuclear construction and fuel handling. It retains the existing city-block resource interfaces while the larger train overhaul is pending. Build by unlocked recipe rather than constructing the entire district at once.
-
-The small support cells use ordinary input/output chests. Supply ingredients manually or connect local feed belts; **these cells are batch producers, not an automatically interconnected mall**. Outputs are limited to one stack. Connect water to the east pipe for concrete/refined concrete. The four-centrifuge uranium-processing module accepts ore at (10.5,0.5), with separate filtered isotope chests. Nuclear construction cells are not a reactor power plant, uranium mine or complete enrichment installation.
-
-## Development
+## Building and verification
 
 ```sh
 python3 tools/build-bootstrap.py
@@ -110,15 +94,16 @@ python3 tools/fatul.py encode brians-bootstrap/book brians-bootstrap/space-age-b
 python3 -m unittest discover -s tools/bootstrap-tests
 ```
 
-A real Factorio 2.1.23 test, using only official expansion components, measured **45 / 45 / 45 / 45.2 / 45.6 / 45.3 packs/min** over ten minutes after an 80-minute cold-start warmup. Empty belts, circuits, batteries and machine input buffers take time to fill. No recipe-productivity research, modules or beacons were used; inserter capacity was limited to bonuses 1–3. Inputs were saturated at the declared ports, power was unlimited externally, and labs were drained to keep demand active. This tests the science district, not the upstream mines, fleet or power plant.
-
-Reproduce native tests with an official Space Age headless installation:
+Native acceptance tests use an official Space Age headless installation:
 
 ```sh
-python3 tools/check-bootstrap-engine.py --factorio /path/to/factorio
+python3 tools/check-bootstrap-engine.py --phase 6 --factorio /path/to/factorio
+python3 tools/check-bootstrap-engine.py --phase 7 --factorio /path/to/factorio
 python3 tools/check-bootstrap-engine.py --scenario support --factorio /path/to/factorio
 ```
 
-Results and blueprint hashes are committed under `validation/`. The support test checks smelter throughput, a continuously supplied parked 2-2 train, uranium processing, solar-panel batch production, starter-phase placement and large-mall placement. Large-mall production rates and a full survival playthrough have not been validated. The runner creates disposable worlds and does not load or change your save.
+**Native result:** both complete red and blue layouts produced 45/min of every science over 18 minutes 40 seconds after an 80-minute cold start. All 17 structural checks and the native module/import tests pass. See [the validation notes](validation/README.md) for the measurements and their scope.
 
-The generator preserves the original editable starter sources and reuses the existing larger factory layouts. See [PORTS.md](PORTS.md) for the science district's explicit local interfaces. Do not confuse machine counts or successful blueprint import with a measured sustained production result. Attribution and the repository license continue to apply.
+Reports under `validation/` identify the exact encoded blueprint by SHA-256. Tests supply saturated declared material/fluid ports and external electricity, disable recipe-productivity research, limit inserter capacity to bonuses 1–3, and drain labs to keep demand active. They test the factory's production, not a particular upstream mine/fleet/power design. Support tests check the compact smelters, unloaders, uranium processing, solar production and placement of every phase.
+
+A complete survival playthrough remains unvalidated. Place the revised book in a test world before migrating an existing base. Original source designs and attribution remain in the repository, under its existing license.

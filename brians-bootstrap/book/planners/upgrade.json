@@ -25,6 +25,11 @@
           "index": 3,
           "from": {"type": "entity", "name": "inserter"},
           "to": {"type": "entity", "name": "fast-inserter"}
+        },
+        {
+          "index": 4,
+          "from": {"type": "entity", "name": "underground-belt"},
+          "to": {"type": "entity", "name": "fast-underground-belt"}
         }
       ]
     }

@@ -1,0 +1,27 @@
+{
+  "index": 1,
+  "upgrade_planner": {
+    "item": "upgrade-planner",
+    "label": "Yellow to red belts",
+    "version": 562954249895936,
+    "settings": {
+      "mappers": [
+        {
+          "index": 0,
+          "from": {"type": "entity", "name": "transport-belt"},
+          "to": {"type": "entity", "name": "fast-transport-belt"}
+        },
+        {
+          "index": 1,
+          "from": {"type": "entity", "name": "underground-belt"},
+          "to": {"type": "entity", "name": "fast-underground-belt"}
+        },
+        {
+          "index": 2,
+          "from": {"type": "entity", "name": "splitter"},
+          "to": {"type": "entity", "name": "fast-splitter"}
+        }
+      ]
+    }
+  }
+}

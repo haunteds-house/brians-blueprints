@@ -19,7 +19,7 @@ import sys
 import tempfile
 import time
 
-from fatul import Processor
+from fatul import Processor, read_files
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -77,12 +77,17 @@ def free_port():
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--factorio', default=os.environ.get('FACTORIO_BINARY', shutil.which('factorio')))
+    parser.add_argument('--inspect', action='store_true')
+    parser.add_argument('--phase', type=int, choices=range(2,8), default=6)
     parser.add_argument('--scenario', choices=['science', 'support'], default='science')
     parser.add_argument('--warmup-minutes', type=int, default=80)
-    parser.add_argument('--sample-minutes', type=int, default=10)
+    parser.add_argument('--sample-minutes', type=float, default=None,
+                        help='Default 4m for assembler 1 phases; 18m40s for assembler 2 phases')
     parser.add_argument('--timeout', type=int, default=600)
     parser.add_argument('--output', type=Path)
     args = parser.parse_args()
+    if args.sample_minutes is None:
+        args.sample_minutes = 4 if args.phase < 5 else 56/3
     if args.output is None:
         args.output = ROOT / f'brians-bootstrap/validation/{args.scenario}.json'
     if not args.factorio:
@@ -100,7 +105,17 @@ def main():
         'science_counts': {name + '-science-pack': count for name, count in
                           {'automation': 5, 'logistic': 6, 'military': 5,
                            'chemical': 12, 'production': 7, 'utility': 7}.items()}}
-    blueprint = json.loads((ROOT / 'brians-bootstrap/book/phase-7-science-campus.json').read_text())
+    blueprint = json.loads((ROOT / f'brians-bootstrap/book/phase-{args.phase}.json').read_text())
+    present = {(e['position']['x'], e['position']['y']) for e in blueprint['blueprint']['entities'] if 'transport-belt' in e['name']}
+    config['item_ports'] = [p for p in config['item_ports'] if (p['x'],p['y']) in present]
+    if args.phase < 4: config['fluid_ports'] = []
+    active = {'automation'} if args.phase == 2 else {'automation','logistic','military'} if args.phase == 3 else {'automation','logistic','military','chemical'} if args.phase < 6 else set(config['science_counts'])
+    config['science_counts'] = {name:count for name,count in config['science_counts'].items() if name in active or name.removesuffix('-science-pack') in active}
+    config['minimum_spm'] = 29.5 if args.phase < 5 else 44.5
+    config['phase'] = args.phase
+    config['inspect'] = args.inspect
+    if args.inspect:
+        config['book'] = Processor(False).encode(read_files(ROOT / 'brians-bootstrap/book', False))
     encoded = Processor(False).encode(copy.deepcopy(blueprint))
     if args.scenario == 'support':
         cases = []
@@ -113,18 +128,18 @@ def main():
             data = json.loads((ROOT / f'brians-bootstrap/book/phase-6-external-resources/{path}.json').read_text())
             cases.append({'name': name, 'kind': 'smelting', 'ingredient': ingredient,
                 'product': product, 'expected_rate': expected_rate,
-                'height': 64 if name == 'brick' else 128,
+                'rows': 2 if name == 'brick' else 4,
                 'blueprint': Processor(False).encode(copy.deepcopy(data))})
         for kind, path in [
             ('solid-import', 'phase-6-external-resources/import-iron-ore'),
             ('fluid-import', 'phase-6-external-resources/import-crude-oil'),
             ('uranium', 'nauvis-infrastructure/uranium-processing'),
             ('solar', 'early-support/solar-panel'),
-            ('placement', 'phase-8-infrastructure-mall')]:
+            ('placement', 'phase-6')]:
             data = json.loads((ROOT / f'brians-bootstrap/book/{path}.json').read_text())
             cases.append({'name': kind, 'kind': kind,
                           'blueprint': Processor(False).encode(copy.deepcopy(data))})
-        for phase in range(1, 6):
+        for phase in range(1, 8):
             data = json.loads((ROOT / f'brians-bootstrap/book/phase-{phase}.json').read_text())
             cases.append({'name': f'phase-{phase}', 'kind': 'placement',
                           'blueprint': Processor(False).encode(copy.deepcopy(data))})
@@ -205,7 +220,7 @@ def main():
                     time.sleep(.2)
                 report = json.loads(results.read_text())
                 report['blueprint_sha256'] = hashlib.sha256(encoded.encode()).hexdigest() \
-                    if args.scenario == 'science' else {
+                    if args.scenario != 'support' else {
                         case['name']: hashlib.sha256(case['blueprint'].encode()).hexdigest()
                         for case in config['cases']}
                 if report.get('passed'):

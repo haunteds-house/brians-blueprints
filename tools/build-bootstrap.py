@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""Build the Space Age bootstrap book from the repository's editable designs.
-
-Late-game districts are separate, chunk-aligned modules, not a promise that
-placing a later blueprint will demolish/reconnect an earlier factory for you.
-"""
+"""Build one staged, chunk-aligned Space Age bootstrap and resource modules."""
 import base64
 import copy
 import json
@@ -119,49 +115,6 @@ def icon(item):
     return [{'index': 1, 'signal': {'name': item}}]
 
 
-def smelter(rows=24):
-    """Two furnace columns; a shorter bank avoids idle brick furnaces."""
-    height = math.ceil((rows * 5 + 2) / 32) * 32
-    es = []
-    for j in range(rows):
-        y = 4.5 + j * 5
-        for x, idir, odir in [(12.5, 4, 4), (20.5, 12, 12)]:
-            es.append(e('electric-furnace', x, y))
-            es.append(e('fast-inserter', x + (2 if x < 16 else -2), y,
-                        direction=idir))
-            es.append(e('fast-inserter', x + (-2 if x < 16 else 2), y,
-                        direction=odir))
-    for y in range(3, rows * 5 + 3):
-        for x in [15, 17]:
-            es.append(e('fast-transport-belt', x + .5, y + .5, direction=8))
-    es.extend([e('fast-transport-belt', 16.5, .5, direction=8),
-               e('fast-splitter', 17, 1.5, direction=8),
-               e('fast-transport-belt', 16.5, 2.5, direction=12),
-               e('fast-transport-belt', 15.5, 2.5, direction=8),
-               e('fast-transport-belt', 17.5, 2.5, direction=8)])
-    # Keep outputs separate so the two furnace columns cannot compete for a lane.
-    for x in [9, 23]:
-        for y in range(3, height):
-            es.append(e('fast-transport-belt', x + .5, y + .5, direction=8))
-    for y in range(5, rows * 5 + 3, 7):
-        es.append(e('medium-electric-pole', 16.5, y + .5))
-    for j in range(rows):
-        for x in (12.5, 20.5):
-            es.append(e('medium-electric-pole', x, 6.5 + j * 5))
-    label = 'External electric smelting — 48' if rows == 24 else 'External brick smelting — 24'
-    description = (f'32x{height} tiles. Ore/plate input: (16.5,0.5). Outputs: '
-        f'(9.5,{height - .5}) and (23.5,{height - .5}). No fuel belt. ')
-    description += ('Iron/copper: 15/s per output; steel: 3/s per output '
-        'from iron plate. 8.64 MW active furnace load, plus inserters/drain. '
-        if rows == 24 else
-        'Stone brick: 7.5/s per output from 30 stone/s. 4.32 MW active '
-        'furnace load, plus inserters/drain. ')
-    description += 'Connect power before retiring fuel smelting.'
-    return aligned(power_wires({'item': 'blueprint', 'label': label,
-        'version': VERSION, 'entities': es, 'icons': icon('electric-furnace'),
-        'description': description}))
-
-
 def early_cell(recipe, label, index):
     """Small chest-fed early batch production; no locked logistics chests."""
     bp = {'item': 'blueprint', 'label': label, 'version': VERSION,
@@ -210,7 +163,7 @@ def uranium_processing():
         'icons': icon('uranium-235'), 'entities': es}))
 
 
-def science_campus():
+def science_reference():
     bp = read('self-building-factory/book/science-research-(45-spm,-from-raw).json')['blueprint']
     # Preserve the production and oil district, not its railway/fuel smelting.
     excluded = {'train-stop', 'straight-rail', 'half-diagonal-rail', 'curved-rail-a',
@@ -272,7 +225,7 @@ def science_campus():
           'version': VERSION, 'entities': es,
           'icons': icon('utility-science-pack'),
           'description': '192x160 reserved area. 5/6/5/12/7/7 assembler 2s. '
-          '45/45/45/45/47.25/47.25 packs/min machine capacity before modules. '
+          '45/45/45/45/45/45 packs/min machine capacity before modules. '
           'Supply marked plate, steel, brick, stone, coal, water and crude-oil '
           'ports. This is a separate district: retire the starter science and '
           'smelting after commissioning it. See PORTS.md; do not feed ore to '
@@ -330,8 +283,7 @@ def science_campus():
         es.append(e('medium-electric-pole', 104.5, y + 80))
     es.append(e('medium-electric-pole', 107.5, 201.5))
     # Campus local coordinates are independent of the old city's anchor.
-    # Preserve the source's belt-tier braids. Converting every yellow tunnel to
-    # red can silently join a different tunnel on the same axis.
+    # This source geometry is normalized and made uniform-tier by compact().
     power_wires(bp)
     min_x = min(t['position']['x'] for t in es)
     min_y = min(t['position']['y'] for t in es)
@@ -345,51 +297,6 @@ def science_campus():
         [wire_ref(82.5, 201.5), 1, wire_ref(86.5, 200.5), 1]])
     bp = aligned(move(bp, -60, -80))
     return bp, [(x - 60, y - 80, item, d) for x, y, item, d in ports]
-
-
-def mall():
-    bp = read('self-building-factory/book/red-mall.json')['blueprint']
-    original_notes = bp.get('description', '')
-    # Keep the proven belt production. Post-planet or space-only recipes must
-    # not masquerade as an early Nauvis capability.
-    gated = set(read('brians-bootstrap/source/space-age-gated-recipes.json')['recipes'])
-    removed = {tuple(t['position'].values()) for t in bp['entities']
-               if t.get('recipe') in gated}
-    bp['entities'] = [t for t in bp['entities']
-                      if tuple(t['position'].values()) not in removed]
-    # Logistics System is behind space science. The production belts remain;
-    # optional requester inputs become ordinary refillable input chests.
-    for entity in bp['entities']:
-        # Late source designs requested advanced modules during construction.
-        # The Nauvis bootstrap must also function with empty module slots.
-        entity.pop('items', None)
-        replacement = {'requester-chest': 'iron-chest',
-                       'active-provider-chest': 'passive-provider-chest',
-                       'buffer-chest': 'storage-chest'}.get(entity['name'])
-        if replacement:
-            entity['name'] = replacement
-            entity.pop('request_filters', None)
-    min_x = min(t['position']['x'] for t in bp['entities'])
-    min_y = min(t['position']['y'] for t in bp['entities'])
-    bp['wires'] = [w for w in bp.get('wires', [])
-                   if not any((float(w[i].split(',')[0]) + min_x,
-                               float(w[i].split(',')[1]) + min_y) in removed
-                              for i in (0, 2))]
-    # FaTul's original odd export shift carries the rail lattice parity.
-    # Preserve it when changing from the source's 110-tile grid to 32.
-    bp = move(bp, 1, 1)
-    bp['label'] = 'Phase 8 — Nauvis infrastructure belt mall'
-    bp['description'] = ('Separate large late-bootstrap district, derived from '
-        'the existing belt-fed red mall. Build by unlocked recipe, not all at '
-        'once. Includes concrete/refined concrete, gun/flamethrower/laser '
-        'turrets, ammunition, solar/accumulators, electric furnaces, nuclear '
-        'construction and uranium processing. No solar array. Space/planet '
-        'gated recipes are omitted. Former requester inputs are ordinary chests '
-        'and need local belts or manual supply. No space-science prerequisite. '
-        'Uses the existing city-block station '
-        'interfaces pending the separate train overhaul. See README.md.\n\n'
-        'Original design attribution and notes:\n' + original_notes)
-    return aligned(bp)
 
 
 def source_train_book():
@@ -495,31 +402,8 @@ def build():
     for p in DEST.rglob('*.json'):
         p.unlink()
     write(DEST / '_metadata.json', metadata("Brian's Bootstrap — Space Age 2.1", 0))
-    for i in range(1, 5):
-        bp = read(f'brians-bootstrap/source/early-game/phase-#{i}.json')['blueprint']
-        # Earlier exports were independently normalized; align their persistent
-        # starter furnaces/gears to phase 4 rather than trusting export origins.
-        dx, dy = {1: (1, 47), 2: (4, 43), 3: (4, 14), 4: (4, 4)}[i]
-        bp = aligned(move(bp, dx, dy))
-        bp['label'] = f'Phase {i} — ' + ['First smelting', 'Automation', 'Construction and green science', 'Oil, blue science and rail supplies'][i - 1]
-        bp['description'] = ('Starter 96x96 chunk reservation. Align every starter '
-            'phase on the same chunk intersection. Build only unlocked recipes. '
-            'Read the Space Age research/milestone order in README.md. '
-            'Cliff explosives are deliberately omitted until Vulcanus.')
-        bp['entities'] = [t for t in bp['entities'] if t.get('recipe') != 'cliff-explosives']
-        save_bp(DEST, f'phase-{i}', bp, i - 1)
-    bp = read('brians-bootstrap/source/early-game/phase-#4.json')['blueprint']
-    bp['entities'] = [t for t in bp['entities'] if t.get('recipe') != 'cliff-explosives']
-    bp = aligned(move(upgrade(bp), 4, 4))
-    bp['label'] = 'Phase 5 — Red belts, assembler 2s and fast inserters'
-    bp['description'] = ('Same starter anchor. Apply the supplied upgrade planner '
-        'to existing machines/belts; placing ghosts alone does not upgrade '
-        'built entities. Retain long-handed inserters and the bulk inserter. '
-        'This tier phase precedes the external-smelting handoff.')
-    save_bp(DEST, 'phase-5', bp, 4)
-
     early = DEST / 'early-support'
-    write(early / '_metadata.json', metadata('Early solar and defenses', 5))
+    write(early / '_metadata.json', metadata('Early solar and defenses', 7))
     for i, (recipe, label) in enumerate([
         ('solar-panel', 'Solar panels — green science unlock'),
         ('gun-turret', 'Gun turrets — early batch production'),
@@ -528,45 +412,66 @@ def build():
         write(early / (recipe + '.json'), early_cell(recipe, label, i))
 
     batches = DEST / 'nauvis-infrastructure'
-    write(batches / '_metadata.json', metadata('Nauvis infrastructure batch mall — no space science', 8))
+    write(batches / '_metadata.json', metadata('Nauvis infrastructure batch mall — no space science', 9))
     for i, recipe in enumerate(['concrete', 'refined-concrete', 'hazard-concrete',
             'refined-hazard-concrete', 'gun-turret', 'flamethrower-turret',
             'laser-turret', 'stone-wall', 'gate', 'electric-furnace',
             'nuclear-reactor', 'centrifuge', 'heat-exchanger', 'heat-pipe',
             'steam-turbine', 'uranium-fuel-cell', 'roboport', 'solar-panel',
-            'accumulator', 'construction-robot']):
+            'accumulator', 'construction-robot', 'assembling-machine-1',
+            'assembling-machine-2','fast-inserter','long-handed-inserter',
+            'electric-mining-drill','boiler','steam-engine','offshore-pump',
+            'pipe','pipe-to-ground','pump','pumpjack','oil-refinery','chemical-plant',
+            'storage-tank','rail','rail-signal','rail-chain-signal','train-stop',
+            'locomotive','cargo-wagon','fluid-wagon','medium-electric-pole',
+            'big-electric-pole','radar','lab','fast-transport-belt',
+            'fast-underground-belt','fast-splitter','express-transport-belt',
+            'express-underground-belt','express-splitter','piercing-rounds-magazine']):
         write(batches / (recipe + '.json'), early_cell(recipe, recipe, i))
-    save_bp(batches, 'uranium-processing', uranium_processing(), 20)
+    save_bp(batches, 'uranium-processing', uranium_processing(), 99)
 
     ext = DEST / 'phase-6-external-resources'
-    write(ext / '_metadata.json', metadata('Phase 6 — External electric smelting and raw imports', 6))
-    save_bp(ext, 'electric-smelting', smelter(), 0)
+    write(ext / '_metadata.json', metadata('External electric smelting and raw imports', 8))
+    from compact_bootstrap import furnace_bank
+    save_bp(ext, 'electric-smelting', furnace_bank(ROOT, e, power_wires, aligned), 0)
     for i, resource, bp in import_stations():
         save_bp(ext, 'import-' + resource, bp, i + 1)
     for i, (resource, bp) in enumerate(resource_trains()):
         save_bp(ext, 'train-' + resource, bp, i + 6)
-    save_bp(ext, 'brick-smelting', smelter(rows=12), 11)
+    save_bp(ext, 'brick-smelting', furnace_bank(ROOT, e, power_wires, aligned, rows=2), 11)
 
-    science, ports = science_campus()
-    save_bp(DEST, 'phase-7-science-campus', science, 7)
-    save_bp(DEST, 'phase-8-infrastructure-mall', mall(), 9)
+    from compact_bootstrap import compact, phases, tier
+    science, ports = science_reference()
+    science = compact(science, ROOT, e, power_wires, early_cell)
+    first = {k: copy.deepcopy(v) for k,v in science.items() if k not in {'entities','wires'}}
+    first['entities'] = [{k:copy.deepcopy(v) for k,v in t.items() if not k.startswith('_')} for t in science['entities'] if t.get('_starter_only')]
+    first['icons'] = icon('stone-furnace')
+    first['label'] = 'Phase 1 — First smelting, permanent bootstrap anchor'
+    first['description'] = 'Hand-fed iron, copper and coal. Same 160x128 reservation as all later phases. Connect external steam power for phase 2. Retire these fuel furnaces at phase 5, after external smelting is running.'
+    save_bp(DEST, 'phase-1', first, 0)
+    for stage, data in phases(science, ROOT, e, power_wires):
+        save_bp(DEST, f'phase-{stage}', data, stage-1)
 
     planners = DEST / 'planners'
     write(planners / '_metadata.json', metadata('Transition planners', 10))
+    upgrade_tiers = {**TIERS, 'underground-belt':'fast-underground-belt'}
     write(planners / 'upgrade.json', {'index': 0, 'upgrade_planner': {
         'item': 'upgrade-planner', 'label': 'Starter tier upgrade', 'version': VERSION,
         'settings': {'mappers': [{'index': i, 'from': {'type': 'entity', 'name': a},
                                   'to': {'type': 'entity', 'name': b}}
-                                 for i, (a, b) in enumerate(TIERS.items())]}}})
-    write(planners / 'retire-fuel-smelting.json', {'index': 1, 'deconstruction_planner': {
+                                 for i, (a, b) in enumerate(upgrade_tiers.items())]}}})
+    for label, old, new, idx in [('Yellow to red belts',('transport-belt','underground-belt','splitter'),('fast-transport-belt','fast-underground-belt','fast-splitter'),1),('Red to blue belts',('fast-transport-belt','fast-underground-belt','fast-splitter'),('express-transport-belt','express-underground-belt','express-splitter'),2)]:
+        write(planners / ('red-belts.json' if idx==1 else 'blue-belts.json'), {'index':idx,'upgrade_planner':{'item':'upgrade-planner','label':label,'version':VERSION,'settings':{'mappers':[{'index':i,'from':{'type':'entity','name':a},'to':{'type':'entity','name':b}} for i,(a,b) in enumerate(zip(old,new))]}}})
+    write(planners / 'medium-pole.json', {'index':4,'upgrade_planner':{'item':'upgrade-planner','label':'Medium poles — green science unlock','version':VERSION,'settings':{'mappers':[{'index':0,'from':{'type':'entity','name':'small-electric-pole'},'to':{'type':'entity','name':'medium-electric-pole'}}]}}})
+    write(planners / 'retire-fuel-smelting.json', {'index': 3, 'deconstruction_planner': {
         'item': 'deconstruction-planner', 'label': 'Retire starter furnaces only',
         'version': VERSION, 'settings': {'entity_filters': [
             {'index': 1, 'name': 'stone-furnace'}, {'index': 2, 'name': 'steel-furnace'}]}}})
     write(ROOT / 'brians-bootstrap/science-ports.json', [
         {'x': x, 'y': y, 'item': item, 'direction': d} for x, y, item, d in ports])
     write(ROOT / 'brians-bootstrap/science-fluid-ports.json', [
-        {'x': .5, 'y': 137.5, 'fluid': 'water'},
-        {'x': .5, 'y': 143.5, 'fluid': 'crude-oil'}])
+        {'x': .5, 'y': 97.5, 'fluid': 'water'},
+        {'x': .5, 'y': 99.5, 'fluid': 'crude-oil'}])
 
 
 if __name__ == '__main__':

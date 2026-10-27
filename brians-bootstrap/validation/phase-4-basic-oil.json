@@ -1,0 +1,157 @@
+{
+  "engine_version": "2.1.23",
+  "official_expansion": "2.1.23",
+  "passed": true,
+  "warmup_minutes": 30,
+  "sample_minutes": 10,
+  "packs_per_minute": {
+    "automation-science-pack": 30,
+    "logistic-science-pack": 30,
+    "military-science-pack": 30,
+    "chemical-science-pack": 30
+  },
+  "produced_packs": {
+    "automation-science-pack": 300,
+    "logistic-science-pack": 300,
+    "military-science-pack": 300,
+    "chemical-science-pack": 300
+  },
+  "recipe_counts": {
+    "stone-wall": 2,
+    "grenade": 4,
+    "firearm-magazine": 2,
+    "piercing-rounds-magazine": 2,
+    "military-science-pack": 5,
+    "engine-unit": 10,
+    "iron-gear-wheel": 4,
+    "logistic-science-pack": 6,
+    "chemical-science-pack": 12,
+    "automation-science-pack": 5,
+    "basic-oil-processing": 9,
+    "pipe": 1,
+    "inserter": 2,
+    "transport-belt": 2,
+    "plastic-bar": 8,
+    "copper-cable": 12,
+    "battery": 2,
+    "sulfuric-acid": 1,
+    "sulfur": 1,
+    "advanced-circuit": 12,
+    "electronic-circuit": 4,
+    "gun-turret": 1,
+    "underground-belt": 1,
+    "splitter": 1,
+    "repair-pack": 1,
+    "small-electric-pole": 1,
+    "solar-panel": 1
+  },
+  "declared_item_inputs": [
+    {
+      "x": 0.5,
+      "y": 0.5,
+      "item": "steel-plate",
+      "direction": 8
+    },
+    {
+      "x": 2.5,
+      "y": 0.5,
+      "item": "iron-plate",
+      "direction": 8
+    },
+    {
+      "x": 3.5,
+      "y": 0.5,
+      "item": "iron-plate",
+      "direction": 8
+    },
+    {
+      "x": 4.5,
+      "y": 0.5,
+      "item": "iron-plate",
+      "direction": 8
+    },
+    {
+      "x": 5.5,
+      "y": 0.5,
+      "item": "iron-plate",
+      "direction": 8
+    },
+    {
+      "x": 4.5,
+      "y": 11.5,
+      "item": "iron-plate",
+      "direction": 4
+    },
+    {
+      "x": 4.5,
+      "y": 12.5,
+      "item": "iron-plate",
+      "direction": 4
+    },
+    {
+      "x": 4.5,
+      "y": 13.5,
+      "item": "steel-plate",
+      "direction": 4
+    },
+    {
+      "x": 4.5,
+      "y": 47.5,
+      "item": "coal",
+      "direction": 4
+    },
+    {
+      "x": 19.5,
+      "y": 3.5,
+      "item": "coal",
+      "direction": 8
+    },
+    {
+      "x": 108.5,
+      "y": 3.5,
+      "item": "stone-brick",
+      "direction": 8
+    },
+    {
+      "x": 115.5,
+      "y": 0.5,
+      "item": "copper-plate",
+      "direction": 8
+    },
+    {
+      "x": 116.5,
+      "y": 0.5,
+      "item": "copper-plate",
+      "direction": 8
+    },
+    {
+      "x": 117.5,
+      "y": 0.5,
+      "item": "copper-plate",
+      "direction": 8
+    },
+    {
+      "x": 118.5,
+      "y": 0.5,
+      "item": "copper-plate",
+      "direction": 8
+    }
+  ],
+  "declared_fluid_inputs": [
+    {
+      "x": 0.5,
+      "y": 97.5,
+      "fluid": "water"
+    },
+    {
+      "x": 0.5,
+      "y": 99.5,
+      "fluid": "crude-oil"
+    }
+  ],
+  "unpowered_machines": 0,
+  "blueprint_entity_count": 3694,
+  "recipe_productivity_research": false,
+  "inserter_capacity_max": 3,
+  "blueprint_sha256": "34446c5fce19afe6dd951e66d4b3478556538b41e28ec5952e285d8dbf428743"
+}

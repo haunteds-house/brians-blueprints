@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "engine_version": "2.1.23",
+  "leaf_items": 82,
+  "planners": {
+    "Starter tier upgrade": 5,
+    "Yellow to red belts": 3,
+    "Red to blue belts": 3,
+    "Retire starter furnaces only": 0,
+    "Medium poles \u2014 green science unlock": 1
+  },
+  "import_string_sha256": "31ab9bae0adac666128ee81ab4e5878fd37fc0fb8862584647b024de0c898fd4"
+}

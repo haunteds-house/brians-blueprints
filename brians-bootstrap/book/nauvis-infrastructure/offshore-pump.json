@@ -1,0 +1,28 @@
+{
+  "index": 27,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "offshore-pump",
+    "version": 562954249895936,
+    "icons": [{"index": 1, "signal": {"name": "offshore-pump"}}],
+    "entities": [
+      {
+        "name": "assembling-machine-2",
+        "position": {"x": 8.5, "y": 8.5},
+        "recipe": "offshore-pump",
+        "direction": 4
+      },
+      {"name": "iron-chest", "position": {"x": 8.5, "y": 5.5}},
+      {"name": "inserter", "position": {"x": 8.5, "y": 6.5}, "direction": 0},
+      {"name": "wooden-chest", "position": {"x": 8.5, "y": 11.5}, "bar": 1},
+      {"name": "inserter", "position": {"x": 8.5, "y": 10.5}, "direction": 0},
+      {"name": "small-electric-pole", "position": {"x": 6.5, "y": 6.5}},
+      {"name": "small-electric-pole", "position": {"x": 6.5, "y": 10.5}}
+    ],
+    "description": "Early batch production: put recipe ingredients in the north chest; take output from the south chest. One stack output limit. Place separately on the chunk grid; replace with the belt-fed infrastructure mall later. Fluid recipes: connect water to the east pipe. These are batch cells; feed ingredients manually or connect your own input belts, not requester-chest automation.",
+    "wires": [["0,5", 5, "0,1", 5]],
+    "snap-to-grid": {"x": 32, "y": 32},
+    "absolute-snapping": true,
+    "position-relative-to-grid": {"x": 0, "y": 0}
+  }
+}

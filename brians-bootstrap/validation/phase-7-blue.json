@@ -3,27 +3,27 @@
   "official_expansion": "2.1.23",
   "passed": true,
   "warmup_minutes": 80,
-  "sample_minutes": 10,
+  "sample_minutes": 18.666666666666668,
   "packs_per_minute": {
     "automation-science-pack": 45,
     "logistic-science-pack": 45,
     "military-science-pack": 45,
-    "chemical-science-pack": 45.2,
-    "production-science-pack": 45.6,
-    "utility-science-pack": 45.3
+    "chemical-science-pack": 45,
+    "production-science-pack": 45,
+    "utility-science-pack": 45
   },
   "produced_packs": {
-    "automation-science-pack": 450,
-    "logistic-science-pack": 450,
-    "military-science-pack": 450,
-    "chemical-science-pack": 452,
-    "production-science-pack": 456,
-    "utility-science-pack": 453
+    "automation-science-pack": 840,
+    "logistic-science-pack": 840,
+    "military-science-pack": 840,
+    "chemical-science-pack": 840,
+    "production-science-pack": 840,
+    "utility-science-pack": 840
   },
   "recipe_counts": {
-    "stone-wall": 1,
+    "stone-wall": 2,
     "grenade": 4,
-    "firearm-magazine": 1,
+    "firearm-magazine": 2,
     "piercing-rounds-magazine": 2,
     "military-science-pack": 5,
     "engine-unit": 14,
@@ -38,8 +38,8 @@
     "iron-stick": 2,
     "rail": 3,
     "electric-furnace": 2,
-    "inserter": 1,
-    "transport-belt": 2,
+    "inserter": 2,
+    "transport-belt": 3,
     "productivity-module": 6,
     "production-science-pack": 7,
     "low-density-structure": 20,
@@ -48,14 +48,20 @@
     "electric-engine-unit": 4,
     "light-oil-cracking": 7,
     "plastic-bar": 8,
-    "basic-oil-processing": 1,
     "copper-cable": 47,
     "processing-unit": 7,
     "battery": 2,
     "sulfuric-acid": 1,
     "sulfur": 1,
     "advanced-circuit": 40,
-    "electronic-circuit": 18
+    "electronic-circuit": 18,
+    "gun-turret": 1,
+    "underground-belt": 1,
+    "splitter": 1,
+    "basic-oil-processing": 1,
+    "repair-pack": 1,
+    "small-electric-pole": 1,
+    "solar-panel": 1
   },
   "declared_item_inputs": [
     {
@@ -158,18 +164,18 @@
   "declared_fluid_inputs": [
     {
       "x": 0.5,
-      "y": 137.5,
+      "y": 97.5,
       "fluid": "water"
     },
     {
       "x": 0.5,
-      "y": 143.5,
+      "y": 99.5,
       "fluid": "crude-oil"
     }
   ],
   "unpowered_machines": 0,
-  "blueprint_entity_count": 7448,
+  "blueprint_entity_count": 7514,
   "recipe_productivity_research": false,
   "inserter_capacity_max": 3,
-  "blueprint_sha256": "e3eeacccdcc61004ba0e4fceb31a4943df4be2197868d60ff223a130de56edcd"
+  "blueprint_sha256": "73faccc0b1ec653d418440dfd3ff629a90b60d9f1358fa4de2e21daea0b1d0b2"
 }
