@@ -1,0 +1,26 @@
+{
+  "automation-science-pack": {
+    "energy": 5,
+    "amount": 1
+  },
+  "logistic-science-pack": {
+    "energy": 6,
+    "amount": 1
+  },
+  "military-science-pack": {
+    "energy": 10,
+    "amount": 2
+  },
+  "chemical-science-pack": {
+    "energy": 24,
+    "amount": 2
+  },
+  "production-science-pack": {
+    "energy": 21,
+    "amount": 3
+  },
+  "utility-science-pack": {
+    "energy": 21,
+    "amount": 3
+  }
+}

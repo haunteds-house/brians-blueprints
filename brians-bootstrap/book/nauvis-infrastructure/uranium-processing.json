@@ -1,0 +1,120 @@
+{
+  "index": 99,
+  "blueprint": {
+    "item": "blueprint",
+    "version": 562954249895936,
+    "label": "Uranium processing — four centrifuges",
+    "description": "32x32 module. Feed uranium ore at (10.5,0.5), southbound. U-238 and U-235 leave through separate filtered inserters into steel chests. Connect power. Mine actual uranium ore to unlock the recipe first. Does not require Kovarex. Outputs are random; stockpile fuel before relying on nuclear generation.",
+    "icons": [{"index": 1, "signal": {"name": "uranium-235"}}],
+    "entities": [
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 0.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 1.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 2.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 3.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 4.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 5.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 6.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 7.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 8.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 9.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 10.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 11.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 12.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 13.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 14.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 15.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 16.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 17.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 18.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 19.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 20.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 21.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 22.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 23.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 24.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 25.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 26.5}, "direction": 8},
+      {"name": "transport-belt", "position": {"x": 10.5, "y": 27.5}, "direction": 8},
+      {"name": "centrifuge", "position": {"x": 7.5, "y": 7.5}, "recipe": "uranium-processing"},
+      {"name": "fast-inserter", "position": {"x": 9.5, "y": 7.5}, "direction": 4},
+      {"name": "medium-electric-pole", "position": {"x": 7.5, "y": 4.5}},
+      {"name": "steel-chest", "position": {"x": 4.5, "y": 7.5}},
+      {
+        "name": "fast-inserter",
+        "position": {"x": 5.5, "y": 7.5},
+        "direction": 4,
+        "use_filters": true,
+        "filters": [{"name": "uranium-238", "quality": "normal", "comparator": "=", "index": 1}]
+      },
+      {"name": "steel-chest", "position": {"x": 4.5, "y": 8.5}},
+      {
+        "name": "fast-inserter",
+        "position": {"x": 5.5, "y": 8.5},
+        "direction": 4,
+        "use_filters": true,
+        "filters": [{"name": "uranium-235", "quality": "normal", "comparator": "=", "index": 1}]
+      },
+      {"name": "centrifuge", "position": {"x": 7.5, "y": 13.5}, "recipe": "uranium-processing"},
+      {"name": "fast-inserter", "position": {"x": 9.5, "y": 13.5}, "direction": 4},
+      {"name": "medium-electric-pole", "position": {"x": 7.5, "y": 10.5}},
+      {"name": "steel-chest", "position": {"x": 4.5, "y": 13.5}},
+      {
+        "name": "fast-inserter",
+        "position": {"x": 5.5, "y": 13.5},
+        "direction": 4,
+        "use_filters": true,
+        "filters": [{"name": "uranium-238", "quality": "normal", "comparator": "=", "index": 1}]
+      },
+      {"name": "steel-chest", "position": {"x": 4.5, "y": 14.5}},
+      {
+        "name": "fast-inserter",
+        "position": {"x": 5.5, "y": 14.5},
+        "direction": 4,
+        "use_filters": true,
+        "filters": [{"name": "uranium-235", "quality": "normal", "comparator": "=", "index": 1}]
+      },
+      {"name": "centrifuge", "position": {"x": 7.5, "y": 19.5}, "recipe": "uranium-processing"},
+      {"name": "fast-inserter", "position": {"x": 9.5, "y": 19.5}, "direction": 4},
+      {"name": "medium-electric-pole", "position": {"x": 7.5, "y": 16.5}},
+      {"name": "steel-chest", "position": {"x": 4.5, "y": 19.5}},
+      {
+        "name": "fast-inserter",
+        "position": {"x": 5.5, "y": 19.5},
+        "direction": 4,
+        "use_filters": true,
+        "filters": [{"name": "uranium-238", "quality": "normal", "comparator": "=", "index": 1}]
+      },
+      {"name": "steel-chest", "position": {"x": 4.5, "y": 20.5}},
+      {
+        "name": "fast-inserter",
+        "position": {"x": 5.5, "y": 20.5},
+        "direction": 4,
+        "use_filters": true,
+        "filters": [{"name": "uranium-235", "quality": "normal", "comparator": "=", "index": 1}]
+      },
+      {"name": "centrifuge", "position": {"x": 7.5, "y": 25.5}, "recipe": "uranium-processing"},
+      {"name": "fast-inserter", "position": {"x": 9.5, "y": 25.5}, "direction": 4},
+      {"name": "medium-electric-pole", "position": {"x": 7.5, "y": 22.5}},
+      {"name": "steel-chest", "position": {"x": 4.5, "y": 25.5}},
+      {
+        "name": "fast-inserter",
+        "position": {"x": 5.5, "y": 25.5},
+        "direction": 4,
+        "use_filters": true,
+        "filters": [{"name": "uranium-238", "quality": "normal", "comparator": "=", "index": 1}]
+      },
+      {"name": "steel-chest", "position": {"x": 4.5, "y": 26.5}},
+      {
+        "name": "fast-inserter",
+        "position": {"x": 5.5, "y": 26.5},
+        "direction": 4,
+        "use_filters": true,
+        "filters": [{"name": "uranium-235", "quality": "normal", "comparator": "=", "index": 1}]
+      }
+    ],
+    "wires": [["3,10", 5, "3,4", 5], ["3,16", 5, "3,10", 5], ["3,22", 5, "3,16", 5]],
+    "snap-to-grid": {"x": 32, "y": 32},
+    "absolute-snapping": true,
+    "position-relative-to-grid": {"x": 0, "y": 0}
+  }
+}

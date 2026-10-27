@@ -1,0 +1,25 @@
+{
+  "index": 0,
+  "blueprint": {
+    "item": "blueprint",
+    "label": "Phase 1 — First smelting, permanent bootstrap anchor",
+    "version": 562954249895936,
+    "icons": [{"index": 1, "signal": {"name": "stone-furnace"}}],
+    "description": "Hand-fed iron, copper and coal. Same 160x128 reservation as all later phases. Connect external steam power for phase 2. Retire these fuel furnaces at phase 5, after external smelting is running.",
+    "snap-to-grid": {"x": 32, "y": 32},
+    "absolute-snapping": true,
+    "position-relative-to-grid": {"x": 0, "y": 0},
+    "entities": [
+      {"name": "burner-inserter", "direction": 12, "position": {"x": 2.5, "y": 101.5}},
+      {"name": "burner-inserter", "direction": 8, "position": {"x": 3.5, "y": 102.5}},
+      {"name": "burner-inserter", "direction": 12, "position": {"x": 2.5, "y": 105.5}},
+      {"name": "burner-inserter", "position": {"x": 3.5, "y": 104.5}},
+      {"name": "inserter", "direction": 12, "position": {"x": 2.5, "y": 103.5}},
+      {"name": "stone-furnace", "position": {"x": 4, "y": 101}},
+      {"name": "stone-furnace", "position": {"x": 4, "y": 106}},
+      {"name": "wooden-chest", "position": {"x": 1.5, "y": 101.5}},
+      {"name": "wooden-chest", "bar": 2, "position": {"x": 3.5, "y": 103.5}},
+      {"name": "wooden-chest", "position": {"x": 1.5, "y": 105.5}}
+    ]
+  }
+}

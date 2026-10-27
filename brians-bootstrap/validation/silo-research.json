@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "engine_version": "2.1.23",
+  "official_expansion": "2.1.23",
+  "labs": 36,
+  "blueprint_entity_count": 144,
+  "research": "rocket-silo",
+  "research_units": 1000,
+  "elapsed_minutes": 27.808611111111112,
+  "research_speed_modifier": 0,
+  "packs_supplied_each": 1008,
+  "scope": "Pre-researched prerequisites; finite packs supplied in chest-fed annex. Excludes pack production, manual loading and survival time.",
+  "blueprint_sha256": "6bac6dd43b34b822e0e525d9664879f793a72e1a22d555ad11e8a3b856ffbc41"
+}

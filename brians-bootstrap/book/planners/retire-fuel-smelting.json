@@ -1,0 +1,9 @@
+{
+  "index": 3,
+  "deconstruction_planner": {
+    "item": "deconstruction-planner",
+    "label": "Retire starter furnaces only",
+    "version": 562954249895936,
+    "settings": {"entity_filters": [{"index": 1, "name": "stone-furnace"}, {"index": 2, "name": "steel-furnace"}]}
+  }
+}

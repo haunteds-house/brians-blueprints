@@ -1,6 +1,33 @@
 # Brian's Bootstrap Changelog
 
+
+## First-launch route, then postlaunch expansion
+
+- Phase 5 upgrades assemblers/inserters while keeping yellow belts; red conversion and purple/yellow science move after the first launch.
+- Add a chunk-aligned 32×32 finite-batch launch workshop and 32×32 silo/landing pad; add a 36-lab research annex to avoid the original nine labs limiting silo research. Include all first-launch ingredients and the platform starter pack; no third-party mods or logistics chests.
+- Add a generated batch ledger, prerequisite guidance, achievement-eligible map setup, planning splits and a postlaunch upgrade sequence.
+- Validate actual finite crafting, manual transfers and launch in official Space Age; a full timed survival playthrough remains outside the validation claim.
+
 Don't update to a new version that is different in the first or second digit when in the process of building a base. Though very similar, they are **not** compatible!
+
+## Integrated bootstrap revision
+
+- Replaced separate starter/campus placement with seven phases at one 160×128 anchor.
+- Uniform yellow, then red, then blue belts, including all undergrounds and splitters; no belt weaving.
+- Corrected the 2.1 science-capacity calculation: all six requested machine counts give 45/min with assembler 2s.
+- Reduced early circuit-machine construction and added sciences in their final positions.
+- Replaced the previous external furnaces with compact banks based on the supplied EFurnace Tile.
+- Removed advanced-module dependencies from those furnace tiles and added vanilla tier planners.
+- Replaced the large separate infrastructure district with the integrated construction bay and optional batch cells.
+
+## Space Age 2.1 development overhaul
+
+- Shared chunk-grid anchor for five starter phases and a routing-safe tier upgrade.
+- Separate six-science campus with 5/6/5/12/7/7 assembler 2s, military science and external plate inputs.
+- Electric smelting banks, five raw-resource unloaders and vanilla 2-2 train schedules.
+- Early solar/defense batch cells, uranium processing and a Nauvis infrastructure mall.
+- Milestone-aware setup order, explicit interfaces and reproducible headless validation.
+- Original starter sources preserved; existing city-block dispatch books remain for the next migration.
 
 ## v2.3.3
 

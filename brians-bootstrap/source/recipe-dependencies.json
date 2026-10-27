@@ -1,0 +1,6157 @@
+{
+  "wooden-chest": {
+    "ingredients": [
+      {
+        "name": "wood"
+      }
+    ]
+  },
+  "iron-chest": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      }
+    ]
+  },
+  "steel-chest": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      }
+    ]
+  },
+  "storage-tank": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "steel-plate"
+      }
+    ]
+  },
+  "transport-belt": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      }
+    ]
+  },
+  "fast-transport-belt": {
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "transport-belt"
+      }
+    ]
+  },
+  "express-transport-belt": {
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "fast-transport-belt"
+      },
+      {
+        "name": "lubricant"
+      }
+    ]
+  },
+  "turbo-transport-belt": {
+    "ingredients": [
+      {
+        "name": "tungsten-plate"
+      },
+      {
+        "name": "express-transport-belt"
+      },
+      {
+        "name": "lubricant"
+      }
+    ]
+  },
+  "underground-belt": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "transport-belt"
+      }
+    ]
+  },
+  "fast-underground-belt": {
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "underground-belt"
+      }
+    ]
+  },
+  "express-underground-belt": {
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "fast-underground-belt"
+      },
+      {
+        "name": "lubricant"
+      }
+    ]
+  },
+  "turbo-underground-belt": {
+    "ingredients": [
+      {
+        "name": "tungsten-plate"
+      },
+      {
+        "name": "express-underground-belt"
+      },
+      {
+        "name": "lubricant"
+      }
+    ]
+  },
+  "splitter": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "transport-belt"
+      }
+    ]
+  },
+  "fast-splitter": {
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "splitter"
+      }
+    ]
+  },
+  "express-splitter": {
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "fast-splitter"
+      },
+      {
+        "name": "lubricant"
+      }
+    ]
+  },
+  "turbo-splitter": {
+    "ingredients": [
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "tungsten-plate"
+      },
+      {
+        "name": "express-splitter"
+      },
+      {
+        "name": "lubricant"
+      }
+    ]
+  },
+  "loader": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "transport-belt"
+      },
+      {
+        "name": "inserter"
+      }
+    ]
+  },
+  "fast-loader": {
+    "ingredients": [
+      {
+        "name": "fast-transport-belt"
+      },
+      {
+        "name": "loader"
+      }
+    ]
+  },
+  "express-loader": {
+    "ingredients": [
+      {
+        "name": "express-transport-belt"
+      },
+      {
+        "name": "fast-loader"
+      }
+    ]
+  },
+  "turbo-loader": {
+    "ingredients": [
+      {
+        "name": "turbo-transport-belt"
+      },
+      {
+        "name": "express-loader"
+      }
+    ]
+  },
+  "burner-inserter": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      }
+    ]
+  },
+  "inserter": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "long-handed-inserter": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "inserter"
+      }
+    ]
+  },
+  "fast-inserter": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "inserter"
+      }
+    ]
+  },
+  "bulk-inserter": {
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "fast-inserter"
+      }
+    ]
+  },
+  "stack-inserter": {
+    "ingredients": [
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "jelly"
+      },
+      {
+        "name": "carbon-fiber"
+      },
+      {
+        "name": "bulk-inserter"
+      }
+    ]
+  },
+  "small-electric-pole": {
+    "ingredients": [
+      {
+        "name": "wood"
+      },
+      {
+        "name": "copper-cable"
+      }
+    ]
+  },
+  "medium-electric-pole": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "iron-stick"
+      },
+      {
+        "name": "copper-cable"
+      }
+    ]
+  },
+  "big-electric-pole": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "iron-stick"
+      },
+      {
+        "name": "copper-cable"
+      }
+    ]
+  },
+  "substation": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "copper-cable"
+      },
+      {
+        "name": "advanced-circuit"
+      }
+    ]
+  },
+  "pipe": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      }
+    ]
+  },
+  "pipe-to-ground": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "pipe"
+      }
+    ]
+  },
+  "casting-pipe": {
+    "ingredients": [
+      {
+        "name": "molten-iron"
+      }
+    ]
+  },
+  "casting-pipe-to-ground": {
+    "ingredients": [
+      {
+        "name": "pipe"
+      },
+      {
+        "name": "molten-iron"
+      }
+    ]
+  },
+  "pump": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "engine-unit"
+      },
+      {
+        "name": "pipe"
+      }
+    ]
+  },
+  "rail": {
+    "ingredients": [
+      {
+        "name": "stone"
+      },
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "iron-stick"
+      }
+    ]
+  },
+  "rail-ramp": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "rail"
+      },
+      {
+        "name": "refined-concrete"
+      }
+    ]
+  },
+  "rail-support": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "refined-concrete"
+      }
+    ]
+  },
+  "train-stop": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "iron-stick"
+      },
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "rail-signal": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "rail-chain-signal": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "locomotive": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "engine-unit"
+      }
+    ]
+  },
+  "cargo-wagon": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      }
+    ]
+  },
+  "fluid-wagon": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "storage-tank"
+      },
+      {
+        "name": "pipe"
+      }
+    ]
+  },
+  "artillery-wagon": {
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "engine-unit"
+      },
+      {
+        "name": "tungsten-plate"
+      },
+      {
+        "name": "refined-concrete"
+      }
+    ]
+  },
+  "car": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "engine-unit"
+      }
+    ]
+  },
+  "tank": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "engine-unit"
+      }
+    ]
+  },
+  "spidertron": {
+    "ingredients": [
+      {
+        "name": "raw-fish"
+      },
+      {
+        "name": "fission-reactor-equipment"
+      },
+      {
+        "name": "exoskeleton-equipment"
+      },
+      {
+        "name": "radar"
+      },
+      {
+        "name": "rocket-turret"
+      }
+    ]
+  },
+  "logistic-robot": {
+    "ingredients": [
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "flying-robot-frame"
+      }
+    ]
+  },
+  "construction-robot": {
+    "ingredients": [
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "flying-robot-frame"
+      }
+    ]
+  },
+  "active-provider-chest": {
+    "ingredients": [
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "steel-chest"
+      }
+    ]
+  },
+  "passive-provider-chest": {
+    "ingredients": [
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "steel-chest"
+      }
+    ]
+  },
+  "storage-chest": {
+    "ingredients": [
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "steel-chest"
+      }
+    ]
+  },
+  "buffer-chest": {
+    "ingredients": [
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "steel-chest"
+      }
+    ]
+  },
+  "requester-chest": {
+    "ingredients": [
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "steel-chest"
+      }
+    ]
+  },
+  "roboport": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "advanced-circuit"
+      }
+    ]
+  },
+  "small-lamp": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "copper-cable"
+      },
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "arithmetic-combinator": {
+    "ingredients": [
+      {
+        "name": "copper-cable"
+      },
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "decider-combinator": {
+    "ingredients": [
+      {
+        "name": "copper-cable"
+      },
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "selector-combinator": {
+    "ingredients": [
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "decider-combinator"
+      }
+    ]
+  },
+  "constant-combinator": {
+    "ingredients": [
+      {
+        "name": "copper-cable"
+      },
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "power-switch": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "copper-cable"
+      },
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "programmable-speaker": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "iron-stick"
+      },
+      {
+        "name": "copper-cable"
+      },
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "display-panel": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "stone-brick": {
+    "ingredients": [
+      {
+        "name": "stone"
+      }
+    ]
+  },
+  "stone-brick-recycling": {
+    "ingredients": [
+      {
+        "name": "stone-brick"
+      }
+    ]
+  },
+  "stone-wall-recycling": {
+    "ingredients": [
+      {
+        "name": "stone-wall"
+      }
+    ]
+  },
+  "concrete": {
+    "ingredients": [
+      {
+        "name": "iron-ore"
+      },
+      {
+        "name": "stone-brick"
+      },
+      {
+        "name": "water"
+      }
+    ]
+  },
+  "hazard-concrete": {
+    "ingredients": [
+      {
+        "name": "concrete"
+      }
+    ]
+  },
+  "refined-concrete": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "iron-stick"
+      },
+      {
+        "name": "concrete"
+      },
+      {
+        "name": "water"
+      }
+    ]
+  },
+  "refined-hazard-concrete": {
+    "ingredients": [
+      {
+        "name": "refined-concrete"
+      }
+    ]
+  },
+  "landfill": {
+    "ingredients": [
+      {
+        "name": "stone"
+      }
+    ]
+  },
+  "landfill-recycling": {
+    "ingredients": [
+      {
+        "name": "landfill"
+      }
+    ]
+  },
+  "artificial-yumako-soil": {
+    "ingredients": [
+      {
+        "name": "yumako-seed"
+      },
+      {
+        "name": "nutrients"
+      },
+      {
+        "name": "landfill"
+      }
+    ]
+  },
+  "overgrowth-yumako-soil": {
+    "ingredients": [
+      {
+        "name": "yumako-seed"
+      },
+      {
+        "name": "spoilage"
+      },
+      {
+        "name": "biter-egg"
+      },
+      {
+        "name": "artificial-yumako-soil"
+      },
+      {
+        "name": "water"
+      }
+    ]
+  },
+  "artificial-jellynut-soil": {
+    "ingredients": [
+      {
+        "name": "jellynut-seed"
+      },
+      {
+        "name": "nutrients"
+      },
+      {
+        "name": "landfill"
+      }
+    ]
+  },
+  "overgrowth-jellynut-soil": {
+    "ingredients": [
+      {
+        "name": "jellynut-seed"
+      },
+      {
+        "name": "spoilage"
+      },
+      {
+        "name": "biter-egg"
+      },
+      {
+        "name": "artificial-jellynut-soil"
+      },
+      {
+        "name": "water"
+      }
+    ]
+  },
+  "ice-platform": {
+    "ingredients": [
+      {
+        "name": "ice"
+      },
+      {
+        "name": "ammonia"
+      }
+    ]
+  },
+  "foundation": {
+    "ingredients": [
+      {
+        "name": "stone"
+      },
+      {
+        "name": "tungsten-plate"
+      },
+      {
+        "name": "carbon-fiber"
+      },
+      {
+        "name": "lithium-plate"
+      },
+      {
+        "name": "fluoroketone-cold"
+      }
+    ]
+  },
+  "cliff-explosives": {
+    "ingredients": [
+      {
+        "name": "explosives"
+      },
+      {
+        "name": "barrel"
+      },
+      {
+        "name": "calcite"
+      },
+      {
+        "name": "grenade"
+      }
+    ]
+  },
+  "repair-pack": {
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "blueprint-recycling": {
+    "ingredients": [
+      {
+        "name": "blueprint"
+      }
+    ]
+  },
+  "deconstruction-planner-recycling": {
+    "ingredients": [
+      {
+        "name": "deconstruction-planner"
+      }
+    ]
+  },
+  "upgrade-planner-recycling": {
+    "ingredients": [
+      {
+        "name": "upgrade-planner"
+      }
+    ]
+  },
+  "blueprint-book-recycling": {
+    "ingredients": [
+      {
+        "name": "blueprint-book"
+      }
+    ]
+  },
+  "boiler": {
+    "ingredients": [
+      {
+        "name": "pipe"
+      },
+      {
+        "name": "stone-furnace"
+      }
+    ]
+  },
+  "steam-engine": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "pipe"
+      }
+    ]
+  },
+  "solar-panel": {
+    "ingredients": [
+      {
+        "name": "copper-plate"
+      },
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "accumulator": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "battery"
+      }
+    ]
+  },
+  "nuclear-reactor": {
+    "ingredients": [
+      {
+        "name": "copper-plate"
+      },
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "concrete"
+      }
+    ]
+  },
+  "heat-pipe": {
+    "ingredients": [
+      {
+        "name": "copper-plate"
+      },
+      {
+        "name": "steel-plate"
+      }
+    ]
+  },
+  "heat-exchanger": {
+    "ingredients": [
+      {
+        "name": "copper-plate"
+      },
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "pipe"
+      }
+    ]
+  },
+  "steam-turbine": {
+    "ingredients": [
+      {
+        "name": "copper-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "pipe"
+      }
+    ]
+  },
+  "fusion-reactor": {
+    "ingredients": [
+      {
+        "name": "tungsten-plate"
+      },
+      {
+        "name": "superconductor"
+      },
+      {
+        "name": "quantum-processor"
+      }
+    ]
+  },
+  "fusion-generator": {
+    "ingredients": [
+      {
+        "name": "tungsten-plate"
+      },
+      {
+        "name": "superconductor"
+      },
+      {
+        "name": "quantum-processor"
+      }
+    ]
+  },
+  "burner-mining-drill": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "stone-furnace"
+      }
+    ]
+  },
+  "electric-mining-drill": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "big-mining-drill": {
+    "ingredients": [
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "electric-engine-unit"
+      },
+      {
+        "name": "tungsten-carbide"
+      },
+      {
+        "name": "electric-mining-drill"
+      },
+      {
+        "name": "molten-iron"
+      }
+    ]
+  },
+  "offshore-pump": {
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "pipe"
+      }
+    ]
+  },
+  "pumpjack": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "pipe"
+      }
+    ]
+  },
+  "stone-furnace": {
+    "ingredients": [
+      {
+        "name": "stone"
+      }
+    ]
+  },
+  "steel-furnace": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "stone-brick"
+      }
+    ]
+  },
+  "electric-furnace": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "stone-brick"
+      }
+    ]
+  },
+  "foundry": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "tungsten-carbide"
+      },
+      {
+        "name": "refined-concrete"
+      },
+      {
+        "name": "lubricant"
+      }
+    ]
+  },
+  "recycler": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "concrete"
+      }
+    ]
+  },
+  "agricultural-tower": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "spoilage"
+      },
+      {
+        "name": "landfill"
+      }
+    ]
+  },
+  "biochamber": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "nutrients"
+      },
+      {
+        "name": "pentapod-egg"
+      },
+      {
+        "name": "landfill"
+      }
+    ]
+  },
+  "captive-biter-spawner": {
+    "ingredients": [
+      {
+        "name": "uranium-235"
+      },
+      {
+        "name": "biter-egg"
+      },
+      {
+        "name": "capture-robot-rocket"
+      },
+      {
+        "name": "fluoroketone-cold"
+      }
+    ]
+  },
+  "captive-biter-spawner-recycling": {
+    "ingredients": [
+      {
+        "name": "captive-biter-spawner"
+      }
+    ]
+  },
+  "assembling-machine-1": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "assembling-machine-2": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "assembling-machine-1"
+      }
+    ]
+  },
+  "assembling-machine-3": {
+    "ingredients": [
+      {
+        "name": "assembling-machine-2"
+      },
+      {
+        "name": "speed-module"
+      }
+    ]
+  },
+  "oil-refinery": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "pipe"
+      },
+      {
+        "name": "stone-brick"
+      }
+    ]
+  },
+  "chemical-plant": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "pipe"
+      }
+    ]
+  },
+  "centrifuge": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "concrete"
+      }
+    ]
+  },
+  "electromagnetic-plant": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "holmium-plate"
+      },
+      {
+        "name": "refined-concrete"
+      }
+    ]
+  },
+  "cryogenic-plant": {
+    "ingredients": [
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "superconductor"
+      },
+      {
+        "name": "lithium-plate"
+      },
+      {
+        "name": "refined-concrete"
+      }
+    ]
+  },
+  "lab": {
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "transport-belt"
+      }
+    ]
+  },
+  "biolab": {
+    "ingredients": [
+      {
+        "name": "uranium-235"
+      },
+      {
+        "name": "biter-egg"
+      },
+      {
+        "name": "refined-concrete"
+      },
+      {
+        "name": "lab"
+      },
+      {
+        "name": "capture-robot-rocket"
+      }
+    ]
+  },
+  "biolab-recycling": {
+    "ingredients": [
+      {
+        "name": "biolab"
+      }
+    ]
+  },
+  "lightning-rod": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "copper-cable"
+      },
+      {
+        "name": "stone-brick"
+      }
+    ]
+  },
+  "lightning-collector": {
+    "ingredients": [
+      {
+        "name": "supercapacitor"
+      },
+      {
+        "name": "accumulator"
+      },
+      {
+        "name": "lightning-rod"
+      },
+      {
+        "name": "electrolyte"
+      }
+    ]
+  },
+  "heating-tower": {
+    "ingredients": [
+      {
+        "name": "concrete"
+      },
+      {
+        "name": "boiler"
+      },
+      {
+        "name": "heat-pipe"
+      }
+    ]
+  },
+  "beacon": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "copper-cable"
+      },
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "advanced-circuit"
+      }
+    ]
+  },
+  "speed-module": {
+    "ingredients": [
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "advanced-circuit"
+      }
+    ]
+  },
+  "speed-module-2": {
+    "ingredients": [
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "speed-module"
+      }
+    ]
+  },
+  "speed-module-3": {
+    "ingredients": [
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "tungsten-carbide"
+      },
+      {
+        "name": "speed-module-2"
+      }
+    ]
+  },
+  "efficiency-module": {
+    "ingredients": [
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "advanced-circuit"
+      }
+    ]
+  },
+  "efficiency-module-2": {
+    "ingredients": [
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "efficiency-module"
+      }
+    ]
+  },
+  "efficiency-module-3": {
+    "ingredients": [
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "spoilage"
+      },
+      {
+        "name": "efficiency-module-2"
+      }
+    ]
+  },
+  "productivity-module": {
+    "ingredients": [
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "advanced-circuit"
+      }
+    ]
+  },
+  "productivity-module-2": {
+    "ingredients": [
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "productivity-module"
+      }
+    ]
+  },
+  "productivity-module-3": {
+    "ingredients": [
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "biter-egg"
+      },
+      {
+        "name": "productivity-module-2"
+      }
+    ]
+  },
+  "quality-module": {
+    "ingredients": [
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "advanced-circuit"
+      }
+    ]
+  },
+  "quality-module-2": {
+    "ingredients": [
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "quality-module"
+      }
+    ]
+  },
+  "quality-module-3": {
+    "ingredients": [
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "superconductor"
+      },
+      {
+        "name": "quality-module-2"
+      }
+    ]
+  },
+  "empty-module-slot-recycling": {
+    "ingredients": [
+      {
+        "name": "empty-module-slot"
+      }
+    ]
+  },
+  "basic-oil-processing": {
+    "ingredients": [
+      {
+        "name": "crude-oil"
+      }
+    ]
+  },
+  "advanced-oil-processing": {
+    "ingredients": [
+      {
+        "name": "water"
+      },
+      {
+        "name": "crude-oil"
+      }
+    ]
+  },
+  "simple-coal-liquefaction": {
+    "ingredients": [
+      {
+        "name": "coal"
+      },
+      {
+        "name": "calcite"
+      },
+      {
+        "name": "sulfuric-acid"
+      }
+    ]
+  },
+  "coal-liquefaction": {
+    "ingredients": [
+      {
+        "name": "coal"
+      },
+      {
+        "name": "heavy-oil"
+      },
+      {
+        "name": "steam"
+      }
+    ]
+  },
+  "heavy-oil-cracking": {
+    "ingredients": [
+      {
+        "name": "water"
+      },
+      {
+        "name": "heavy-oil"
+      }
+    ]
+  },
+  "light-oil-cracking": {
+    "ingredients": [
+      {
+        "name": "water"
+      },
+      {
+        "name": "light-oil"
+      }
+    ]
+  },
+  "solid-fuel-from-petroleum-gas": {
+    "ingredients": [
+      {
+        "name": "petroleum-gas"
+      }
+    ]
+  },
+  "solid-fuel-from-light-oil": {
+    "ingredients": [
+      {
+        "name": "light-oil"
+      }
+    ]
+  },
+  "solid-fuel-from-heavy-oil": {
+    "ingredients": [
+      {
+        "name": "heavy-oil"
+      }
+    ]
+  },
+  "lubricant": {
+    "ingredients": [
+      {
+        "name": "heavy-oil"
+      }
+    ]
+  },
+  "sulfuric-acid": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "sulfur"
+      },
+      {
+        "name": "water"
+      }
+    ]
+  },
+  "acid-neutralisation": {
+    "ingredients": [
+      {
+        "name": "calcite"
+      },
+      {
+        "name": "sulfuric-acid"
+      }
+    ]
+  },
+  "steam-condensation": {
+    "ingredients": [
+      {
+        "name": "steam"
+      }
+    ]
+  },
+  "ice-melting": {
+    "ingredients": [
+      {
+        "name": "ice"
+      }
+    ]
+  },
+  "wood-recycling": {
+    "ingredients": [
+      {
+        "name": "wood"
+      }
+    ]
+  },
+  "wooden-chest-recycling": {
+    "ingredients": [
+      {
+        "name": "wooden-chest"
+      }
+    ]
+  },
+  "coal-recycling": {
+    "ingredients": [
+      {
+        "name": "coal"
+      }
+    ]
+  },
+  "stone-furnace-recycling": {
+    "ingredients": [
+      {
+        "name": "stone-furnace"
+      }
+    ]
+  },
+  "stone-recycling": {
+    "ingredients": [
+      {
+        "name": "stone"
+      }
+    ]
+  },
+  "iron-ore-recycling": {
+    "ingredients": [
+      {
+        "name": "iron-ore"
+      }
+    ]
+  },
+  "copper-ore-recycling": {
+    "ingredients": [
+      {
+        "name": "copper-ore"
+      }
+    ]
+  },
+  "uranium-ore-recycling": {
+    "ingredients": [
+      {
+        "name": "uranium-ore"
+      }
+    ]
+  },
+  "raw-fish-recycling": {
+    "ingredients": [
+      {
+        "name": "raw-fish"
+      }
+    ]
+  },
+  "ice-platform-recycling": {
+    "ingredients": [
+      {
+        "name": "ice-platform"
+      }
+    ]
+  },
+  "ice-recycling": {
+    "ingredients": [
+      {
+        "name": "ice"
+      }
+    ]
+  },
+  "firearm-magazine-recycling": {
+    "ingredients": [
+      {
+        "name": "firearm-magazine"
+      }
+    ]
+  },
+  "iron-chest-recycling": {
+    "ingredients": [
+      {
+        "name": "iron-chest"
+      }
+    ]
+  },
+  "iron-gear-wheel-recycling": {
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel"
+      }
+    ]
+  },
+  "iron-plate": {
+    "ingredients": [
+      {
+        "name": "iron-ore"
+      }
+    ]
+  },
+  "iron-plate-recycling": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      }
+    ]
+  },
+  "iron-stick-recycling": {
+    "ingredients": [
+      {
+        "name": "iron-stick"
+      }
+    ]
+  },
+  "light-armor-recycling": {
+    "ingredients": [
+      {
+        "name": "light-armor"
+      }
+    ]
+  },
+  "pipe-recycling": {
+    "ingredients": [
+      {
+        "name": "pipe"
+      }
+    ]
+  },
+  "copper-cable-recycling": {
+    "ingredients": [
+      {
+        "name": "copper-cable"
+      }
+    ]
+  },
+  "copper-plate": {
+    "ingredients": [
+      {
+        "name": "copper-ore"
+      }
+    ]
+  },
+  "copper-plate-recycling": {
+    "ingredients": [
+      {
+        "name": "copper-plate"
+      }
+    ]
+  },
+  "steel-chest-recycling": {
+    "ingredients": [
+      {
+        "name": "steel-chest"
+      }
+    ]
+  },
+  "steel-plate": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      }
+    ]
+  },
+  "steel-plate-recycling": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      }
+    ]
+  },
+  "rocket-fuel-recycling": {
+    "ingredients": [
+      {
+        "name": "rocket-fuel"
+      }
+    ]
+  },
+  "solid-fuel-recycling": {
+    "ingredients": [
+      {
+        "name": "solid-fuel"
+      }
+    ]
+  },
+  "plastic-bar": {
+    "ingredients": [
+      {
+        "name": "coal"
+      },
+      {
+        "name": "petroleum-gas"
+      }
+    ]
+  },
+  "plastic-bar-recycling": {
+    "ingredients": [
+      {
+        "name": "plastic-bar"
+      }
+    ]
+  },
+  "sulfur": {
+    "ingredients": [
+      {
+        "name": "water"
+      },
+      {
+        "name": "petroleum-gas"
+      }
+    ]
+  },
+  "sulfur-recycling": {
+    "ingredients": [
+      {
+        "name": "sulfur"
+      }
+    ]
+  },
+  "battery": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "copper-plate"
+      },
+      {
+        "name": "sulfuric-acid"
+      }
+    ]
+  },
+  "explosives": {
+    "ingredients": [
+      {
+        "name": "coal"
+      },
+      {
+        "name": "sulfur"
+      },
+      {
+        "name": "water"
+      }
+    ]
+  },
+  "explosives-recycling": {
+    "ingredients": [
+      {
+        "name": "explosives"
+      }
+    ]
+  },
+  "carbon": {
+    "ingredients": [
+      {
+        "name": "coal"
+      },
+      {
+        "name": "sulfuric-acid"
+      }
+    ]
+  },
+  "carbon-recycling": {
+    "ingredients": [
+      {
+        "name": "carbon"
+      }
+    ]
+  },
+  "coal-synthesis": {
+    "ingredients": [
+      {
+        "name": "sulfur"
+      },
+      {
+        "name": "carbon"
+      },
+      {
+        "name": "water"
+      }
+    ]
+  },
+  "crude-oil-barrel-recycling": {
+    "ingredients": [
+      {
+        "name": "crude-oil-barrel"
+      }
+    ]
+  },
+  "fluoroketone-cold-barrel-recycling": {
+    "ingredients": [
+      {
+        "name": "fluoroketone-cold-barrel"
+      }
+    ]
+  },
+  "fluoroketone-hot-barrel-recycling": {
+    "ingredients": [
+      {
+        "name": "fluoroketone-hot-barrel"
+      }
+    ]
+  },
+  "heavy-oil-barrel-recycling": {
+    "ingredients": [
+      {
+        "name": "heavy-oil-barrel"
+      }
+    ]
+  },
+  "light-oil-barrel-recycling": {
+    "ingredients": [
+      {
+        "name": "light-oil-barrel"
+      }
+    ]
+  },
+  "lubricant-barrel-recycling": {
+    "ingredients": [
+      {
+        "name": "lubricant-barrel"
+      }
+    ]
+  },
+  "petroleum-gas-barrel-recycling": {
+    "ingredients": [
+      {
+        "name": "petroleum-gas-barrel"
+      }
+    ]
+  },
+  "sulfuric-acid-barrel-recycling": {
+    "ingredients": [
+      {
+        "name": "sulfuric-acid-barrel"
+      }
+    ]
+  },
+  "water-barrel-recycling": {
+    "ingredients": [
+      {
+        "name": "water-barrel"
+      }
+    ]
+  },
+  "water-barrel": {
+    "ingredients": [
+      {
+        "name": "barrel"
+      },
+      {
+        "name": "water"
+      }
+    ]
+  },
+  "crude-oil-barrel": {
+    "ingredients": [
+      {
+        "name": "barrel"
+      },
+      {
+        "name": "crude-oil"
+      }
+    ]
+  },
+  "petroleum-gas-barrel": {
+    "ingredients": [
+      {
+        "name": "barrel"
+      },
+      {
+        "name": "petroleum-gas"
+      }
+    ]
+  },
+  "light-oil-barrel": {
+    "ingredients": [
+      {
+        "name": "barrel"
+      },
+      {
+        "name": "light-oil"
+      }
+    ]
+  },
+  "heavy-oil-barrel": {
+    "ingredients": [
+      {
+        "name": "barrel"
+      },
+      {
+        "name": "heavy-oil"
+      }
+    ]
+  },
+  "lubricant-barrel": {
+    "ingredients": [
+      {
+        "name": "barrel"
+      },
+      {
+        "name": "lubricant"
+      }
+    ]
+  },
+  "sulfuric-acid-barrel": {
+    "ingredients": [
+      {
+        "name": "barrel"
+      },
+      {
+        "name": "sulfuric-acid"
+      }
+    ]
+  },
+  "fluoroketone-hot-barrel": {
+    "ingredients": [
+      {
+        "name": "barrel"
+      },
+      {
+        "name": "fluoroketone-hot"
+      }
+    ]
+  },
+  "fluoroketone-cold-barrel": {
+    "ingredients": [
+      {
+        "name": "barrel"
+      },
+      {
+        "name": "fluoroketone-cold"
+      }
+    ]
+  },
+  "empty-water-barrel": {
+    "ingredients": [
+      {
+        "name": "water-barrel"
+      }
+    ]
+  },
+  "empty-crude-oil-barrel": {
+    "ingredients": [
+      {
+        "name": "crude-oil-barrel"
+      }
+    ]
+  },
+  "empty-petroleum-gas-barrel": {
+    "ingredients": [
+      {
+        "name": "petroleum-gas-barrel"
+      }
+    ]
+  },
+  "empty-light-oil-barrel": {
+    "ingredients": [
+      {
+        "name": "light-oil-barrel"
+      }
+    ]
+  },
+  "empty-heavy-oil-barrel": {
+    "ingredients": [
+      {
+        "name": "heavy-oil-barrel"
+      }
+    ]
+  },
+  "empty-lubricant-barrel": {
+    "ingredients": [
+      {
+        "name": "lubricant-barrel"
+      }
+    ]
+  },
+  "empty-sulfuric-acid-barrel": {
+    "ingredients": [
+      {
+        "name": "sulfuric-acid-barrel"
+      }
+    ]
+  },
+  "empty-fluoroketone-hot-barrel": {
+    "ingredients": [
+      {
+        "name": "fluoroketone-hot-barrel"
+      }
+    ]
+  },
+  "empty-fluoroketone-cold-barrel": {
+    "ingredients": [
+      {
+        "name": "fluoroketone-cold-barrel"
+      }
+    ]
+  },
+  "iron-gear-wheel": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      }
+    ]
+  },
+  "iron-stick": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      }
+    ]
+  },
+  "copper-cable": {
+    "ingredients": [
+      {
+        "name": "copper-plate"
+      }
+    ]
+  },
+  "barrel": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      }
+    ]
+  },
+  "barrel-recycling": {
+    "ingredients": [
+      {
+        "name": "barrel"
+      }
+    ]
+  },
+  "electronic-circuit": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "copper-cable"
+      }
+    ]
+  },
+  "advanced-circuit": {
+    "ingredients": [
+      {
+        "name": "plastic-bar"
+      },
+      {
+        "name": "copper-cable"
+      },
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "processing-unit": {
+    "ingredients": [
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "sulfuric-acid"
+      }
+    ]
+  },
+  "engine-unit": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "pipe"
+      }
+    ]
+  },
+  "electric-engine-unit": {
+    "ingredients": [
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "engine-unit"
+      },
+      {
+        "name": "lubricant"
+      }
+    ]
+  },
+  "flying-robot-frame": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "battery"
+      },
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "electric-engine-unit"
+      }
+    ]
+  },
+  "low-density-structure": {
+    "ingredients": [
+      {
+        "name": "copper-plate"
+      },
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "plastic-bar"
+      }
+    ]
+  },
+  "rocket-fuel": {
+    "ingredients": [
+      {
+        "name": "solid-fuel"
+      },
+      {
+        "name": "light-oil"
+      }
+    ]
+  },
+  "nuclear-fuel-recycling": {
+    "ingredients": [
+      {
+        "name": "nuclear-fuel"
+      }
+    ]
+  },
+  "uranium-processing": {
+    "ingredients": [
+      {
+        "name": "uranium-ore"
+      }
+    ]
+  },
+  "uranium-235-recycling": {
+    "ingredients": [
+      {
+        "name": "uranium-235"
+      }
+    ]
+  },
+  "uranium-238-recycling": {
+    "ingredients": [
+      {
+        "name": "uranium-238"
+      }
+    ]
+  },
+  "uranium-fuel-cell": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "uranium-235"
+      },
+      {
+        "name": "uranium-238"
+      }
+    ]
+  },
+  "uranium-fuel-cell-recycling": {
+    "ingredients": [
+      {
+        "name": "uranium-fuel-cell"
+      }
+    ]
+  },
+  "depleted-uranium-fuel-cell-recycling": {
+    "ingredients": [
+      {
+        "name": "depleted-uranium-fuel-cell"
+      }
+    ]
+  },
+  "nuclear-fuel-reprocessing": {
+    "ingredients": [
+      {
+        "name": "depleted-uranium-fuel-cell"
+      }
+    ]
+  },
+  "kovarex-enrichment-process": {
+    "ingredients": [
+      {
+        "name": "uranium-235"
+      },
+      {
+        "name": "uranium-238"
+      }
+    ]
+  },
+  "nuclear-fuel": {
+    "ingredients": [
+      {
+        "name": "rocket-fuel"
+      },
+      {
+        "name": "uranium-235"
+      }
+    ]
+  },
+  "calcite-recycling": {
+    "ingredients": [
+      {
+        "name": "calcite"
+      }
+    ]
+  },
+  "molten-iron-from-lava": {
+    "ingredients": [
+      {
+        "name": "calcite"
+      },
+      {
+        "name": "lava"
+      }
+    ]
+  },
+  "molten-copper-from-lava": {
+    "ingredients": [
+      {
+        "name": "calcite"
+      },
+      {
+        "name": "lava"
+      }
+    ]
+  },
+  "iron-ore-melting": {
+    "ingredients": [
+      {
+        "name": "iron-ore"
+      },
+      {
+        "name": "calcite"
+      }
+    ]
+  },
+  "copper-ore-melting": {
+    "ingredients": [
+      {
+        "name": "copper-ore"
+      },
+      {
+        "name": "calcite"
+      }
+    ]
+  },
+  "casting-iron": {
+    "ingredients": [
+      {
+        "name": "molten-iron"
+      }
+    ]
+  },
+  "casting-copper": {
+    "ingredients": [
+      {
+        "name": "molten-copper"
+      }
+    ]
+  },
+  "casting-steel": {
+    "ingredients": [
+      {
+        "name": "molten-iron"
+      }
+    ]
+  },
+  "casting-iron-gear-wheel": {
+    "ingredients": [
+      {
+        "name": "molten-iron"
+      }
+    ]
+  },
+  "casting-iron-stick": {
+    "ingredients": [
+      {
+        "name": "molten-iron"
+      }
+    ]
+  },
+  "casting-low-density-structure": {
+    "ingredients": [
+      {
+        "name": "plastic-bar"
+      },
+      {
+        "name": "molten-iron"
+      },
+      {
+        "name": "molten-copper"
+      }
+    ]
+  },
+  "concrete-from-molten-iron": {
+    "ingredients": [
+      {
+        "name": "stone-brick"
+      },
+      {
+        "name": "molten-iron"
+      },
+      {
+        "name": "water"
+      }
+    ]
+  },
+  "casting-copper-cable": {
+    "ingredients": [
+      {
+        "name": "molten-copper"
+      }
+    ]
+  },
+  "tungsten-ore-recycling": {
+    "ingredients": [
+      {
+        "name": "tungsten-ore"
+      }
+    ]
+  },
+  "tungsten-carbide": {
+    "ingredients": [
+      {
+        "name": "carbon"
+      },
+      {
+        "name": "tungsten-ore"
+      },
+      {
+        "name": "sulfuric-acid"
+      }
+    ]
+  },
+  "tungsten-carbide-recycling": {
+    "ingredients": [
+      {
+        "name": "tungsten-carbide"
+      }
+    ]
+  },
+  "tungsten-plate": {
+    "ingredients": [
+      {
+        "name": "tungsten-ore"
+      },
+      {
+        "name": "molten-iron"
+      }
+    ]
+  },
+  "tungsten-plate-recycling": {
+    "ingredients": [
+      {
+        "name": "tungsten-plate"
+      }
+    ]
+  },
+  "supercapacitor-recycling": {
+    "ingredients": [
+      {
+        "name": "supercapacitor"
+      }
+    ]
+  },
+  "scrap-recycling": {
+    "ingredients": [
+      {
+        "name": "scrap"
+      }
+    ]
+  },
+  "holmium-ore-recycling": {
+    "ingredients": [
+      {
+        "name": "holmium-ore"
+      }
+    ]
+  },
+  "holmium-solution": {
+    "ingredients": [
+      {
+        "name": "stone"
+      },
+      {
+        "name": "holmium-ore"
+      },
+      {
+        "name": "water"
+      }
+    ]
+  },
+  "holmium-plate": {
+    "ingredients": [
+      {
+        "name": "holmium-solution"
+      }
+    ]
+  },
+  "holmium-plate-recycling": {
+    "ingredients": [
+      {
+        "name": "holmium-plate"
+      }
+    ]
+  },
+  "superconductor": {
+    "ingredients": [
+      {
+        "name": "copper-plate"
+      },
+      {
+        "name": "plastic-bar"
+      },
+      {
+        "name": "holmium-plate"
+      },
+      {
+        "name": "light-oil"
+      }
+    ]
+  },
+  "superconductor-recycling": {
+    "ingredients": [
+      {
+        "name": "superconductor"
+      }
+    ]
+  },
+  "electrolyte": {
+    "ingredients": [
+      {
+        "name": "stone"
+      },
+      {
+        "name": "heavy-oil"
+      },
+      {
+        "name": "holmium-solution"
+      }
+    ]
+  },
+  "supercapacitor": {
+    "ingredients": [
+      {
+        "name": "battery"
+      },
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "holmium-plate"
+      },
+      {
+        "name": "superconductor"
+      },
+      {
+        "name": "electrolyte"
+      }
+    ]
+  },
+  "yumako-processing": {
+    "ingredients": [
+      {
+        "name": "yumako"
+      }
+    ]
+  },
+  "yumako-seed-recycling": {
+    "ingredients": [
+      {
+        "name": "yumako-seed"
+      }
+    ]
+  },
+  "jellynut-processing": {
+    "ingredients": [
+      {
+        "name": "jellynut"
+      }
+    ]
+  },
+  "jellynut-seed-recycling": {
+    "ingredients": [
+      {
+        "name": "jellynut-seed"
+      }
+    ]
+  },
+  "yumako-recycling": {
+    "ingredients": [
+      {
+        "name": "yumako"
+      }
+    ]
+  },
+  "jellynut-recycling": {
+    "ingredients": [
+      {
+        "name": "jellynut"
+      }
+    ]
+  },
+  "iron-bacteria": {
+    "ingredients": [
+      {
+        "name": "jelly"
+      }
+    ]
+  },
+  "iron-bacteria-recycling": {
+    "ingredients": [
+      {
+        "name": "iron-bacteria"
+      }
+    ]
+  },
+  "iron-bacteria-cultivation": {
+    "ingredients": [
+      {
+        "name": "iron-bacteria"
+      },
+      {
+        "name": "bioflux"
+      }
+    ]
+  },
+  "copper-bacteria": {
+    "ingredients": [
+      {
+        "name": "yumako-mash"
+      }
+    ]
+  },
+  "copper-bacteria-recycling": {
+    "ingredients": [
+      {
+        "name": "copper-bacteria"
+      }
+    ]
+  },
+  "copper-bacteria-cultivation": {
+    "ingredients": [
+      {
+        "name": "copper-bacteria"
+      },
+      {
+        "name": "bioflux"
+      }
+    ]
+  },
+  "nutrients-recycling": {
+    "ingredients": [
+      {
+        "name": "nutrients"
+      }
+    ]
+  },
+  "spoilage-recycling": {
+    "ingredients": [
+      {
+        "name": "spoilage"
+      }
+    ]
+  },
+  "nutrients-from-spoilage": {
+    "ingredients": [
+      {
+        "name": "spoilage"
+      }
+    ]
+  },
+  "nutrients-from-yumako-mash": {
+    "ingredients": [
+      {
+        "name": "yumako-mash"
+      }
+    ]
+  },
+  "nutrients-from-bioflux": {
+    "ingredients": [
+      {
+        "name": "bioflux"
+      }
+    ]
+  },
+  "pentapod-egg": {
+    "ingredients": [
+      {
+        "name": "nutrients"
+      },
+      {
+        "name": "pentapod-egg"
+      },
+      {
+        "name": "water"
+      }
+    ]
+  },
+  "bioflux-recycling": {
+    "ingredients": [
+      {
+        "name": "bioflux"
+      }
+    ]
+  },
+  "yumako-mash-recycling": {
+    "ingredients": [
+      {
+        "name": "yumako-mash"
+      }
+    ]
+  },
+  "jelly-recycling": {
+    "ingredients": [
+      {
+        "name": "jelly"
+      }
+    ]
+  },
+  "rocket-fuel-from-jelly": {
+    "ingredients": [
+      {
+        "name": "bioflux"
+      },
+      {
+        "name": "jelly"
+      },
+      {
+        "name": "water"
+      }
+    ]
+  },
+  "biolubricant": {
+    "ingredients": [
+      {
+        "name": "jelly"
+      }
+    ]
+  },
+  "bioplastic": {
+    "ingredients": [
+      {
+        "name": "bioflux"
+      },
+      {
+        "name": "yumako-mash"
+      }
+    ]
+  },
+  "biosulfur": {
+    "ingredients": [
+      {
+        "name": "spoilage"
+      },
+      {
+        "name": "bioflux"
+      }
+    ]
+  },
+  "carbon-fiber-recycling": {
+    "ingredients": [
+      {
+        "name": "carbon-fiber"
+      }
+    ]
+  },
+  "bioflux": {
+    "ingredients": [
+      {
+        "name": "yumako-mash"
+      },
+      {
+        "name": "jelly"
+      }
+    ]
+  },
+  "burnt-spoilage": {
+    "ingredients": [
+      {
+        "name": "spoilage"
+      }
+    ]
+  },
+  "carbon-fiber": {
+    "ingredients": [
+      {
+        "name": "carbon"
+      },
+      {
+        "name": "yumako-mash"
+      }
+    ]
+  },
+  "biter-egg": {
+    "ingredients": []
+  },
+  "biter-egg-recycling": {
+    "ingredients": [
+      {
+        "name": "biter-egg"
+      }
+    ]
+  },
+  "pentapod-egg-recycling": {
+    "ingredients": [
+      {
+        "name": "pentapod-egg"
+      }
+    ]
+  },
+  "tree-seed": {
+    "ingredients": [
+      {
+        "name": "wood"
+      }
+    ]
+  },
+  "tree-seed-recycling": {
+    "ingredients": [
+      {
+        "name": "tree-seed"
+      }
+    ]
+  },
+  "fish-breeding": {
+    "ingredients": [
+      {
+        "name": "raw-fish"
+      },
+      {
+        "name": "nutrients"
+      },
+      {
+        "name": "water"
+      }
+    ]
+  },
+  "nutrients-from-fish": {
+    "ingredients": [
+      {
+        "name": "raw-fish"
+      }
+    ]
+  },
+  "nutrients-from-biter-egg": {
+    "ingredients": [
+      {
+        "name": "biter-egg"
+      }
+    ]
+  },
+  "quantum-processor-recycling": {
+    "ingredients": [
+      {
+        "name": "quantum-processor"
+      }
+    ]
+  },
+  "ammoniacal-solution-separation": {
+    "ingredients": [
+      {
+        "name": "ammoniacal-solution"
+      }
+    ]
+  },
+  "solid-fuel-from-ammonia": {
+    "ingredients": [
+      {
+        "name": "ammonia"
+      },
+      {
+        "name": "crude-oil"
+      }
+    ]
+  },
+  "ammonia-rocket-fuel": {
+    "ingredients": [
+      {
+        "name": "solid-fuel"
+      },
+      {
+        "name": "water"
+      },
+      {
+        "name": "ammonia"
+      }
+    ]
+  },
+  "fluoroketone": {
+    "ingredients": [
+      {
+        "name": "solid-fuel"
+      },
+      {
+        "name": "lithium"
+      },
+      {
+        "name": "fluorine"
+      },
+      {
+        "name": "ammonia"
+      }
+    ]
+  },
+  "fluoroketone-cooling": {
+    "ingredients": [
+      {
+        "name": "fluoroketone-hot"
+      }
+    ]
+  },
+  "lithium": {
+    "ingredients": [
+      {
+        "name": "holmium-plate"
+      },
+      {
+        "name": "lithium-brine"
+      },
+      {
+        "name": "ammonia"
+      }
+    ]
+  },
+  "lithium-recycling": {
+    "ingredients": [
+      {
+        "name": "lithium"
+      }
+    ]
+  },
+  "lithium-plate": {
+    "ingredients": [
+      {
+        "name": "lithium"
+      }
+    ]
+  },
+  "lithium-plate-recycling": {
+    "ingredients": [
+      {
+        "name": "lithium-plate"
+      }
+    ]
+  },
+  "quantum-processor": {
+    "ingredients": [
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "tungsten-carbide"
+      },
+      {
+        "name": "superconductor"
+      },
+      {
+        "name": "carbon-fiber"
+      },
+      {
+        "name": "lithium-plate"
+      },
+      {
+        "name": "fluoroketone-cold"
+      }
+    ]
+  },
+  "fusion-power-cell": {
+    "ingredients": [
+      {
+        "name": "holmium-plate"
+      },
+      {
+        "name": "lithium-plate"
+      },
+      {
+        "name": "ammonia"
+      }
+    ]
+  },
+  "fusion-power-cell-recycling": {
+    "ingredients": [
+      {
+        "name": "fusion-power-cell"
+      }
+    ]
+  },
+  "automation-science-pack": {
+    "ingredients": [
+      {
+        "name": "copper-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      }
+    ]
+  },
+  "automation-science-pack-recycling": {
+    "ingredients": [
+      {
+        "name": "automation-science-pack"
+      }
+    ]
+  },
+  "logistic-science-pack": {
+    "ingredients": [
+      {
+        "name": "transport-belt"
+      },
+      {
+        "name": "inserter"
+      }
+    ]
+  },
+  "logistic-science-pack-recycling": {
+    "ingredients": [
+      {
+        "name": "logistic-science-pack"
+      }
+    ]
+  },
+  "military-science-pack": {
+    "ingredients": [
+      {
+        "name": "piercing-rounds-magazine"
+      },
+      {
+        "name": "grenade"
+      },
+      {
+        "name": "stone-wall"
+      }
+    ]
+  },
+  "military-science-pack-recycling": {
+    "ingredients": [
+      {
+        "name": "military-science-pack"
+      }
+    ]
+  },
+  "chemical-science-pack": {
+    "ingredients": [
+      {
+        "name": "sulfur"
+      },
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "engine-unit"
+      }
+    ]
+  },
+  "chemical-science-pack-recycling": {
+    "ingredients": [
+      {
+        "name": "chemical-science-pack"
+      }
+    ]
+  },
+  "production-science-pack": {
+    "ingredients": [
+      {
+        "name": "rail"
+      },
+      {
+        "name": "electric-furnace"
+      },
+      {
+        "name": "productivity-module"
+      }
+    ]
+  },
+  "production-science-pack-recycling": {
+    "ingredients": [
+      {
+        "name": "production-science-pack"
+      }
+    ]
+  },
+  "utility-science-pack": {
+    "ingredients": [
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "flying-robot-frame"
+      },
+      {
+        "name": "low-density-structure"
+      }
+    ]
+  },
+  "utility-science-pack-recycling": {
+    "ingredients": [
+      {
+        "name": "utility-science-pack"
+      }
+    ]
+  },
+  "space-science-pack": {
+    "ingredients": [
+      {
+        "name": "ice"
+      },
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "carbon"
+      }
+    ]
+  },
+  "space-science-pack-recycling": {
+    "ingredients": [
+      {
+        "name": "space-science-pack"
+      }
+    ]
+  },
+  "metallurgic-science-pack": {
+    "ingredients": [
+      {
+        "name": "tungsten-carbide"
+      },
+      {
+        "name": "tungsten-plate"
+      },
+      {
+        "name": "molten-copper"
+      }
+    ]
+  },
+  "metallurgic-science-pack-recycling": {
+    "ingredients": [
+      {
+        "name": "metallurgic-science-pack"
+      }
+    ]
+  },
+  "agricultural-science-pack": {
+    "ingredients": [
+      {
+        "name": "bioflux"
+      },
+      {
+        "name": "pentapod-egg"
+      }
+    ]
+  },
+  "agricultural-science-pack-recycling": {
+    "ingredients": [
+      {
+        "name": "agricultural-science-pack"
+      }
+    ]
+  },
+  "electromagnetic-science-pack": {
+    "ingredients": [
+      {
+        "name": "supercapacitor"
+      },
+      {
+        "name": "accumulator"
+      },
+      {
+        "name": "electrolyte"
+      },
+      {
+        "name": "holmium-solution"
+      }
+    ]
+  },
+  "electromagnetic-science-pack-recycling": {
+    "ingredients": [
+      {
+        "name": "electromagnetic-science-pack"
+      }
+    ]
+  },
+  "cryogenic-science-pack": {
+    "ingredients": [
+      {
+        "name": "ice"
+      },
+      {
+        "name": "lithium-plate"
+      },
+      {
+        "name": "fluoroketone-cold"
+      }
+    ]
+  },
+  "cryogenic-science-pack-recycling": {
+    "ingredients": [
+      {
+        "name": "cryogenic-science-pack"
+      }
+    ]
+  },
+  "promethium-science-pack": {
+    "ingredients": [
+      {
+        "name": "biter-egg"
+      },
+      {
+        "name": "quantum-processor"
+      },
+      {
+        "name": "promethium-asteroid-chunk"
+      }
+    ]
+  },
+  "promethium-science-pack-recycling": {
+    "ingredients": [
+      {
+        "name": "promethium-science-pack"
+      }
+    ]
+  },
+  "coin-recycling": {
+    "ingredients": [
+      {
+        "name": "coin"
+      }
+    ]
+  },
+  "science-recycling": {
+    "ingredients": [
+      {
+        "name": "science"
+      }
+    ]
+  },
+  "rocket-silo": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "electric-engine-unit"
+      },
+      {
+        "name": "pipe"
+      },
+      {
+        "name": "concrete"
+      }
+    ]
+  },
+  "rocket-part": {
+    "ingredients": [
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "low-density-structure"
+      },
+      {
+        "name": "rocket-fuel"
+      }
+    ]
+  },
+  "cargo-landing-pad": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "concrete"
+      }
+    ]
+  },
+  "cargo-bay": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "low-density-structure"
+      }
+    ]
+  },
+  "landing-pad-unloading-bay": {
+    "ingredients": [
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "electric-engine-unit"
+      },
+      {
+        "name": "steel-chest"
+      },
+      {
+        "name": "cargo-bay"
+      }
+    ]
+  },
+  "space-platform-foundation": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "copper-cable"
+      }
+    ]
+  },
+  "asteroid-collector": {
+    "ingredients": [
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "electric-engine-unit"
+      },
+      {
+        "name": "low-density-structure"
+      }
+    ]
+  },
+  "crusher": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "electric-engine-unit"
+      },
+      {
+        "name": "low-density-structure"
+      }
+    ]
+  },
+  "thruster": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "electric-engine-unit"
+      }
+    ]
+  },
+  "space-platform-starter-pack": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "space-platform-foundation"
+      }
+    ]
+  },
+  "space-platform-hub-recycling": {
+    "ingredients": [
+      {
+        "name": "space-platform-hub"
+      }
+    ]
+  },
+  "metallic-asteroid-chunk-recycling": {
+    "ingredients": [
+      {
+        "name": "metallic-asteroid-chunk"
+      }
+    ]
+  },
+  "carbonic-asteroid-chunk-recycling": {
+    "ingredients": [
+      {
+        "name": "carbonic-asteroid-chunk"
+      }
+    ]
+  },
+  "oxide-asteroid-chunk-recycling": {
+    "ingredients": [
+      {
+        "name": "oxide-asteroid-chunk"
+      }
+    ]
+  },
+  "promethium-asteroid-chunk-recycling": {
+    "ingredients": [
+      {
+        "name": "promethium-asteroid-chunk"
+      }
+    ]
+  },
+  "metallic-asteroid-crushing": {
+    "ingredients": [
+      {
+        "name": "metallic-asteroid-chunk"
+      }
+    ]
+  },
+  "carbonic-asteroid-crushing": {
+    "ingredients": [
+      {
+        "name": "carbonic-asteroid-chunk"
+      }
+    ]
+  },
+  "oxide-asteroid-crushing": {
+    "ingredients": [
+      {
+        "name": "oxide-asteroid-chunk"
+      }
+    ]
+  },
+  "metallic-asteroid-reprocessing": {
+    "ingredients": [
+      {
+        "name": "metallic-asteroid-chunk"
+      }
+    ]
+  },
+  "carbonic-asteroid-reprocessing": {
+    "ingredients": [
+      {
+        "name": "carbonic-asteroid-chunk"
+      }
+    ]
+  },
+  "oxide-asteroid-reprocessing": {
+    "ingredients": [
+      {
+        "name": "oxide-asteroid-chunk"
+      }
+    ]
+  },
+  "advanced-metallic-asteroid-crushing": {
+    "ingredients": [
+      {
+        "name": "metallic-asteroid-chunk"
+      }
+    ]
+  },
+  "advanced-carbonic-asteroid-crushing": {
+    "ingredients": [
+      {
+        "name": "carbonic-asteroid-chunk"
+      }
+    ]
+  },
+  "advanced-oxide-asteroid-crushing": {
+    "ingredients": [
+      {
+        "name": "oxide-asteroid-chunk"
+      }
+    ]
+  },
+  "thruster-fuel": {
+    "ingredients": [
+      {
+        "name": "carbon"
+      },
+      {
+        "name": "water"
+      }
+    ]
+  },
+  "advanced-thruster-fuel": {
+    "ingredients": [
+      {
+        "name": "carbon"
+      },
+      {
+        "name": "calcite"
+      },
+      {
+        "name": "water"
+      }
+    ]
+  },
+  "thruster-oxidizer": {
+    "ingredients": [
+      {
+        "name": "iron-ore"
+      },
+      {
+        "name": "water"
+      }
+    ]
+  },
+  "advanced-thruster-oxidizer": {
+    "ingredients": [
+      {
+        "name": "iron-ore"
+      },
+      {
+        "name": "calcite"
+      },
+      {
+        "name": "water"
+      }
+    ]
+  },
+  "pistol": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "copper-plate"
+      }
+    ]
+  },
+  "pistol-recycling": {
+    "ingredients": [
+      {
+        "name": "pistol"
+      }
+    ]
+  },
+  "submachine-gun": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "copper-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      }
+    ]
+  },
+  "railgun": {
+    "ingredients": [
+      {
+        "name": "tungsten-plate"
+      },
+      {
+        "name": "superconductor"
+      },
+      {
+        "name": "quantum-processor"
+      },
+      {
+        "name": "fluoroketone-cold"
+      }
+    ]
+  },
+  "teslagun": {
+    "ingredients": [
+      {
+        "name": "plastic-bar"
+      },
+      {
+        "name": "holmium-plate"
+      },
+      {
+        "name": "superconductor"
+      },
+      {
+        "name": "electrolyte"
+      }
+    ]
+  },
+  "shotgun": {
+    "ingredients": [
+      {
+        "name": "wood"
+      },
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "copper-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      }
+    ]
+  },
+  "combat-shotgun": {
+    "ingredients": [
+      {
+        "name": "wood"
+      },
+      {
+        "name": "copper-plate"
+      },
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      }
+    ]
+  },
+  "rocket-launcher": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "flamethrower": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      }
+    ]
+  },
+  "firearm-magazine": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      }
+    ]
+  },
+  "piercing-rounds-magazine": {
+    "ingredients": [
+      {
+        "name": "copper-plate"
+      },
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "firearm-magazine"
+      }
+    ]
+  },
+  "uranium-rounds-magazine": {
+    "ingredients": [
+      {
+        "name": "uranium-238"
+      },
+      {
+        "name": "piercing-rounds-magazine"
+      }
+    ]
+  },
+  "shotgun-shell": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "copper-plate"
+      }
+    ]
+  },
+  "piercing-shotgun-shell": {
+    "ingredients": [
+      {
+        "name": "copper-plate"
+      },
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "shotgun-shell"
+      }
+    ]
+  },
+  "cannon-shell": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "plastic-bar"
+      },
+      {
+        "name": "explosives"
+      }
+    ]
+  },
+  "explosive-cannon-shell": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "plastic-bar"
+      },
+      {
+        "name": "explosives"
+      }
+    ]
+  },
+  "uranium-cannon-shell": {
+    "ingredients": [
+      {
+        "name": "uranium-238"
+      },
+      {
+        "name": "cannon-shell"
+      }
+    ]
+  },
+  "explosive-uranium-cannon-shell": {
+    "ingredients": [
+      {
+        "name": "uranium-238"
+      },
+      {
+        "name": "explosive-cannon-shell"
+      }
+    ]
+  },
+  "artillery-shell": {
+    "ingredients": [
+      {
+        "name": "explosives"
+      },
+      {
+        "name": "calcite"
+      },
+      {
+        "name": "tungsten-plate"
+      },
+      {
+        "name": "radar"
+      }
+    ]
+  },
+  "rocket": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "explosives"
+      }
+    ]
+  },
+  "explosive-rocket": {
+    "ingredients": [
+      {
+        "name": "explosives"
+      },
+      {
+        "name": "rocket"
+      }
+    ]
+  },
+  "atomic-bomb": {
+    "ingredients": [
+      {
+        "name": "explosives"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "uranium-235"
+      }
+    ]
+  },
+  "capture-robot-rocket": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "flying-robot-frame"
+      },
+      {
+        "name": "bioflux"
+      }
+    ]
+  },
+  "flamethrower-ammo": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "crude-oil"
+      }
+    ]
+  },
+  "flamethrower-ammo-recycling": {
+    "ingredients": [
+      {
+        "name": "flamethrower-ammo"
+      }
+    ]
+  },
+  "railgun-ammo": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "explosives"
+      },
+      {
+        "name": "copper-cable"
+      }
+    ]
+  },
+  "tesla-ammo": {
+    "ingredients": [
+      {
+        "name": "plastic-bar"
+      },
+      {
+        "name": "supercapacitor"
+      },
+      {
+        "name": "electrolyte"
+      }
+    ]
+  },
+  "grenade": {
+    "ingredients": [
+      {
+        "name": "coal"
+      },
+      {
+        "name": "iron-plate"
+      }
+    ]
+  },
+  "cluster-grenade": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "explosives"
+      },
+      {
+        "name": "grenade"
+      }
+    ]
+  },
+  "poison-capsule": {
+    "ingredients": [
+      {
+        "name": "coal"
+      },
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "slowdown-capsule": {
+    "ingredients": [
+      {
+        "name": "coal"
+      },
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "defender-capsule": {
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "piercing-rounds-magazine"
+      }
+    ]
+  },
+  "distractor-capsule": {
+    "ingredients": [
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "defender-capsule"
+      }
+    ]
+  },
+  "destroyer-capsule": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "distractor-capsule"
+      }
+    ]
+  },
+  "light-armor": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      }
+    ]
+  },
+  "heavy-armor": {
+    "ingredients": [
+      {
+        "name": "copper-plate"
+      },
+      {
+        "name": "steel-plate"
+      }
+    ]
+  },
+  "modular-armor": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "advanced-circuit"
+      }
+    ]
+  },
+  "power-armor": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "electric-engine-unit"
+      }
+    ]
+  },
+  "power-armor-mk2": {
+    "ingredients": [
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "electric-engine-unit"
+      },
+      {
+        "name": "low-density-structure"
+      },
+      {
+        "name": "speed-module"
+      },
+      {
+        "name": "efficiency-module"
+      }
+    ]
+  },
+  "mech-armor": {
+    "ingredients": [
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "holmium-plate"
+      },
+      {
+        "name": "superconductor"
+      },
+      {
+        "name": "supercapacitor"
+      },
+      {
+        "name": "power-armor-mk2"
+      }
+    ]
+  },
+  "solar-panel-equipment": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "solar-panel"
+      }
+    ]
+  },
+  "fission-reactor-equipment": {
+    "ingredients": [
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "low-density-structure"
+      },
+      {
+        "name": "uranium-fuel-cell"
+      }
+    ]
+  },
+  "fusion-reactor-equipment": {
+    "ingredients": [
+      {
+        "name": "tungsten-plate"
+      },
+      {
+        "name": "supercapacitor"
+      },
+      {
+        "name": "carbon-fiber"
+      },
+      {
+        "name": "quantum-processor"
+      },
+      {
+        "name": "fusion-power-cell"
+      },
+      {
+        "name": "fission-reactor-equipment"
+      }
+    ]
+  },
+  "battery-equipment": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "battery"
+      }
+    ]
+  },
+  "battery-mk2-equipment": {
+    "ingredients": [
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "low-density-structure"
+      },
+      {
+        "name": "battery-equipment"
+      }
+    ]
+  },
+  "battery-mk3-equipment": {
+    "ingredients": [
+      {
+        "name": "supercapacitor"
+      },
+      {
+        "name": "battery-mk2-equipment"
+      }
+    ]
+  },
+  "belt-immunity-equipment": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "advanced-circuit"
+      }
+    ]
+  },
+  "exoskeleton-equipment": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "electric-engine-unit"
+      }
+    ]
+  },
+  "personal-roboport-equipment": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "battery"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "advanced-circuit"
+      }
+    ]
+  },
+  "personal-roboport-mk2-equipment": {
+    "ingredients": [
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "superconductor"
+      },
+      {
+        "name": "personal-roboport-equipment"
+      }
+    ]
+  },
+  "night-vision-equipment": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "advanced-circuit"
+      }
+    ]
+  },
+  "toolbelt-equipment": {
+    "ingredients": [
+      {
+        "name": "advanced-circuit"
+      },
+      {
+        "name": "carbon-fiber"
+      }
+    ]
+  },
+  "energy-shield-equipment": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "advanced-circuit"
+      }
+    ]
+  },
+  "energy-shield-mk2-equipment": {
+    "ingredients": [
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "low-density-structure"
+      },
+      {
+        "name": "energy-shield-equipment"
+      }
+    ]
+  },
+  "personal-laser-defense-equipment": {
+    "ingredients": [
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "low-density-structure"
+      },
+      {
+        "name": "laser-turret"
+      }
+    ]
+  },
+  "discharge-defense-equipment": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "laser-turret"
+      }
+    ]
+  },
+  "stone-wall": {
+    "ingredients": [
+      {
+        "name": "stone-brick"
+      }
+    ]
+  },
+  "gate": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "stone-wall"
+      }
+    ]
+  },
+  "radar": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "land-mine": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "explosives"
+      }
+    ]
+  },
+  "gun-turret": {
+    "ingredients": [
+      {
+        "name": "iron-plate"
+      },
+      {
+        "name": "copper-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      }
+    ]
+  },
+  "laser-turret": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "battery"
+      },
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "flamethrower-turret": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "engine-unit"
+      },
+      {
+        "name": "pipe"
+      }
+    ]
+  },
+  "artillery-turret": {
+    "ingredients": [
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "tungsten-plate"
+      },
+      {
+        "name": "refined-concrete"
+      }
+    ]
+  },
+  "rocket-turret": {
+    "ingredients": [
+      {
+        "name": "steel-plate"
+      },
+      {
+        "name": "iron-gear-wheel"
+      },
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "carbon-fiber"
+      },
+      {
+        "name": "rocket-launcher"
+      }
+    ]
+  },
+  "tesla-turret": {
+    "ingredients": [
+      {
+        "name": "processing-unit"
+      },
+      {
+        "name": "superconductor"
+      },
+      {
+        "name": "supercapacitor"
+      },
+      {
+        "name": "teslagun"
+      },
+      {
+        "name": "electrolyte"
+      }
+    ]
+  },
+  "railgun-turret": {
+    "ingredients": [
+      {
+        "name": "tungsten-plate"
+      },
+      {
+        "name": "superconductor"
+      },
+      {
+        "name": "carbon-fiber"
+      },
+      {
+        "name": "quantum-processor"
+      },
+      {
+        "name": "fluoroketone-cold"
+      }
+    ]
+  },
+  "parameter-0": {
+    "ingredients": []
+  },
+  "parameter-1": {
+    "ingredients": []
+  },
+  "parameter-2": {
+    "ingredients": []
+  },
+  "parameter-3": {
+    "ingredients": []
+  },
+  "parameter-4": {
+    "ingredients": []
+  },
+  "parameter-5": {
+    "ingredients": []
+  },
+  "parameter-6": {
+    "ingredients": []
+  },
+  "parameter-7": {
+    "ingredients": []
+  },
+  "parameter-8": {
+    "ingredients": []
+  },
+  "parameter-9": {
+    "ingredients": []
+  },
+  "accumulator-recycling": {
+    "ingredients": [
+      {
+        "name": "accumulator"
+      }
+    ]
+  },
+  "active-provider-chest-recycling": {
+    "ingredients": [
+      {
+        "name": "active-provider-chest"
+      }
+    ]
+  },
+  "advanced-circuit-recycling": {
+    "ingredients": [
+      {
+        "name": "advanced-circuit"
+      }
+    ]
+  },
+  "agricultural-tower-recycling": {
+    "ingredients": [
+      {
+        "name": "agricultural-tower"
+      }
+    ]
+  },
+  "arithmetic-combinator-recycling": {
+    "ingredients": [
+      {
+        "name": "arithmetic-combinator"
+      }
+    ]
+  },
+  "artificial-jellynut-soil-recycling": {
+    "ingredients": [
+      {
+        "name": "artificial-jellynut-soil"
+      }
+    ]
+  },
+  "artificial-yumako-soil-recycling": {
+    "ingredients": [
+      {
+        "name": "artificial-yumako-soil"
+      }
+    ]
+  },
+  "artillery-shell-recycling": {
+    "ingredients": [
+      {
+        "name": "artillery-shell"
+      }
+    ]
+  },
+  "artillery-turret-recycling": {
+    "ingredients": [
+      {
+        "name": "artillery-turret"
+      }
+    ]
+  },
+  "artillery-wagon-recycling": {
+    "ingredients": [
+      {
+        "name": "artillery-wagon"
+      }
+    ]
+  },
+  "assembling-machine-1-recycling": {
+    "ingredients": [
+      {
+        "name": "assembling-machine-1"
+      }
+    ]
+  },
+  "assembling-machine-2-recycling": {
+    "ingredients": [
+      {
+        "name": "assembling-machine-2"
+      }
+    ]
+  },
+  "assembling-machine-3-recycling": {
+    "ingredients": [
+      {
+        "name": "assembling-machine-3"
+      }
+    ]
+  },
+  "asteroid-collector-recycling": {
+    "ingredients": [
+      {
+        "name": "asteroid-collector"
+      }
+    ]
+  },
+  "atomic-bomb-recycling": {
+    "ingredients": [
+      {
+        "name": "atomic-bomb"
+      }
+    ]
+  },
+  "battery-equipment-recycling": {
+    "ingredients": [
+      {
+        "name": "battery-equipment"
+      }
+    ]
+  },
+  "battery-mk2-equipment-recycling": {
+    "ingredients": [
+      {
+        "name": "battery-mk2-equipment"
+      }
+    ]
+  },
+  "battery-mk3-equipment-recycling": {
+    "ingredients": [
+      {
+        "name": "battery-mk3-equipment"
+      }
+    ]
+  },
+  "battery-recycling": {
+    "ingredients": [
+      {
+        "name": "battery"
+      }
+    ]
+  },
+  "beacon-recycling": {
+    "ingredients": [
+      {
+        "name": "beacon"
+      }
+    ]
+  },
+  "belt-immunity-equipment-recycling": {
+    "ingredients": [
+      {
+        "name": "belt-immunity-equipment"
+      }
+    ]
+  },
+  "big-electric-pole-recycling": {
+    "ingredients": [
+      {
+        "name": "big-electric-pole"
+      }
+    ]
+  },
+  "big-mining-drill-recycling": {
+    "ingredients": [
+      {
+        "name": "big-mining-drill"
+      }
+    ]
+  },
+  "biochamber-recycling": {
+    "ingredients": [
+      {
+        "name": "biochamber"
+      }
+    ]
+  },
+  "boiler-recycling": {
+    "ingredients": [
+      {
+        "name": "boiler"
+      }
+    ]
+  },
+  "buffer-chest-recycling": {
+    "ingredients": [
+      {
+        "name": "buffer-chest"
+      }
+    ]
+  },
+  "bulk-inserter-recycling": {
+    "ingredients": [
+      {
+        "name": "bulk-inserter"
+      }
+    ]
+  },
+  "burner-inserter-recycling": {
+    "ingredients": [
+      {
+        "name": "burner-inserter"
+      }
+    ]
+  },
+  "burner-mining-drill-recycling": {
+    "ingredients": [
+      {
+        "name": "burner-mining-drill"
+      }
+    ]
+  },
+  "cannon-shell-recycling": {
+    "ingredients": [
+      {
+        "name": "cannon-shell"
+      }
+    ]
+  },
+  "capture-robot-rocket-recycling": {
+    "ingredients": [
+      {
+        "name": "capture-robot-rocket"
+      }
+    ]
+  },
+  "car-recycling": {
+    "ingredients": [
+      {
+        "name": "car"
+      }
+    ]
+  },
+  "cargo-bay-recycling": {
+    "ingredients": [
+      {
+        "name": "cargo-bay"
+      }
+    ]
+  },
+  "cargo-landing-pad-recycling": {
+    "ingredients": [
+      {
+        "name": "cargo-landing-pad"
+      }
+    ]
+  },
+  "cargo-wagon-recycling": {
+    "ingredients": [
+      {
+        "name": "cargo-wagon"
+      }
+    ]
+  },
+  "centrifuge-recycling": {
+    "ingredients": [
+      {
+        "name": "centrifuge"
+      }
+    ]
+  },
+  "chemical-plant-recycling": {
+    "ingredients": [
+      {
+        "name": "chemical-plant"
+      }
+    ]
+  },
+  "cliff-explosives-recycling": {
+    "ingredients": [
+      {
+        "name": "cliff-explosives"
+      }
+    ]
+  },
+  "cluster-grenade-recycling": {
+    "ingredients": [
+      {
+        "name": "cluster-grenade"
+      }
+    ]
+  },
+  "combat-shotgun-recycling": {
+    "ingredients": [
+      {
+        "name": "combat-shotgun"
+      }
+    ]
+  },
+  "concrete-recycling": {
+    "ingredients": [
+      {
+        "name": "concrete"
+      }
+    ]
+  },
+  "constant-combinator-recycling": {
+    "ingredients": [
+      {
+        "name": "constant-combinator"
+      }
+    ]
+  },
+  "construction-robot-recycling": {
+    "ingredients": [
+      {
+        "name": "construction-robot"
+      }
+    ]
+  },
+  "crusher-recycling": {
+    "ingredients": [
+      {
+        "name": "crusher"
+      }
+    ]
+  },
+  "cryogenic-plant-recycling": {
+    "ingredients": [
+      {
+        "name": "cryogenic-plant"
+      }
+    ]
+  },
+  "decider-combinator-recycling": {
+    "ingredients": [
+      {
+        "name": "decider-combinator"
+      }
+    ]
+  },
+  "defender-capsule-recycling": {
+    "ingredients": [
+      {
+        "name": "defender-capsule"
+      }
+    ]
+  },
+  "destroyer-capsule-recycling": {
+    "ingredients": [
+      {
+        "name": "destroyer-capsule"
+      }
+    ]
+  },
+  "discharge-defense-equipment-recycling": {
+    "ingredients": [
+      {
+        "name": "discharge-defense-equipment"
+      }
+    ]
+  },
+  "display-panel-recycling": {
+    "ingredients": [
+      {
+        "name": "display-panel"
+      }
+    ]
+  },
+  "distractor-capsule-recycling": {
+    "ingredients": [
+      {
+        "name": "distractor-capsule"
+      }
+    ]
+  },
+  "efficiency-module-2-recycling": {
+    "ingredients": [
+      {
+        "name": "efficiency-module-2"
+      }
+    ]
+  },
+  "efficiency-module-3-recycling": {
+    "ingredients": [
+      {
+        "name": "efficiency-module-3"
+      }
+    ]
+  },
+  "efficiency-module-recycling": {
+    "ingredients": [
+      {
+        "name": "efficiency-module"
+      }
+    ]
+  },
+  "electric-engine-unit-recycling": {
+    "ingredients": [
+      {
+        "name": "electric-engine-unit"
+      }
+    ]
+  },
+  "electric-furnace-recycling": {
+    "ingredients": [
+      {
+        "name": "electric-furnace"
+      }
+    ]
+  },
+  "electric-mining-drill-recycling": {
+    "ingredients": [
+      {
+        "name": "electric-mining-drill"
+      }
+    ]
+  },
+  "electromagnetic-plant-recycling": {
+    "ingredients": [
+      {
+        "name": "electromagnetic-plant"
+      }
+    ]
+  },
+  "electronic-circuit-recycling": {
+    "ingredients": [
+      {
+        "name": "electronic-circuit"
+      }
+    ]
+  },
+  "energy-shield-equipment-recycling": {
+    "ingredients": [
+      {
+        "name": "energy-shield-equipment"
+      }
+    ]
+  },
+  "energy-shield-mk2-equipment-recycling": {
+    "ingredients": [
+      {
+        "name": "energy-shield-mk2-equipment"
+      }
+    ]
+  },
+  "engine-unit-recycling": {
+    "ingredients": [
+      {
+        "name": "engine-unit"
+      }
+    ]
+  },
+  "exoskeleton-equipment-recycling": {
+    "ingredients": [
+      {
+        "name": "exoskeleton-equipment"
+      }
+    ]
+  },
+  "explosive-cannon-shell-recycling": {
+    "ingredients": [
+      {
+        "name": "explosive-cannon-shell"
+      }
+    ]
+  },
+  "explosive-rocket-recycling": {
+    "ingredients": [
+      {
+        "name": "explosive-rocket"
+      }
+    ]
+  },
+  "explosive-uranium-cannon-shell-recycling": {
+    "ingredients": [
+      {
+        "name": "explosive-uranium-cannon-shell"
+      }
+    ]
+  },
+  "express-loader-recycling": {
+    "ingredients": [
+      {
+        "name": "express-loader"
+      }
+    ]
+  },
+  "express-splitter-recycling": {
+    "ingredients": [
+      {
+        "name": "express-splitter"
+      }
+    ]
+  },
+  "express-transport-belt-recycling": {
+    "ingredients": [
+      {
+        "name": "express-transport-belt"
+      }
+    ]
+  },
+  "express-underground-belt-recycling": {
+    "ingredients": [
+      {
+        "name": "express-underground-belt"
+      }
+    ]
+  },
+  "fast-inserter-recycling": {
+    "ingredients": [
+      {
+        "name": "fast-inserter"
+      }
+    ]
+  },
+  "fast-loader-recycling": {
+    "ingredients": [
+      {
+        "name": "fast-loader"
+      }
+    ]
+  },
+  "fast-splitter-recycling": {
+    "ingredients": [
+      {
+        "name": "fast-splitter"
+      }
+    ]
+  },
+  "fast-transport-belt-recycling": {
+    "ingredients": [
+      {
+        "name": "fast-transport-belt"
+      }
+    ]
+  },
+  "fast-underground-belt-recycling": {
+    "ingredients": [
+      {
+        "name": "fast-underground-belt"
+      }
+    ]
+  },
+  "fission-reactor-equipment-recycling": {
+    "ingredients": [
+      {
+        "name": "fission-reactor-equipment"
+      }
+    ]
+  },
+  "flamethrower-recycling": {
+    "ingredients": [
+      {
+        "name": "flamethrower"
+      }
+    ]
+  },
+  "flamethrower-turret-recycling": {
+    "ingredients": [
+      {
+        "name": "flamethrower-turret"
+      }
+    ]
+  },
+  "fluid-wagon-recycling": {
+    "ingredients": [
+      {
+        "name": "fluid-wagon"
+      }
+    ]
+  },
+  "flying-robot-frame-recycling": {
+    "ingredients": [
+      {
+        "name": "flying-robot-frame"
+      }
+    ]
+  },
+  "foundation-recycling": {
+    "ingredients": [
+      {
+        "name": "foundation"
+      }
+    ]
+  },
+  "foundry-recycling": {
+    "ingredients": [
+      {
+        "name": "foundry"
+      }
+    ]
+  },
+  "fusion-generator-recycling": {
+    "ingredients": [
+      {
+        "name": "fusion-generator"
+      }
+    ]
+  },
+  "fusion-reactor-equipment-recycling": {
+    "ingredients": [
+      {
+        "name": "fusion-reactor-equipment"
+      }
+    ]
+  },
+  "fusion-reactor-recycling": {
+    "ingredients": [
+      {
+        "name": "fusion-reactor"
+      }
+    ]
+  },
+  "gate-recycling": {
+    "ingredients": [
+      {
+        "name": "gate"
+      }
+    ]
+  },
+  "grenade-recycling": {
+    "ingredients": [
+      {
+        "name": "grenade"
+      }
+    ]
+  },
+  "gun-turret-recycling": {
+    "ingredients": [
+      {
+        "name": "gun-turret"
+      }
+    ]
+  },
+  "hazard-concrete-recycling": {
+    "ingredients": [
+      {
+        "name": "hazard-concrete"
+      }
+    ]
+  },
+  "heat-exchanger-recycling": {
+    "ingredients": [
+      {
+        "name": "heat-exchanger"
+      }
+    ]
+  },
+  "heat-interface-recycling": {
+    "ingredients": [
+      {
+        "name": "heat-interface"
+      }
+    ]
+  },
+  "heat-pipe-recycling": {
+    "ingredients": [
+      {
+        "name": "heat-pipe"
+      }
+    ]
+  },
+  "heating-tower-recycling": {
+    "ingredients": [
+      {
+        "name": "heating-tower"
+      }
+    ]
+  },
+  "heavy-armor-recycling": {
+    "ingredients": [
+      {
+        "name": "heavy-armor"
+      }
+    ]
+  },
+  "infinity-chest-recycling": {
+    "ingredients": [
+      {
+        "name": "infinity-chest"
+      }
+    ]
+  },
+  "infinity-pipe-recycling": {
+    "ingredients": [
+      {
+        "name": "infinity-pipe"
+      }
+    ]
+  },
+  "inserter-recycling": {
+    "ingredients": [
+      {
+        "name": "inserter"
+      }
+    ]
+  },
+  "item-unknown-recycling": {
+    "ingredients": [
+      {
+        "name": "item-unknown"
+      }
+    ]
+  },
+  "lab-recycling": {
+    "ingredients": [
+      {
+        "name": "lab"
+      }
+    ]
+  },
+  "land-mine-recycling": {
+    "ingredients": [
+      {
+        "name": "land-mine"
+      }
+    ]
+  },
+  "landing-pad-unloading-bay-recycling": {
+    "ingredients": [
+      {
+        "name": "landing-pad-unloading-bay"
+      }
+    ]
+  },
+  "laser-turret-recycling": {
+    "ingredients": [
+      {
+        "name": "laser-turret"
+      }
+    ]
+  },
+  "lightning-collector-recycling": {
+    "ingredients": [
+      {
+        "name": "lightning-collector"
+      }
+    ]
+  },
+  "lightning-rod-recycling": {
+    "ingredients": [
+      {
+        "name": "lightning-rod"
+      }
+    ]
+  },
+  "loader-recycling": {
+    "ingredients": [
+      {
+        "name": "loader"
+      }
+    ]
+  },
+  "locomotive-recycling": {
+    "ingredients": [
+      {
+        "name": "locomotive"
+      }
+    ]
+  },
+  "logistic-robot-recycling": {
+    "ingredients": [
+      {
+        "name": "logistic-robot"
+      }
+    ]
+  },
+  "long-handed-inserter-recycling": {
+    "ingredients": [
+      {
+        "name": "long-handed-inserter"
+      }
+    ]
+  },
+  "low-density-structure-recycling": {
+    "ingredients": [
+      {
+        "name": "low-density-structure"
+      }
+    ]
+  },
+  "mech-armor-recycling": {
+    "ingredients": [
+      {
+        "name": "mech-armor"
+      }
+    ]
+  },
+  "medium-electric-pole-recycling": {
+    "ingredients": [
+      {
+        "name": "medium-electric-pole"
+      }
+    ]
+  },
+  "modular-armor-recycling": {
+    "ingredients": [
+      {
+        "name": "modular-armor"
+      }
+    ]
+  },
+  "night-vision-equipment-recycling": {
+    "ingredients": [
+      {
+        "name": "night-vision-equipment"
+      }
+    ]
+  },
+  "nuclear-reactor-recycling": {
+    "ingredients": [
+      {
+        "name": "nuclear-reactor"
+      }
+    ]
+  },
+  "offshore-pump-recycling": {
+    "ingredients": [
+      {
+        "name": "offshore-pump"
+      }
+    ]
+  },
+  "oil-refinery-recycling": {
+    "ingredients": [
+      {
+        "name": "oil-refinery"
+      }
+    ]
+  },
+  "overgrowth-jellynut-soil-recycling": {
+    "ingredients": [
+      {
+        "name": "overgrowth-jellynut-soil"
+      }
+    ]
+  },
+  "overgrowth-yumako-soil-recycling": {
+    "ingredients": [
+      {
+        "name": "overgrowth-yumako-soil"
+      }
+    ]
+  },
+  "passive-provider-chest-recycling": {
+    "ingredients": [
+      {
+        "name": "passive-provider-chest"
+      }
+    ]
+  },
+  "personal-laser-defense-equipment-recycling": {
+    "ingredients": [
+      {
+        "name": "personal-laser-defense-equipment"
+      }
+    ]
+  },
+  "personal-roboport-equipment-recycling": {
+    "ingredients": [
+      {
+        "name": "personal-roboport-equipment"
+      }
+    ]
+  },
+  "personal-roboport-mk2-equipment-recycling": {
+    "ingredients": [
+      {
+        "name": "personal-roboport-mk2-equipment"
+      }
+    ]
+  },
+  "piercing-rounds-magazine-recycling": {
+    "ingredients": [
+      {
+        "name": "piercing-rounds-magazine"
+      }
+    ]
+  },
+  "piercing-shotgun-shell-recycling": {
+    "ingredients": [
+      {
+        "name": "piercing-shotgun-shell"
+      }
+    ]
+  },
+  "pipe-to-ground-recycling": {
+    "ingredients": [
+      {
+        "name": "pipe-to-ground"
+      }
+    ]
+  },
+  "poison-capsule-recycling": {
+    "ingredients": [
+      {
+        "name": "poison-capsule"
+      }
+    ]
+  },
+  "power-armor-mk2-recycling": {
+    "ingredients": [
+      {
+        "name": "power-armor-mk2"
+      }
+    ]
+  },
+  "power-armor-recycling": {
+    "ingredients": [
+      {
+        "name": "power-armor"
+      }
+    ]
+  },
+  "power-switch-recycling": {
+    "ingredients": [
+      {
+        "name": "power-switch"
+      }
+    ]
+  },
+  "processing-unit-recycling": {
+    "ingredients": [
+      {
+        "name": "processing-unit"
+      }
+    ]
+  },
+  "productivity-module-2-recycling": {
+    "ingredients": [
+      {
+        "name": "productivity-module-2"
+      }
+    ]
+  },
+  "productivity-module-3-recycling": {
+    "ingredients": [
+      {
+        "name": "productivity-module-3"
+      }
+    ]
+  },
+  "productivity-module-recycling": {
+    "ingredients": [
+      {
+        "name": "productivity-module"
+      }
+    ]
+  },
+  "programmable-speaker-recycling": {
+    "ingredients": [
+      {
+        "name": "programmable-speaker"
+      }
+    ]
+  },
+  "pump-recycling": {
+    "ingredients": [
+      {
+        "name": "pump"
+      }
+    ]
+  },
+  "pumpjack-recycling": {
+    "ingredients": [
+      {
+        "name": "pumpjack"
+      }
+    ]
+  },
+  "quality-module-2-recycling": {
+    "ingredients": [
+      {
+        "name": "quality-module-2"
+      }
+    ]
+  },
+  "quality-module-3-recycling": {
+    "ingredients": [
+      {
+        "name": "quality-module-3"
+      }
+    ]
+  },
+  "quality-module-recycling": {
+    "ingredients": [
+      {
+        "name": "quality-module"
+      }
+    ]
+  },
+  "radar-recycling": {
+    "ingredients": [
+      {
+        "name": "radar"
+      }
+    ]
+  },
+  "rail-chain-signal-recycling": {
+    "ingredients": [
+      {
+        "name": "rail-chain-signal"
+      }
+    ]
+  },
+  "rail-ramp-recycling": {
+    "ingredients": [
+      {
+        "name": "rail-ramp"
+      }
+    ]
+  },
+  "rail-recycling": {
+    "ingredients": [
+      {
+        "name": "rail"
+      }
+    ]
+  },
+  "rail-signal-recycling": {
+    "ingredients": [
+      {
+        "name": "rail-signal"
+      }
+    ]
+  },
+  "rail-support-recycling": {
+    "ingredients": [
+      {
+        "name": "rail-support"
+      }
+    ]
+  },
+  "railgun-ammo-recycling": {
+    "ingredients": [
+      {
+        "name": "railgun-ammo"
+      }
+    ]
+  },
+  "railgun-recycling": {
+    "ingredients": [
+      {
+        "name": "railgun"
+      }
+    ]
+  },
+  "railgun-turret-recycling": {
+    "ingredients": [
+      {
+        "name": "railgun-turret"
+      }
+    ]
+  },
+  "recipe-unknown": {
+    "ingredients": []
+  },
+  "recycler-recycling": {
+    "ingredients": [
+      {
+        "name": "recycler"
+      }
+    ]
+  },
+  "refined-concrete-recycling": {
+    "ingredients": [
+      {
+        "name": "refined-concrete"
+      }
+    ]
+  },
+  "refined-hazard-concrete-recycling": {
+    "ingredients": [
+      {
+        "name": "refined-hazard-concrete"
+      }
+    ]
+  },
+  "repair-pack-recycling": {
+    "ingredients": [
+      {
+        "name": "repair-pack"
+      }
+    ]
+  },
+  "requester-chest-recycling": {
+    "ingredients": [
+      {
+        "name": "requester-chest"
+      }
+    ]
+  },
+  "roboport-recycling": {
+    "ingredients": [
+      {
+        "name": "roboport"
+      }
+    ]
+  },
+  "rocket-launcher-recycling": {
+    "ingredients": [
+      {
+        "name": "rocket-launcher"
+      }
+    ]
+  },
+  "rocket-recycling": {
+    "ingredients": [
+      {
+        "name": "rocket"
+      }
+    ]
+  },
+  "rocket-silo-recycling": {
+    "ingredients": [
+      {
+        "name": "rocket-silo"
+      }
+    ]
+  },
+  "rocket-turret-recycling": {
+    "ingredients": [
+      {
+        "name": "rocket-turret"
+      }
+    ]
+  },
+  "selector-combinator-recycling": {
+    "ingredients": [
+      {
+        "name": "selector-combinator"
+      }
+    ]
+  },
+  "shotgun-recycling": {
+    "ingredients": [
+      {
+        "name": "shotgun"
+      }
+    ]
+  },
+  "shotgun-shell-recycling": {
+    "ingredients": [
+      {
+        "name": "shotgun-shell"
+      }
+    ]
+  },
+  "slowdown-capsule-recycling": {
+    "ingredients": [
+      {
+        "name": "slowdown-capsule"
+      }
+    ]
+  },
+  "small-electric-pole-recycling": {
+    "ingredients": [
+      {
+        "name": "small-electric-pole"
+      }
+    ]
+  },
+  "small-lamp-recycling": {
+    "ingredients": [
+      {
+        "name": "small-lamp"
+      }
+    ]
+  },
+  "solar-panel-equipment-recycling": {
+    "ingredients": [
+      {
+        "name": "solar-panel-equipment"
+      }
+    ]
+  },
+  "solar-panel-recycling": {
+    "ingredients": [
+      {
+        "name": "solar-panel"
+      }
+    ]
+  },
+  "space-platform-foundation-recycling": {
+    "ingredients": [
+      {
+        "name": "space-platform-foundation"
+      }
+    ]
+  },
+  "space-platform-starter-pack-recycling": {
+    "ingredients": [
+      {
+        "name": "space-platform-starter-pack"
+      }
+    ]
+  },
+  "speed-module-2-recycling": {
+    "ingredients": [
+      {
+        "name": "speed-module-2"
+      }
+    ]
+  },
+  "speed-module-3-recycling": {
+    "ingredients": [
+      {
+        "name": "speed-module-3"
+      }
+    ]
+  },
+  "speed-module-recycling": {
+    "ingredients": [
+      {
+        "name": "speed-module"
+      }
+    ]
+  },
+  "spidertron-recycling": {
+    "ingredients": [
+      {
+        "name": "spidertron"
+      }
+    ]
+  },
+  "splitter-recycling": {
+    "ingredients": [
+      {
+        "name": "splitter"
+      }
+    ]
+  },
+  "stack-inserter-recycling": {
+    "ingredients": [
+      {
+        "name": "stack-inserter"
+      }
+    ]
+  },
+  "steam-engine-recycling": {
+    "ingredients": [
+      {
+        "name": "steam-engine"
+      }
+    ]
+  },
+  "steam-turbine-recycling": {
+    "ingredients": [
+      {
+        "name": "steam-turbine"
+      }
+    ]
+  },
+  "steel-furnace-recycling": {
+    "ingredients": [
+      {
+        "name": "steel-furnace"
+      }
+    ]
+  },
+  "storage-chest-recycling": {
+    "ingredients": [
+      {
+        "name": "storage-chest"
+      }
+    ]
+  },
+  "storage-tank-recycling": {
+    "ingredients": [
+      {
+        "name": "storage-tank"
+      }
+    ]
+  },
+  "submachine-gun-recycling": {
+    "ingredients": [
+      {
+        "name": "submachine-gun"
+      }
+    ]
+  },
+  "substation-recycling": {
+    "ingredients": [
+      {
+        "name": "substation"
+      }
+    ]
+  },
+  "tank-recycling": {
+    "ingredients": [
+      {
+        "name": "tank"
+      }
+    ]
+  },
+  "tesla-ammo-recycling": {
+    "ingredients": [
+      {
+        "name": "tesla-ammo"
+      }
+    ]
+  },
+  "tesla-turret-recycling": {
+    "ingredients": [
+      {
+        "name": "tesla-turret"
+      }
+    ]
+  },
+  "teslagun-recycling": {
+    "ingredients": [
+      {
+        "name": "teslagun"
+      }
+    ]
+  },
+  "thruster-recycling": {
+    "ingredients": [
+      {
+        "name": "thruster"
+      }
+    ]
+  },
+  "toolbelt-equipment-recycling": {
+    "ingredients": [
+      {
+        "name": "toolbelt-equipment"
+      }
+    ]
+  },
+  "train-stop-recycling": {
+    "ingredients": [
+      {
+        "name": "train-stop"
+      }
+    ]
+  },
+  "transport-belt-recycling": {
+    "ingredients": [
+      {
+        "name": "transport-belt"
+      }
+    ]
+  },
+  "turbo-loader-recycling": {
+    "ingredients": [
+      {
+        "name": "turbo-loader"
+      }
+    ]
+  },
+  "turbo-splitter-recycling": {
+    "ingredients": [
+      {
+        "name": "turbo-splitter"
+      }
+    ]
+  },
+  "turbo-transport-belt-recycling": {
+    "ingredients": [
+      {
+        "name": "turbo-transport-belt"
+      }
+    ]
+  },
+  "turbo-underground-belt-recycling": {
+    "ingredients": [
+      {
+        "name": "turbo-underground-belt"
+      }
+    ]
+  },
+  "underground-belt-recycling": {
+    "ingredients": [
+      {
+        "name": "underground-belt"
+      }
+    ]
+  },
+  "uranium-cannon-shell-recycling": {
+    "ingredients": [
+      {
+        "name": "uranium-cannon-shell"
+      }
+    ]
+  },
+  "uranium-rounds-magazine-recycling": {
+    "ingredients": [
+      {
+        "name": "uranium-rounds-magazine"
+      }
+    ]
+  },
+  "electric-energy-interface-equipment-recycling": {
+    "ingredients": [
+      {
+        "name": "electric-energy-interface-equipment"
+      }
+    ]
+  },
+  "electric-energy-interface-recycling": {
+    "ingredients": [
+      {
+        "name": "electric-energy-interface"
+      }
+    ]
+  },
+  "linked-chest-recycling": {
+    "ingredients": [
+      {
+        "name": "linked-chest"
+      }
+    ]
+  },
+  "proxy-container-recycling": {
+    "ingredients": [
+      {
+        "name": "proxy-container"
+      }
+    ]
+  },
+  "bottomless-chest-recycling": {
+    "ingredients": [
+      {
+        "name": "bottomless-chest"
+      }
+    ]
+  },
+  "heat-interface": {
+    "ingredients": [
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "heat-pipe"
+      }
+    ]
+  },
+  "lane-splitter-recycling": {
+    "ingredients": [
+      {
+        "name": "lane-splitter"
+      }
+    ]
+  },
+  "linked-belt-recycling": {
+    "ingredients": [
+      {
+        "name": "linked-belt"
+      }
+    ]
+  },
+  "one-way-valve-recycling": {
+    "ingredients": [
+      {
+        "name": "one-way-valve"
+      }
+    ]
+  },
+  "overflow-valve-recycling": {
+    "ingredients": [
+      {
+        "name": "overflow-valve"
+      }
+    ]
+  },
+  "top-up-valve-recycling": {
+    "ingredients": [
+      {
+        "name": "top-up-valve"
+      }
+    ]
+  },
+  "infinity-cargo-wagon-recycling": {
+    "ingredients": [
+      {
+        "name": "infinity-cargo-wagon"
+      }
+    ]
+  },
+  "infinity-chest": {
+    "ingredients": [
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "steel-chest"
+      }
+    ]
+  },
+  "infinity-pipe": {
+    "ingredients": [
+      {
+        "name": "electronic-circuit"
+      },
+      {
+        "name": "pipe"
+      }
+    ]
+  },
+  "selection-tool-recycling": {
+    "ingredients": [
+      {
+        "name": "selection-tool"
+      }
+    ]
+  },
+  "simple-entity-with-force-recycling": {
+    "ingredients": [
+      {
+        "name": "simple-entity-with-force"
+      }
+    ]
+  },
+  "simple-entity-with-owner-recycling": {
+    "ingredients": [
+      {
+        "name": "simple-entity-with-owner"
+      }
+    ]
+  },
+  "burner-generator-recycling": {
+    "ingredients": [
+      {
+        "name": "burner-generator"
+      }
+    ]
+  }
+}

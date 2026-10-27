@@ -1,0 +1,27 @@
+{
+  "index": 2,
+  "upgrade_planner": {
+    "item": "upgrade-planner",
+    "label": "Red to blue belts",
+    "version": 562954249895936,
+    "settings": {
+      "mappers": [
+        {
+          "index": 0,
+          "from": {"type": "entity", "name": "fast-transport-belt"},
+          "to": {"type": "entity", "name": "express-transport-belt"}
+        },
+        {
+          "index": 1,
+          "from": {"type": "entity", "name": "fast-underground-belt"},
+          "to": {"type": "entity", "name": "express-underground-belt"}
+        },
+        {
+          "index": 2,
+          "from": {"type": "entity", "name": "fast-splitter"},
+          "to": {"type": "entity", "name": "express-splitter"}
+        }
+      ]
+    }
+  }
+}

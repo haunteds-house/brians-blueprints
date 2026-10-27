@@ -1,0 +1,65 @@
+{
+  "index": 8,
+  "blueprint": {
+    "icons": [{"signal": {"name": "locomotive"}, "index": 1}],
+    "entities": [
+      {
+        "name": "locomotive",
+        "position": {"x": 2, "y": 1},
+        "enable_logistics_while_moving": false,
+        "orientation": 0.75
+      },
+      {
+        "name": "locomotive",
+        "position": {"x": 9, "y": 1},
+        "enable_logistics_while_moving": false,
+        "orientation": 0.75
+      },
+      {
+        "name": "cargo-wagon",
+        "position": {"x": 16, "y": 1},
+        "enable_logistics_while_moving": false,
+        "orientation": 0.25,
+        "inventory": null
+      },
+      {
+        "name": "cargo-wagon",
+        "position": {"x": 23, "y": 1},
+        "enable_logistics_while_moving": false,
+        "orientation": 0.25,
+        "inventory": null
+      }
+    ],
+    "schedules": [
+      {
+        "locomotives": ["0,0", "7,0"],
+        "schedule": {
+          "group": "Bootstrap: coal",
+          "records": [
+            {
+              "station": "[item=coal] Outpost load",
+              "wait_conditions": [{"type": "full", "compare_type": "and"}]
+            },
+            {
+              "station": "[item=coal] Bootstrap unload",
+              "wait_conditions": [{"type": "empty", "compare_type": "and"}]
+            }
+          ]
+        }
+      }
+    ],
+    "stock_connections": [
+      {"stock": "0,0", "back": "7,0"},
+      {"stock": "7,0", "front": "0,0", "back": "14,0"},
+      {"stock": "14,0", "front": "21,0", "back": "7,0"},
+      {"stock": "21,0", "back": "14,0"}
+    ],
+    "item": "blueprint",
+    "label": "coal — 2-2 bootstrap train",
+    "version": 562954249895936,
+    "description": "Two locomotives, two wagons. Place on existing rails; fuel locomotives with coal until a fuel-loading station is built. Explicit resource-specific schedules do not depend on rocket fuel or the later city-block interrupt overhaul.",
+    "snap-to-grid": {"x": 32, "y": 32},
+    "absolute-snapping": true,
+    "position-relative-to-grid": {"x": 0, "y": 0}
+  }
+}

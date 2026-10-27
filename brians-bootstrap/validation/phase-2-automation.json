@@ -1,0 +1,57 @@
+{
+  "engine_version": "2.1.23",
+  "official_expansion": "2.1.23",
+  "passed": true,
+  "warmup_minutes": 5,
+  "sample_minutes": 5,
+  "packs_per_minute": {
+    "automation-science-pack": 30
+  },
+  "produced_packs": {
+    "automation-science-pack": 150
+  },
+  "recipe_counts": {
+    "automation-science-pack": 5,
+    "iron-gear-wheel": 1
+  },
+  "declared_item_inputs": [
+    {
+      "x": 5.5,
+      "y": 0.5,
+      "item": "iron-plate",
+      "direction": 8
+    },
+    {
+      "x": 115.5,
+      "y": 0.5,
+      "item": "copper-plate",
+      "direction": 8
+    },
+    {
+      "x": 116.5,
+      "y": 0.5,
+      "item": "copper-plate",
+      "direction": 8
+    },
+    {
+      "x": 117.5,
+      "y": 0.5,
+      "item": "copper-plate",
+      "direction": 8
+    },
+    {
+      "x": 118.5,
+      "y": 0.5,
+      "item": "copper-plate",
+      "direction": 8
+    }
+  ],
+  "declared_fluid_inputs": {},
+  "unpowered_machines": 0,
+  "blueprint_entity_count": 623,
+  "recipe_productivity_research": false,
+  "inserter_capacity_max": 3,
+  "blueprint_sha256": "7431ee04ab8decaa99ce7d4445be2a987dd637d6b0b2ca63cf87c77f2290f523",
+  "original_test_blueprint_sha256": "0c485783c40f2c60ff23b52e4ec0b9a92348464ea3a662f2901ca34876e7d50d",
+  "metadata_only_update": "Label/description changed for launch ordering; entities, wires and grid settings verified identical to the native-tested version."
+}

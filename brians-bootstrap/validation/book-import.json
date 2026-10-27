@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "engine_version": "2.1.23",
+  "leaf_items": 85,
+  "planners": {
+    "Prelaunch machines and inserters \u2014 keep yellow belts": 2,
+    "Yellow to red belts": 3,
+    "Red to blue belts": 3,
+    "Retire starter furnaces only": 0,
+    "Medium poles \u2014 green science unlock": 1
+  },
+  "import_string_sha256": "0074fedfcbeaf6c26d250b510286e61bcb4207329abbb81444dbf8559ca67489"
+}
