@@ -35,6 +35,8 @@ def footprint(entity):
                 'chemical-plant', 'electric-furnace', 'lab', 'storage-tank'}:
         w = h = 3
     elif name == 'oil-refinery': w = h = 5
+    elif name == 'rocket-silo': w = h = 9
+    elif name == 'cargo-landing-pad': w = h = 8
     elif name in {'stone-furnace', 'steel-furnace', 'big-electric-pole'}: w = h = 2
     elif 'splitter' in name: w, h = 2, 1
     elif name == 'pump': w, h = 1, 2
@@ -211,7 +213,7 @@ def compact(reference, root, create, power_wires, early_cell):
         ('petroleum-gas',(138.5,111.5),(78.5,127.5))]:
         router.route(start,end,fluid)
     bp['label']='Bootstrap — all six sciences, red belts'
-    bp['description']='Integrated 160x128 bootstrap. One placement anchor for all six science chains and the construction/defense bay. All belts, splitters and underground belts are red; routing never depends on different belt tiers. Upgrade the complete belt network to blue. 5/6/5/12/7/7 science assemblers. See README.md for phases, external plate imports and commissioning.'
+    bp['description']='Integrated 160x128 bootstrap. One placement anchor for all six science chains and the construction/defense bay. All belts, splitters and underground belts are red; routing never depends on different belt tiers. Keep red belts through launch; blue is optional later. 5/6/5/12/7/7 science assemblers. See README.md for phases, external plate imports and commissioning.'
     return small_power(bp,create,power_wires)
 
 
@@ -451,7 +453,7 @@ def phases(full, root, create, power_wires):
         def ref(i):return f"{entities[i]['position']['x']-phase_min_x:g},{entities[i]['position']['y']-phase_min_y:g}"
         bp['wires']=[[ref(ref_to_i[a]),ac,ref(ref_to_i[b]),bc] for a,ac,b,bc in full.get('wires',[])
                      if ref_to_i[a] in active and ref_to_i[b] in active]
-        bp=tier(bp,'yellow' if stage<5 else 'red')
+        bp=tier(bp,'yellow' if stage<=5 else 'red')
         for t in bp['entities']:
             t.pop('_starter_only',None)
             t.pop('_construction_bay',None)
@@ -461,10 +463,10 @@ def phases(full, root, create, power_wires):
             if stage<5 and t['name']=='assembling-machine-2':t['name']='assembling-machine-1'
             elif stage>=5 and t['name']=='assembling-machine-1':t['name']='assembling-machine-2'
             if stage==4 and t.get('recipe')=='advanced-oil-processing':t['recipe']='basic-oil-processing'
-        bp['label']=f'Phase {stage} — '+{2:'Automation',3:'Green and military',4:'Basic oil and blue science',5:'Red belts and advanced oil',6:'All six Nauvis sciences'}[stage]
-        bp['description']='Same 160x128 bootstrap anchor. Build this phase over the previous phase, applying the tier planner when needed. No separate science campus. All belts in this phase use one tier. Later science recipes and construction items are added as researched. See setup and retirement instructions.'
+        bp['label']=f'Phase {stage} — '+{2:'Automation',3:'Green and military',4:'Basic oil and blue science',5:'Launch research — assembler 2s and advanced oil',6:'Postlaunch — all six Nauvis sciences'}[stage]
+        bp['description']='Same 160x128 anchor. Phase 5: upgrade assemblers/inserters, keep yellow belts and launch using the first-launch sub-book. Phase 6: after launch, apply yellow-to-red belt planner and add purple/yellow chains. Phase 7: optional blue belts. No separate science campus. See LAUNCH.md and setup/retirement instructions.'
         output.append((stage,bp))
-    blue=tier(output[-1][1],'blue');blue['label']='Phase 7 — Blue belts, same integrated bootstrap'
+    blue=tier(output[-1][1],'blue');blue['label']='Phase 7 — Optional postlaunch blue belts'
     output.append((7,blue))
     return output
 

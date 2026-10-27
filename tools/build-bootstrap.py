@@ -403,7 +403,7 @@ def build():
         p.unlink()
     write(DEST / '_metadata.json', metadata("Brian's Bootstrap — Space Age 2.1", 0))
     early = DEST / 'early-support'
-    write(early / '_metadata.json', metadata('Early solar and defenses', 7))
+    write(early / '_metadata.json', metadata('Early solar and defenses', 8))
     for i, (recipe, label) in enumerate([
         ('solar-panel', 'Solar panels — green science unlock'),
         ('gun-turret', 'Gun turrets — early batch production'),
@@ -412,7 +412,7 @@ def build():
         write(early / (recipe + '.json'), early_cell(recipe, label, i))
 
     batches = DEST / 'nauvis-infrastructure'
-    write(batches / '_metadata.json', metadata('Nauvis infrastructure batch mall — no space science', 9))
+    write(batches / '_metadata.json', metadata('Postlaunch Nauvis infrastructure — no space science', 10))
     for i, recipe in enumerate(['concrete', 'refined-concrete', 'hazard-concrete',
             'refined-hazard-concrete', 'gun-turret', 'flamethrower-turret',
             'laser-turret', 'stone-wall', 'gate', 'electric-furnace',
@@ -431,7 +431,7 @@ def build():
     save_bp(batches, 'uranium-processing', uranium_processing(), 99)
 
     ext = DEST / 'phase-6-external-resources'
-    write(ext / '_metadata.json', metadata('External electric smelting and raw imports', 8))
+    write(ext / '_metadata.json', metadata('External smelting and raw imports — expand as needed', 9))
     from compact_bootstrap import furnace_bank
     save_bp(ext, 'electric-smelting', furnace_bank(ROOT, e, power_wires, aligned), 0)
     for i, resource, bp in import_stations():
@@ -450,13 +450,22 @@ def build():
     first['description'] = 'Hand-fed iron, copper and coal. Same 160x128 reservation as all later phases. Connect external steam power for phase 2. Retire these fuel furnaces at phase 5, after external smelting is running.'
     save_bp(DEST, 'phase-1', first, 0)
     for stage, data in phases(science, ROOT, e, power_wires):
-        save_bp(DEST, f'phase-{stage}', data, stage-1)
+        save_bp(DEST, f'phase-{stage}', data, stage-1 if stage<6 else stage)
+
+    from launch_bootstrap import build as build_launch, research_annex
+    launch = DEST / 'first-launch'
+    write(launch / '_metadata.json', metadata('Phase 5 — First launch before 8 hours', 5))
+    workshop, pad, plan = build_launch(ROOT, e, power_wires, aligned, VERSION)
+    save_bp(launch, 'research-labs', research_annex(e, power_wires, aligned, VERSION), 0)
+    save_bp(launch, 'workshop', workshop, 1)
+    save_bp(launch, 'launch-pad', pad, 2)
+    write(ROOT / 'brians-bootstrap/launch-plan.json', plan)
 
     planners = DEST / 'planners'
-    write(planners / '_metadata.json', metadata('Transition planners', 10))
-    upgrade_tiers = {**TIERS, 'underground-belt':'fast-underground-belt'}
+    write(planners / '_metadata.json', metadata('Transition planners', 11))
+    upgrade_tiers = {'assembling-machine-1':'assembling-machine-2', 'inserter':'fast-inserter'}
     write(planners / 'upgrade.json', {'index': 0, 'upgrade_planner': {
-        'item': 'upgrade-planner', 'label': 'Starter tier upgrade', 'version': VERSION,
+        'item': 'upgrade-planner', 'label': 'Prelaunch machines and inserters — keep yellow belts', 'version': VERSION,
         'settings': {'mappers': [{'index': i, 'from': {'type': 'entity', 'name': a},
                                   'to': {'type': 'entity', 'name': b}}
                                  for i, (a, b) in enumerate(upgrade_tiers.items())]}}})

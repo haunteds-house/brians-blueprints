@@ -83,7 +83,7 @@ class BootstrapBook(unittest.TestCase):
             present={name for name,values in BELTS.items() if names&set(values)}
             self.assertLessEqual(len(present),1,str(path))
         for stage in range(2,8):
-            expected='yellow' if stage<5 else 'red' if stage<7 else 'blue'
+            expected='yellow' if stage<=5 else 'red' if stage<7 else 'blue'
             names={e['name'] for e in get(f'phase-{stage}.json')['entities']}
             self.assertTrue(names&set(BELTS[expected]))
 
@@ -163,6 +163,32 @@ class BootstrapBook(unittest.TestCase):
             for s in bp['schedules']:
                 self.assertEqual(len(s['schedule']['records']),2)
                 self.assertIn(s['schedule']['records'][1]['station'],stations)
+
+    def test_launch_batch_mass_balance_and_geometry(self):
+        plan=bootstrap.read('brians-bootstrap/launch-plan.json')
+        recipes=bootstrap.read('brians-bootstrap/source/launch-recipes.json')
+        balance={}
+        for cell in plan['cells']:
+            balance[cell['product']]=balance.get(cell['product'],0)+cell['target']
+            for ingredient in cell['ingredients']:
+                if ingredient['type']=='item':
+                    balance[ingredient['name']]=balance.get(ingredient['name'],0)-ingredient['amount']
+        for name,count in plan['external_items'].items():balance[name]=balance.get(name,0)+count
+        for name,count in plan['rocket_load'].items():balance[name]-=count
+        self.assertEqual({n:v for n,v in balance.items() if v},
+            {'rocket-silo':1,'cargo-landing-pad':1,'space-platform-starter-pack':1})
+        self.assertEqual(plan['external_items']['electronic-circuit'],6000)
+        self.assertEqual(plan['external_items']['steel-plate'],2345)
+        for path,size in [('workshop',32),('launch-pad',32),('research-labs',32)]:
+            bp=get(f'first-launch/{path}.json');cells=set()
+            for entity in bp['entities']:
+                area=footprint(entity)
+                self.assertFalse(cells&area,entity);cells|=area
+                self.assertTrue(all(0<=x<size and 0<=y<size for x,y in area))
+        self.assertEqual(sum(e['name']=='lab' for e in get('first-launch/research-labs.json')['entities']),36)
+        planner=bootstrap.read('brians-bootstrap/book/planners/upgrade.json')['upgrade_planner']
+        self.assertFalse(any('belt' in m['from']['name'] or 'splitter' in m['from']['name']
+                             for m in planner['settings']['mappers']))
 
     def test_nauvis_only_without_space_logistics(self):
         gated=set(bootstrap.read('brians-bootstrap/source/space-age-gated-recipes.json')['recipes'])

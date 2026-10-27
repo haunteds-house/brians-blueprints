@@ -153,5 +153,7 @@
   "blueprint_entity_count": 3694,
   "recipe_productivity_research": false,
   "inserter_capacity_max": 3,
-  "blueprint_sha256": "34446c5fce19afe6dd951e66d4b3478556538b41e28ec5952e285d8dbf428743"
+  "blueprint_sha256": "77e9c648311d47f8f070b2df4f99837a2439b256f0f97c2a48f5e8ae5de26efc",
+  "original_test_blueprint_sha256": "34446c5fce19afe6dd951e66d4b3478556538b41e28ec5952e285d8dbf428743",
+  "metadata_only_update": "Label/description changed for launch ordering; entities, wires and grid settings verified identical to the native-tested version."
 }

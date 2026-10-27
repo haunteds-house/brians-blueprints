@@ -1,0 +1,207 @@
+{
+  "power_inlet": {"x": 2.5, "y": 4.5},
+  "cells": [
+    {
+      "id": 0,
+      "recipe": "processing-unit",
+      "product": "processing-unit",
+      "target": 140,
+      "machine": {"x": 4.5, "y": 4.5},
+      "input": {"x": 4.5, "y": 1.5},
+      "output": {"x": 4.5, "y": 7.5},
+      "fluid_port": {"x": 7.5, "y": 4.5, "fluid": "sulfuric-acid"},
+      "ingredients": [
+        {"type": "item", "name": "electronic-circuit", "amount": 2800},
+        {"type": "item", "name": "advanced-circuit", "amount": 280},
+        {"type": "fluid", "name": "sulfuric-acid", "amount": 700}
+      ]
+    },
+    {
+      "id": 1,
+      "recipe": "processing-unit",
+      "product": "processing-unit",
+      "target": 140,
+      "machine": {"x": 12.5, "y": 4.5},
+      "input": {"x": 12.5, "y": 1.5},
+      "output": {"x": 12.5, "y": 7.5},
+      "fluid_port": {"x": 15.5, "y": 4.5, "fluid": "sulfuric-acid"},
+      "ingredients": [
+        {"type": "item", "name": "electronic-circuit", "amount": 2800},
+        {"type": "item", "name": "advanced-circuit", "amount": 280},
+        {"type": "fluid", "name": "sulfuric-acid", "amount": 700}
+      ]
+    },
+    {
+      "id": 2,
+      "recipe": "electric-engine-unit",
+      "product": "electric-engine-unit",
+      "target": 100,
+      "machine": {"x": 20.5, "y": 4.5},
+      "input": {"x": 20.5, "y": 1.5},
+      "output": {"x": 20.5, "y": 7.5},
+      "fluid_port": {"x": 23.5, "y": 4.5, "fluid": "lubricant"},
+      "ingredients": [
+        {"type": "item", "name": "electronic-circuit", "amount": 200},
+        {"type": "item", "name": "engine-unit", "amount": 100},
+        {"type": "fluid", "name": "lubricant", "amount": 1500}
+      ]
+    },
+    {
+      "id": 3,
+      "recipe": "electric-engine-unit",
+      "product": "electric-engine-unit",
+      "target": 100,
+      "machine": {"x": 28.5, "y": 4.5},
+      "input": {"x": 28.5, "y": 1.5},
+      "output": {"x": 28.5, "y": 7.5},
+      "fluid_port": {"x": 31.5, "y": 4.5, "fluid": "lubricant"},
+      "ingredients": [
+        {"type": "item", "name": "electronic-circuit", "amount": 200},
+        {"type": "item", "name": "engine-unit", "amount": 100},
+        {"type": "fluid", "name": "lubricant", "amount": 1500}
+      ]
+    },
+    {
+      "id": 4,
+      "recipe": "low-density-structure",
+      "product": "low-density-structure",
+      "target": 50,
+      "machine": {"x": 4.5, "y": 12.5},
+      "input": {"x": 4.5, "y": 9.5},
+      "output": {"x": 4.5, "y": 15.5},
+      "fluid_port": null,
+      "ingredients": [
+        {"type": "item", "name": "copper-plate", "amount": 1000},
+        {"type": "item", "name": "steel-plate", "amount": 100},
+        {"type": "item", "name": "plastic-bar", "amount": 250}
+      ]
+    },
+    {
+      "id": 5,
+      "recipe": "concrete",
+      "product": "concrete",
+      "target": 1200,
+      "machine": {"x": 12.5, "y": 12.5},
+      "input": {"x": 12.5, "y": 9.5},
+      "output": {"x": 12.5, "y": 15.5},
+      "fluid_port": {"x": 15.5, "y": 12.5, "fluid": "water"},
+      "ingredients": [
+        {"type": "item", "name": "iron-ore", "amount": 120},
+        {"type": "item", "name": "stone-brick", "amount": 600},
+        {"type": "fluid", "name": "water", "amount": 12000}
+      ]
+    },
+    {
+      "id": 6,
+      "recipe": "solid-fuel-from-light-oil",
+      "product": "solid-fuel",
+      "target": 500,
+      "machine": {"x": 20.5, "y": 12.5},
+      "input": {"x": 20.5, "y": 9.5},
+      "output": {"x": 20.5, "y": 15.5},
+      "fluid_port": {"x": 23.5, "y": 11.5, "fluid": "light-oil"},
+      "ingredients": [{"type": "fluid", "name": "light-oil", "amount": 5000}]
+    },
+    {
+      "id": 7,
+      "recipe": "rocket-fuel",
+      "product": "rocket-fuel",
+      "target": 50,
+      "machine": {"x": 28.5, "y": 12.5},
+      "input": {"x": 28.5, "y": 9.5},
+      "output": {"x": 28.5, "y": 15.5},
+      "fluid_port": {"x": 31.5, "y": 12.5, "fluid": "light-oil"},
+      "ingredients": [
+        {"type": "item", "name": "solid-fuel", "amount": 500},
+        {"type": "fluid", "name": "light-oil", "amount": 500}
+      ]
+    },
+    {
+      "id": 8,
+      "recipe": "copper-cable",
+      "product": "copper-cable",
+      "target": 1200,
+      "machine": {"x": 4.5, "y": 20.5},
+      "input": {"x": 4.5, "y": 17.5},
+      "output": {"x": 4.5, "y": 23.5},
+      "fluid_port": null,
+      "ingredients": [{"type": "item", "name": "copper-plate", "amount": 600}]
+    },
+    {
+      "id": 9,
+      "recipe": "space-platform-foundation",
+      "product": "space-platform-foundation",
+      "target": 60,
+      "machine": {"x": 12.5, "y": 20.5},
+      "input": {"x": 12.5, "y": 17.5},
+      "output": {"x": 12.5, "y": 23.5},
+      "fluid_port": null,
+      "ingredients": [
+        {"type": "item", "name": "steel-plate", "amount": 1200},
+        {"type": "item", "name": "copper-cable", "amount": 1200}
+      ]
+    },
+    {
+      "id": 10,
+      "recipe": "space-platform-starter-pack",
+      "product": "space-platform-starter-pack",
+      "target": 1,
+      "machine": {"x": 20.5, "y": 20.5},
+      "input": {"x": 20.5, "y": 17.5},
+      "output": {"x": 20.5, "y": 23.5},
+      "fluid_port": null,
+      "ingredients": [
+        {"type": "item", "name": "steel-plate", "amount": 20},
+        {"type": "item", "name": "processing-unit", "amount": 20},
+        {"type": "item", "name": "space-platform-foundation", "amount": 60}
+      ]
+    },
+    {
+      "id": 11,
+      "recipe": "rocket-silo",
+      "product": "rocket-silo",
+      "target": 1,
+      "machine": {"x": 28.5, "y": 20.5},
+      "input": {"x": 28.5, "y": 17.5},
+      "output": {"x": 28.5, "y": 23.5},
+      "fluid_port": null,
+      "ingredients": [
+        {"type": "item", "name": "steel-plate", "amount": 1000},
+        {"type": "item", "name": "processing-unit", "amount": 200},
+        {"type": "item", "name": "electric-engine-unit", "amount": 200},
+        {"type": "item", "name": "pipe", "amount": 100},
+        {"type": "item", "name": "concrete", "amount": 1000}
+      ]
+    },
+    {
+      "id": 12,
+      "recipe": "cargo-landing-pad",
+      "product": "cargo-landing-pad",
+      "target": 1,
+      "machine": {"x": 4.5, "y": 28.5},
+      "input": {"x": 4.5, "y": 25.5},
+      "output": {"x": 4.5, "y": 31.5},
+      "fluid_port": null,
+      "ingredients": [
+        {"type": "item", "name": "steel-plate", "amount": 25},
+        {"type": "item", "name": "processing-unit", "amount": 10},
+        {"type": "item", "name": "concrete", "amount": 200}
+      ]
+    }
+  ],
+  "external_items": {
+    "electronic-circuit": 6000,
+    "advanced-circuit": 560,
+    "engine-unit": 200,
+    "copper-plate": 1600,
+    "steel-plate": 2345,
+    "plastic-bar": 250,
+    "iron-ore": 120,
+    "stone-brick": 600,
+    "pipe": 100
+  },
+  "fluid_consumption": {"sulfuric-acid": 1400, "lubricant": 3000, "water": 12000, "light-oil": 5500},
+  "rocket_load": {"processing-unit": 50, "low-density-structure": 50, "rocket-fuel": 50},
+  "cargo": {"space-platform-starter-pack": 1},
+  "note": "Finite recipe consumption; fluids need additional pipe fill. Workshop construction, external power/oil/smelting and science inputs are extra."
+}

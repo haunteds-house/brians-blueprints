@@ -1,0 +1,20 @@
+{
+  "index": 2,
+  "blueprint": {
+    "item": "blueprint",
+    "version": 562954249895936,
+    "label": "Phase 5c — First rocket and landing pad (32x32)",
+    "description": "Build only after crafting the silo and landing pad. West chest (4.5,10.5): 50 processing units, 50 low-density structures, 50 rocket fuel. Inserter feeds silo. Put one starter pack into rocket cargo, select New platform, name it and launch. External power inlet (4.5,8.5). Reserve rocket clearance; later use this pad for repeated launches.",
+    "entities": [
+      {"name": "rocket-silo", "position": {"x": 10.5, "y": 10.5}, "recipe": "rocket-part"},
+      {"name": "steel-chest", "position": {"x": 4.5, "y": 10.5}},
+      {"name": "fast-inserter", "position": {"x": 5.5, "y": 10.5}, "direction": 12},
+      {"name": "medium-electric-pole", "position": {"x": 4.5, "y": 8.5}},
+      {"name": "cargo-landing-pad", "position": {"x": 26, "y": 26}}
+    ],
+    "wires": [],
+    "snap-to-grid": {"x": 32, "y": 32},
+    "absolute-snapping": true,
+    "position-relative-to-grid": {"x": 0, "y": 0}
+  }
+}

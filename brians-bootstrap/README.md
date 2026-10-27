@@ -2,7 +2,7 @@
 
 One **160×128** bootstrap reservation, aligned to the 32-tile chunk grid. Red, green, military, blue, purple and yellow science all belong to this factory. Later phases extend the same layout at the same anchor; there is no separate science campus.
 
-[Import string](space-age-bootstrap.txt) · [Connection coordinates](PORTS.md) · [Validation reports](validation/)
+[First-launch route and checklist](LAUNCH.md) · [Import string](space-age-bootstrap.txt) · [Connection coordinates](PORTS.md) · [Validation reports](validation/)
 
 This revision targets Factorio 2.1.23 with the official Space Age expansion components and no third-party mods. It replaces the previous development layout. Do not overlay it on that earlier revision: start a fresh placement or move the existing factory deliberately.
 
@@ -20,11 +20,12 @@ Reserve five chunks east–west and four north–south from the beginning. Align
 | 2 | Automation science | Assembler 1s; yellow belts, undergrounds and splitters |
 | 3 | Logistic and military science; construction/defense bay | Yellow throughout; add medium power where marked after its green-science unlock |
 | 4 | Oil pumping, basic refining and chemical science | Yellow throughout; basic oil works before advanced refining is researched |
-| 5 | Tier upgrade and external electric-smelting handoff | Assembler 2s, fast inserters and red belts throughout; advanced refining/cracking |
-| 6 | Production and utility science | All six science chains inside the bootstrap; red throughout |
+| 5 | First-launch research and material stockpiles | Assembler 2s, fast inserters; keep yellow belts; advanced refining/cracking |
+| 5b/5c | Launch workshop and first rocket | Separate 32×32 batch workshop, research annex and launch pad; red/green/blue research only |
+| 6 — postlaunch | Red-belt upgrade, production and utility science | All six science chains inside the bootstrap; red throughout |
 | 7 — optional, later | Belt upgrade after the bootstrap is established | Blue throughout; unnecessary for the 45/min bootstrap |
 
-**Phase 6 on red belts is the completed bootstrap.** The blue version and its planner are optional later upgrades. Both tiers produce the same 45 science/min; blue belts should be used when a measured transport bottleneck or space constraint justifies them. Do not delay the first rocket to upgrade the bootstrap to blue.
+**Launch first; phase 6 on red belts is the completed postlaunch bootstrap.** See [LAUNCH.md](LAUNCH.md) for research priority, finite ingredient batches, an eight-hour planning budget and the launch procedure. The first-launch path keeps yellow belts through phase 5 to avoid paying for an early whole-factory belt replacement. The blue version and its planner are optional later upgrades. Both tiers produce the same 45 science/min; blue belts should be used when a measured transport bottleneck or space constraint justifies them. Do not delay the first rocket to upgrade the bootstrap to blue.
 
 The ten construction-bay cells produce belts, undergrounds, splitters, inserters, poles, gun turrets, ammunition, walls, repair packs and solar panels. They use ordinary ingredient chests and limited output chests. These are **batch producers**; supply them manually or connect local ingredient belts. They do not require requester chests or continuously divert the science supply. Additional power, rail, concrete, defense and nuclear batch cells are supplied as optional modules.
 
@@ -51,11 +52,11 @@ At simultaneous 45/min of all six sciences, normal recipes without productivity 
 
 Producing 1,000 packs at 45/min takes 22 minutes 13 seconds once supply has settled. Build the expensive purple/yellow chains when their research becomes useful, rather than paying for the entire final factory before green science.
 
-The previous starter plus separate campus reserved 39 chunks in total; this integrated layout reserves 20. It uses 5,335 belt/splitter entities, compared with 6,351 across the previous starter plus campus. The old 96×96 starter and its later campus are retained in Git history, not exported alongside the new phases.
+The previous starter plus separate campus reserved 39 chunks in total; the main integrated layout reserves 20. The first-launch workshop, research annex and launch pad add one chunk each, for 23 before external supply infrastructure. It uses 5,335 belt/splitter entities, compared with 6,351 across the previous starter plus campus. The old 96×96 starter and its later campus are retained in Git history, not exported alongside the new phases.
 
 ## Smelting and raw imports
 
-The first hand-fed furnaces cover the initial milestones, not sustained science. Feed the plate ports from expanding fuel stacks during the early phases. At phase 5, commission external electric smelting and retire the internal hand-fed cell. Ore-processing capacity is expanded outside the bootstrap; science stays inside it.
+The first hand-fed furnaces cover the initial milestones, not sustained science. Feed the plate ports from expanding fuel stacks during the early phases. Commission external electric smelting when power and material reserves permit; keep existing external fuel stacks through launch if that saves time. Retire the internal hand-fed cell once external supply is reliable. Ore-processing capacity is expanded outside the bootstrap; science stays inside it.
 
 The electric stacks use the supplied **6×8 EFurnace Tile**, with fast inserters and no advanced-module requests. Interior underground spans are five tiles and use the same belt tier as the rest of the bank.
 
@@ -82,9 +83,9 @@ The full city-block dispatch overhaul remains the subsequent task.
 2. **Green and military:** Logistic Science Pack, steel, ammunition, walls and turrets as needed. Use the first green packs for Electric Energy Distribution 1 and commission the marked medium pole. Research inserter-capacity bonuses 1–3 as prerequisites allow. The bootstrap assumes enemies may be present. On rail worlds, prioritize Railway, engines and fluid handling during green science when distant deposits require them; the raw-import modules can be commissioned as their prerequisites become available.
 3. **Early solar:** prioritize Solar Energy once green science and steel are available. The integrated batch cell makes panels with assembler 1s. Keep steam for nighttime until batteries and accumulators become available. No solar/accumulator field is included.
 4. **Oil milestone:** Oil Gathering → power a pumpjack on actual crude → extract oil → Oil Processing. Phase 4 uses basic refining and can make blue science before Advanced Oil Processing. Unlock plastics, sulfur, engines and advanced circuits as needed.
-5. **Red tier and smelting:** Automation 2, Fast Inserter, Logistics 2, Advanced Oil Processing and Advanced Material Processing 2. Provide enough power for electric furnaces. Apply the tier planner, commission external plate/steel/brick supply, set the main refineries to advanced processing, then enable cracking/lubricant as unlocked. Do not delete fluids as the normal balancing mechanism.
-6. **Infrastructure and later sciences:** construction robotics, concrete, accumulator production, flamethrower/laser turret supplies and railway equipment as needed. Add production/utility machines in their reserved positions. Conventional uranium processing can supply nuclear fuel before Kovarex: deliver sulfuric acid to uranium miners, mine actual uranium ore for the Uranium Processing trigger, then run the provided centrifuges and fuel-cell cells.
-7. **Space handoff:** Space Age's rocket route uses red/green/blue science; purple/yellow and blue transport belts are not rocket prerequisites. Keep the bootstrap on red belts through this handoff. Research Logistics 3 and use the optional blue planner later, when transport demand warrants the cost. Logistics System requires space science. Cliff explosives and artillery require Vulcanus progression and are omitted from these Nauvis modules.
+5. **First launch:** follow [the launch research order](LAUNCH.md). Upgrade assembler 1s/inserters with the starter planner, then overlay phase 5, which retains yellow belts. The starter planner now changes machines/inserters only; use the separate yellow→red belt planner after launch. Start workshop ingredients while researching the silo prerequisites. Advanced Material Processing 2 is a research prerequisite; physically converting smelting can wait. Set advanced refining and cracking/lubricant as unlocked.
+6. **After launch — infrastructure and later sciences:** apply the separate yellow→red belt planner; then add construction robotics, concrete, accumulator production, flamethrower/laser turret supplies and railway equipment as needed. Add production/utility machines in their reserved positions. Conventional uranium processing can supply nuclear fuel before Kovarex: deliver sulfuric acid to uranium miners, mine actual uranium ore for the Uranium Processing trigger, then run the provided centrifuges and fuel-cell cells.
+7. **Postlaunch space handoff:** Space Age's rocket route uses red/green/blue science; purple/yellow and blue transport belts are not rocket prerequisites. Keep yellow belts through the first launch, then red belts through the postlaunch bootstrap. Research Logistics 3 and use the optional blue planner later, when transport demand warrants the cost. Logistics System requires space science. Cliff explosives and artillery require Vulcanus progression and are omitted from these Nauvis modules.
 
 All fluid inputs and working reserves are inside the 160×128 boundary. The main oil section has eight advanced refineries plus one basic refinery for petroleum headroom. Heavy-oil and lubricant working reserves remain 1,000 fluid each; large export-storage buffers are removed. Supply water at **(0.5,97.5)** and crude at **(0.5,99.5)**. See [PORTS.md](PORTS.md) for every plate and fluid port.
 
@@ -102,9 +103,11 @@ Native acceptance tests use an official Space Age headless installation:
 python3 tools/check-bootstrap-engine.py --phase 6 --factorio /path/to/factorio
 python3 tools/check-bootstrap-engine.py --phase 7 --factorio /path/to/factorio
 python3 tools/check-bootstrap-engine.py --scenario support --factorio /path/to/factorio
+python3 tools/check-bootstrap-engine.py --scenario launch --timeout 1800 --factorio /path/to/factorio
+python3 tools/check-bootstrap-engine.py --scenario research --timeout 1800 --factorio /path/to/factorio
 ```
 
-**Native result:** both complete red and blue layouts produced 45/min of every science over 18 minutes 40 seconds after an 80-minute cold start. All 17 structural checks and the native module/import tests pass. See [the validation notes](validation/README.md) for the measurements and their scope.
+**Six-science native result:** both complete red and blue layouts produced 45/min of every science over 18 minutes 40 seconds after an 80-minute cold start. The 36-lab annex researches the silo in 27m49s with finite packs and no research-speed bonus. The finite launch workshop and pad also passed an actual rocket launch and platform-creation test. All 18 structural checks and the native module/import tests pass. See [the validation notes](validation/README.md) for the measurements and their scope.
 
 Reports under `validation/` identify the exact encoded blueprint by SHA-256. Tests supply saturated declared material/fluid ports and external electricity, disable recipe-productivity research, limit inserter capacity to bonuses 1–3, and drain labs to keep demand active. They test the factory's production, not a particular upstream mine/fleet/power design. Support tests check the compact smelters, unloaders, uranium processing, solar production and placement of every phase.
 

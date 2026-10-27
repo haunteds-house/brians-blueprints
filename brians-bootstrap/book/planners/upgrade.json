@@ -2,34 +2,19 @@
   "index": 0,
   "upgrade_planner": {
     "item": "upgrade-planner",
-    "label": "Starter tier upgrade",
+    "label": "Prelaunch machines and inserters — keep yellow belts",
     "version": 562954249895936,
     "settings": {
       "mappers": [
         {
           "index": 0,
-          "from": {"type": "entity", "name": "transport-belt"},
-          "to": {"type": "entity", "name": "fast-transport-belt"}
-        },
-        {
-          "index": 1,
-          "from": {"type": "entity", "name": "splitter"},
-          "to": {"type": "entity", "name": "fast-splitter"}
-        },
-        {
-          "index": 2,
           "from": {"type": "entity", "name": "assembling-machine-1"},
           "to": {"type": "entity", "name": "assembling-machine-2"}
         },
         {
-          "index": 3,
+          "index": 1,
           "from": {"type": "entity", "name": "inserter"},
           "to": {"type": "entity", "name": "fast-inserter"}
-        },
-        {
-          "index": 4,
-          "from": {"type": "entity", "name": "underground-belt"},
-          "to": {"type": "entity", "name": "fast-underground-belt"}
         }
       ]
     }

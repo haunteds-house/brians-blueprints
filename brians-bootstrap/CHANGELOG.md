@@ -1,5 +1,13 @@
 # Brian's Bootstrap Changelog
 
+
+## First-launch route, then postlaunch expansion
+
+- Phase 5 upgrades assemblers/inserters while keeping yellow belts; red conversion and purple/yellow science move after the first launch.
+- Add a chunk-aligned 32×32 finite-batch launch workshop and 32×32 silo/landing pad; add a 36-lab research annex to avoid the original nine labs limiting silo research. Include all first-launch ingredients and the platform starter pack; no third-party mods or logistics chests.
+- Add a generated batch ledger, prerequisite guidance, achievement-eligible map setup, planning splits and a postlaunch upgrade sequence.
+- Validate actual finite crafting, manual transfers and launch in official Space Age; a full timed survival playthrough remains outside the validation claim.
+
 Don't update to a new version that is different in the first or second digit when in the process of building a base. Though very similar, they are **not** compatible!
 
 ## Integrated bootstrap revision

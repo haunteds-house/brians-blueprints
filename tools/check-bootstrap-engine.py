@@ -79,7 +79,7 @@ def main():
     parser.add_argument('--factorio', default=os.environ.get('FACTORIO_BINARY', shutil.which('factorio')))
     parser.add_argument('--inspect', action='store_true')
     parser.add_argument('--phase', type=int, choices=range(2,8), default=6)
-    parser.add_argument('--scenario', choices=['science', 'support'], default='science')
+    parser.add_argument('--scenario', choices=['science', 'support', 'launch', 'research'], default='science')
     parser.add_argument('--warmup-minutes', type=int, default=80)
     parser.add_argument('--sample-minutes', type=float, default=None,
                         help='Default 4m for assembler 1 phases; 18m40s for assembler 2 phases')
@@ -144,6 +144,16 @@ def main():
             cases.append({'name': f'phase-{phase}', 'kind': 'placement',
                           'blueprint': Processor(False).encode(copy.deepcopy(data))})
         config = {'cases': cases, 'warmup_minutes': 2, 'sample_minutes': 3}
+    if args.scenario == 'launch':
+        data = json.loads((ROOT / 'brians-bootstrap/book/first-launch/workshop.json').read_text())
+        encoded = Processor(False).encode(copy.deepcopy(data))
+        pad = json.loads((ROOT / 'brians-bootstrap/book/first-launch/launch-pad.json').read_text())
+        config = json.loads((ROOT / 'brians-bootstrap/launch-plan.json').read_text())
+        config['pad'] = Processor(False).encode(copy.deepcopy(pad))
+    if args.scenario == 'research':
+        data = json.loads((ROOT / 'brians-bootstrap/book/first-launch/research-labs.json').read_text())
+        encoded = Processor(False).encode(copy.deepcopy(data))
+        config = {}
     fixture = (ROOT / f'tools/bootstrap-tests/engine/{args.scenario}.lua').read_text()
     with tempfile.TemporaryDirectory(prefix='bootstrap-engine-') as directory:
         temp = Path(directory)
@@ -223,6 +233,9 @@ def main():
                     if args.scenario != 'support' else {
                         case['name']: hashlib.sha256(case['blueprint'].encode()).hexdigest()
                         for case in config['cases']}
+                if args.scenario == 'launch':
+                    report['launch_pad_sha256'] = hashlib.sha256(config['pad'].encode()).hexdigest()
+                    report['launch_plan_sha256'] = hashlib.sha256((ROOT / 'brians-bootstrap/launch-plan.json').read_bytes()).hexdigest()
                 if report.get('passed'):
                     report.pop('machines', None)
                 args.output.parent.mkdir(parents=True, exist_ok=True)

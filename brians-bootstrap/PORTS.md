@@ -26,7 +26,7 @@ Connect external power at the pole **(1.5,1.5)**. Steam/solar/nuclear power plan
 
 ## Construction bay
 
-The ten integrated batch cells have centers at x=111.5, 117.5, 123.5, 147.5 and 153.5, on rows y=108.5 and 120.5. Their ordinary input chests are three tiles north of the assembler; limited output chests are three tiles south. Supply ingredients manually or through local belts. The rest of the science production is belt-fed.
+The ten integrated batch cells have centers at x=111.5, 117.5, 123.5, 147.5 and 153.5, on rows y=108.5 and 120.5. Their ordinary input chests are three tiles north of the assembler; limited output chests are three tiles south. Supply ingredients manually or through local belts. The rest of the science production is belt-fed. The separate first-launch workshop uses steel batch chests and seven fluid taps; see [LAUNCH.md](LAUNCH.md) for its ports and finite ingredient checklist.
 
 The first-smelting cell occupies the southwest pocket and accepts hand-fed ore/coal in its ordinary chests. It is retained through phase 4 and retired in phase 5. Expand ore smelting outside this cell before trying to sustain science. Later phases do not automatically remove omitted entities.
 

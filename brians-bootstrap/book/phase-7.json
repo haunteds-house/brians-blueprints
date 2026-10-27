@@ -1,8 +1,8 @@
 {
-  "index": 6,
+  "index": 7,
   "blueprint": {
     "item": "blueprint",
-    "label": "Phase 7 — Blue belts, same integrated bootstrap",
+    "label": "Phase 7 — Optional postlaunch blue belts",
     "version": 562954249895936,
     "entities": [
       {
@@ -11300,7 +11300,7 @@
       {"name": "small-electric-pole", "position": {"x": 154.5, "y": 89.5}}
     ],
     "icons": [{"index": 1, "signal": {"name": "utility-science-pack"}}],
-    "description": "Same 160x128 bootstrap anchor. Build this phase over the previous phase, applying the tier planner when needed. No separate science campus. All belts in this phase use one tier. Later science recipes and construction items are added as researched. See setup and retirement instructions.",
+    "description": "Same 160x128 anchor. Phase 5: upgrade assemblers/inserters, keep yellow belts and launch using the first-launch sub-book. Phase 6: after launch, apply yellow-to-red belt planner and add purple/yellow chains. Phase 7: optional blue belts. No separate science campus. See LAUNCH.md and setup/retirement instructions.",
     "wires": [
       ["58,81", 5, "57,81", 5],
       ["60,106", 5, "59,106", 5],
