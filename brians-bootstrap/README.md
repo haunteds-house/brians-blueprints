@@ -22,7 +22,9 @@ Reserve five chunks east–west and four north–south from the beginning. Align
 | 4 | Oil pumping, basic refining and chemical science | Yellow throughout; basic oil works before advanced refining is researched |
 | 5 | Tier upgrade and external electric-smelting handoff | Assembler 2s, fast inserters and red belts throughout; advanced refining/cracking |
 | 6 | Production and utility science | All six science chains inside the bootstrap; red throughout |
-| 7 | Belt upgrade | Blue throughout, including every underground and splitter; assembler 2s retained |
+| 7 — optional, later | Belt upgrade after the bootstrap is established | Blue throughout; unnecessary for the 45/min bootstrap |
+
+**Phase 6 on red belts is the completed bootstrap.** The blue version and its planner are optional later upgrades. Both tiers produce the same 45 science/min; blue belts should be used when a measured transport bottleneck or space constraint justifies them. Do not delay the first rocket to upgrade the bootstrap to blue.
 
 The ten construction-bay cells produce belts, undergrounds, splitters, inserters, poles, gun turrets, ammunition, walls, repair packs and solar panels. They use ordinary ingredient chests and limited output chests. These are **batch producers**; supply them manually or connect local ingredient belts. They do not require requester chests or continuously divert the science supply. Additional power, rail, concrete, defense and nuclear batch cells are supplied as optional modules.
 
@@ -82,7 +84,7 @@ The full city-block dispatch overhaul remains the subsequent task.
 4. **Oil milestone:** Oil Gathering → power a pumpjack on actual crude → extract oil → Oil Processing. Phase 4 uses basic refining and can make blue science before Advanced Oil Processing. Unlock plastics, sulfur, engines and advanced circuits as needed.
 5. **Red tier and smelting:** Automation 2, Fast Inserter, Logistics 2, Advanced Oil Processing and Advanced Material Processing 2. Provide enough power for electric furnaces. Apply the tier planner, commission external plate/steel/brick supply, set the main refineries to advanced processing, then enable cracking/lubricant as unlocked. Do not delete fluids as the normal balancing mechanism.
 6. **Infrastructure and later sciences:** construction robotics, concrete, accumulator production, flamethrower/laser turret supplies and railway equipment as needed. Add production/utility machines in their reserved positions. Conventional uranium processing can supply nuclear fuel before Kovarex: deliver sulfuric acid to uranium miners, mine actual uranium ore for the Uranium Processing trigger, then run the provided centrifuges and fuel-cell cells.
-7. **Blue belts and space:** research Logistics 3 after utility science and apply the blue planner to the entire belt network. Space Age's rocket route uses red/green/blue science; purple/yellow are not rocket prerequisites. Logistics System requires space science. Cliff explosives and artillery require Vulcanus progression and are omitted from these Nauvis modules.
+7. **Space handoff:** Space Age's rocket route uses red/green/blue science; purple/yellow and blue transport belts are not rocket prerequisites. Keep the bootstrap on red belts through this handoff. Research Logistics 3 and use the optional blue planner later, when transport demand warrants the cost. Logistics System requires space science. Cliff explosives and artillery require Vulcanus progression and are omitted from these Nauvis modules.
 
 All fluid inputs and working reserves are inside the 160×128 boundary. The main oil section has eight advanced refineries plus one basic refinery for petroleum headroom. Heavy-oil and lubricant working reserves remain 1,000 fluid each; large export-storage buffers are removed. Supply water at **(0.5,97.5)** and crude at **(0.5,99.5)**. See [PORTS.md](PORTS.md) for every plate and fluid port.
 
