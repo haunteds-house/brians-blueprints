@@ -2,6 +2,15 @@
 
 Don't update to a new version that is different in the first or second digit when in the process of building a base. Though very similar, they are **not** compatible!
 
+## Space Age 2.1 development overhaul
+
+- Shared chunk-grid anchor for five starter phases and a routing-safe tier upgrade.
+- Separate six-science campus with 5/6/5/12/7/7 assembler 2s, military science and external plate inputs.
+- Electric smelting banks, five raw-resource unloaders and vanilla 2-2 train schedules.
+- Early solar/defense batch cells, uranium processing and a Nauvis infrastructure mall.
+- Milestone-aware setup order, explicit interfaces and reproducible headless validation.
+- Original starter sources preserved; existing city-block dispatch books remain for the next migration.
+
 ## v2.3.3
 
 - Updated a phase#3 inserter to match the phase#4 version.

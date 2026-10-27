@@ -23,7 +23,7 @@ def write(name, data):
 
 def build():
     for i in range(1, 6):
-        path = ROOT / f"brians-bootstrap/book/phase-#{min(i, 4)}.json"
+        path = ROOT / f"brians-bootstrap/source/early-game/phase-#{min(i, 4)}.json"
         bp = copy.deepcopy(json.loads(path.read_text())["blueprint"])
         dx, dy = OFFSETS[i - 1]
         bp["entities"] = [e for e in bp["entities"]

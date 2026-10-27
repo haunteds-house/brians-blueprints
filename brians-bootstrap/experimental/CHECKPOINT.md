@@ -1,6 +1,10 @@
 # Bootstrap overhaul checkpoint
 
-Status: partial; implementation and sustained-throughput validation are unfinished. No release or main-branch changes have been made. The local development workspace went offline before its full draft could be saved. Only the reconstructed starter subset in this branch is durable.
+Historical interruption checkpoint. The workspace was subsequently recovered,
+and the broader draft is now preserved in the main bootstrap directory on this
+development branch. The observations below describe the earlier diagnostic
+version, not the current acceptance result. See ../README.md and ../validation
+for current scope and validation. No release or main-branch merge was made.
 
 ## Agreed target
 
