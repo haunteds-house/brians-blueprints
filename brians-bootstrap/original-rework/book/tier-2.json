@@ -1,0 +1,52 @@
+{
+  "index": 6,
+  "upgrade_planner": {
+    "item": "upgrade-planner",
+    "version": 562954249895936,
+    "label": "Tier 2 — red belts, assembler 2s, fast inserters and medium poles",
+    "settings": {
+      "mappers": [
+        {
+          "index": 0,
+          "from": {"type": "entity", "name": "assembling-machine-1"},
+          "to": {"type": "entity", "name": "assembling-machine-2"}
+        },
+        {
+          "index": 1,
+          "from": {"type": "entity", "name": "inserter"},
+          "to": {"type": "entity", "name": "fast-inserter"}
+        },
+        {
+          "index": 2,
+          "from": {"type": "entity", "name": "burner-inserter"},
+          "to": {"type": "entity", "name": "fast-inserter"}
+        },
+        {
+          "index": 3,
+          "from": {"type": "entity", "name": "small-electric-pole"},
+          "to": {"type": "entity", "name": "medium-electric-pole"}
+        },
+        {
+          "index": 4,
+          "from": {"type": "entity", "name": "stone-furnace"},
+          "to": {"type": "entity", "name": "steel-furnace"}
+        },
+        {
+          "index": 5,
+          "from": {"type": "entity", "name": "transport-belt"},
+          "to": {"type": "entity", "name": "fast-transport-belt"}
+        },
+        {
+          "index": 6,
+          "from": {"type": "entity", "name": "underground-belt"},
+          "to": {"type": "entity", "name": "fast-underground-belt"}
+        },
+        {
+          "index": 7,
+          "from": {"type": "entity", "name": "splitter"},
+          "to": {"type": "entity", "name": "fast-splitter"}
+        }
+      ]
+    }
+  }
+}

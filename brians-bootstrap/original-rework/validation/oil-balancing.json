@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "plastic_crafts": 27,
+  "plastic_output_buffer": 0,
+  "engine_version": "2.1.23",
+  "basic_refining_supplied_sulfur": true,
+  "heavy_cracking_crafts": 29,
+  "low_baseline": [
+    29,
+    29
+  ],
+  "heavy_enable": true,
+  "heavy_disabled": true,
+  "heavy_condition": {
+    "first_signal": {
+      "type": "fluid",
+      "name": "heavy-oil"
+    },
+    "constant": 1000,
+    "comparator": ">",
+    "fulfilled": false
+  },
+  "heavy_contents": false,
+  "heavy_tank": 287.356321811676,
+  "light_tank": 272.7272726893425,
+  "light_cracking_crafts": 29,
+  "low_reserve_stops_verified": true,
+  "scope": "Original refinery networks: connected cracking, high-reserve production and low-reserve circuit stop.",
+  "blueprint_sha256": "f146036b9c7dc42b28f816c7ad9c932f298d30410341e5e0660929f4caeb4b74"
+}

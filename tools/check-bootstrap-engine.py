@@ -79,13 +79,15 @@ def main():
     parser.add_argument('--factorio', default=os.environ.get('FACTORIO_BINARY', shutil.which('factorio')))
     parser.add_argument('--inspect', action='store_true')
     parser.add_argument('--phase', type=int, choices=range(2,8), default=6)
-    parser.add_argument('--scenario', choices=['science', 'support', 'launch', 'research'], default='science')
+    parser.add_argument('--scenario', choices=['science', 'support', 'launch', 'research', 'original'], default='science')
     parser.add_argument('--warmup-minutes', type=int, default=80)
     parser.add_argument('--sample-minutes', type=float, default=None,
                         help='Default 4m for assembler 1 phases; 18m40s for assembler 2 phases')
     parser.add_argument('--timeout', type=int, default=600)
     parser.add_argument('--output', type=Path)
     args = parser.parse_args()
+    if args.scenario == 'original' and args.phase not in {3,4,5,6}:
+        parser.error('Original-layout fixtures support phases 3, 4, 5 and 6')
     if args.sample_minutes is None:
         args.sample_minutes = 4 if args.phase < 5 else 56/3
     if args.output is None:
@@ -154,6 +156,11 @@ def main():
         data = json.loads((ROOT / 'brians-bootstrap/book/first-launch/research-labs.json').read_text())
         encoded = Processor(False).encode(copy.deepcopy(data))
         config = {}
+    if args.scenario == 'original':
+        data = json.loads((ROOT / f'brians-bootstrap/original-rework/book/phase-{args.phase}.json').read_text())
+        encoded = Processor(False).encode(copy.deepcopy(data))
+        config = {'original_phase': args.phase, 'inspect_only': args.inspect}
+        if args.phase == 6: config['imports'] = json.loads((ROOT / 'brians-bootstrap/original-rework/priority-imports.json').read_text())
     fixture = (ROOT / f'tools/bootstrap-tests/engine/{args.scenario}.lua').read_text()
     with tempfile.TemporaryDirectory(prefix='bootstrap-engine-') as directory:
         temp = Path(directory)

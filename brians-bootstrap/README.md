@@ -1,3 +1,5 @@
+> **Original-layout rework:** this working branch now develops the original bootstrap in [original-rework/](original-rework/). The launch-first redesign described below is superseded. The original-layout replacement is still incomplete; its status and native test scope are recorded there.
+
 # Brian's Bootstrap — Space Age 2.1
 
 One **160×128** bootstrap reservation, aligned to the 32-tile chunk grid. Red, green, military, blue, purple and yellow science all belong to this factory. Later phases extend the same layout at the same anchor; there is no separate science campus.

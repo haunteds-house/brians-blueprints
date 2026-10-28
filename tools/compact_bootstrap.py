@@ -48,8 +48,9 @@ def footprint(entity):
 
 class FluidRouter:
     """Route pipes around buildings and keep unrelated fluid segments apart."""
-    def __init__(self, entities, labels, create):
+    def __init__(self, entities, labels, create, bounds=(160,128)):
         self.entities, self.create = entities, create
+        self.bounds = bounds
         self.labels = dict(labels)
         self.solids, self.pipes, self.moat = set(), {}, set()
         for entity in entities:
@@ -88,7 +89,7 @@ class FluidRouter:
         start, goal = tuple(map(math.floor,start)), tuple(map(math.floor,goal))
         @lru_cache(None)
         def free(p, underground=False):
-            if not (0 <= p[0] < 160 and 0 <= p[1] < 128): return False
+            if not (0 <= p[0] < self.bounds[0] and 0 <= p[1] < self.bounds[1]): return False
             if p in {start, goal}: return not underground
             if p in self.solids or p in self.moat: return False
             if p in self.pipes: return False
@@ -112,14 +113,19 @@ class FluidRouter:
             if p in visited: continue
             visited.add(p)
             if p==goal:break
+            used={start};cursor=p
+            while cursor in previous:
+                cursor,action=previous[cursor]
+                if action[0]=='pipe':used.add(action[1])
+                else:used.update(action[1:4])
             for direction,(dx,dy) in DIRECTIONS.items():
                 q=(p[0]+dx,p[1]+dy)
-                if free(q):push(q,costs[p]+1,p,('pipe',q))
-                if q in self.pipes or not free(q,True): continue
+                if q not in used and free(q):push(q,costs[p]+1,p,('pipe',q))
+                if q in used or q in self.pipes or not free(q,True): continue
                 for n in range(2,11):
                     end=(q[0]+n*dx,q[1]+n*dy)
                     after=(end[0]+dx,end[1]+dy)
-                    if end in self.pipes or not free(end,True) or not free(after):continue
+                    if end in used or after in used or end in self.pipes or not free(end,True) or not free(after):continue
                     if not clear(q,end):continue
                     push(after,costs[p]+3+n*.25,p,('tunnel',q,end,after,direction))
         else:
@@ -130,15 +136,21 @@ class FluidRouter:
             p,action=previous[p];steps.append(action)
         steps.reverse()
         placements={start:('pipe',0)}
+        new_tunnels=[]
+        def place(point,value):
+            if point in placements:
+                raise ValueError('Fluid route crosses itself at '+str(point))
+            placements[point]=value
         for action in steps:
-            if action[0]=='pipe':placements[action[1]]=('pipe',0)
+            if action[0]=='pipe':place(action[1],('pipe',0))
             else:
                 _,a,b,c,d=action
-                placements[a]=('pipe-to-ground',(d+8)%16)
-                placements[b]=('pipe-to-ground',d)
-                placements[c]=('pipe',0)
-                self.tunnels.append((a,b))
+                place(a,('pipe-to-ground',(d+8)%16))
+                place(b,('pipe-to-ground',d))
+                place(c,('pipe',0))
+                new_tunnels.append((a,b))
         assert placements[start][0]=='pipe' and placements[goal][0]=='pipe', 'Fluid port overwritten by a tunnel'
+        self.tunnels.extend(new_tunnels)
         for point,(name,direction) in placements.items():
             if point in self.pipes:continue
             self.entities.append(self.create(name,point[0]+.5,point[1]+.5,
@@ -336,7 +348,7 @@ def transport_graph(entities):
         name=t['name'];x,y=map(math.floor,(t['position']['x'],t['position']['y']))
         d=t.get('direction',0);dx,dy=DIRECTIONS.get(d,(0,0))
         if 'underground-belt' in name and t.get('type')=='input':
-            for distance in range(1,6):
+            for distance in range(1,{'underground-belt':5,'fast-underground-belt':7,'express-underground-belt':9}.get(name,5)+1):
                 j=endpoints.get((x+distance*dx,y+distance*dy))
                 if j is not None and entities[j].get('type')=='output' and entities[j].get('direction',0)==d:
                     forward[i].add(j);break

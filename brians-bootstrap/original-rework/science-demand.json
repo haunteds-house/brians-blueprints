@@ -1,0 +1,261 @@
+{
+  "target_science_per_minute": 45,
+  "normal_quality": true,
+  "productivity": 0,
+  "boundary": "Imports plates, steel, brick, coal, stone and named fluids; acid/lubricant crafting included; crude refining and oil balancing sized separately. Mall production is additional.",
+  "production": {
+    "advanced-circuit": {
+      "items_per_second": 4.625,
+      "items_per_minute": 277.5,
+      "machines_at_nominal_speed": 37.0,
+      "minimum_whole_machines": 37,
+      "crafting_speed_used": 0.75
+    },
+    "automation-science-pack": {
+      "items_per_second": 0.75,
+      "items_per_minute": 45.0,
+      "machines_at_nominal_speed": 5.0,
+      "minimum_whole_machines": 5,
+      "crafting_speed_used": 0.75
+    },
+    "battery": {
+      "items_per_second": 0.5,
+      "items_per_minute": 30.0,
+      "machines_at_nominal_speed": 2.0,
+      "minimum_whole_machines": 2,
+      "crafting_speed_used": 1
+    },
+    "chemical-science-pack": {
+      "items_per_second": 0.75,
+      "items_per_minute": 45.0,
+      "machines_at_nominal_speed": 12.0,
+      "minimum_whole_machines": 12,
+      "crafting_speed_used": 0.75
+    },
+    "coal": {
+      "items_per_second": 10.25,
+      "items_per_minute": 615.0
+    },
+    "copper-cable": {
+      "items_per_second": 86.0,
+      "items_per_minute": 5160.0,
+      "machines_at_nominal_speed": 28.66666667,
+      "minimum_whole_machines": 29,
+      "crafting_speed_used": 0.75
+    },
+    "copper-plate": {
+      "items_per_second": 59.625,
+      "items_per_minute": 3577.5
+    },
+    "electric-engine-unit": {
+      "items_per_second": 0.25,
+      "items_per_minute": 15.0,
+      "machines_at_nominal_speed": 3.33333333,
+      "minimum_whole_machines": 4,
+      "crafting_speed_used": 0.75
+    },
+    "electric-furnace": {
+      "items_per_second": 0.25,
+      "items_per_minute": 15.0,
+      "machines_at_nominal_speed": 1.66666667,
+      "minimum_whole_machines": 2,
+      "crafting_speed_used": 0.75
+    },
+    "electronic-circuit": {
+      "items_per_second": 22.5,
+      "items_per_minute": 1350.0,
+      "machines_at_nominal_speed": 15.0,
+      "minimum_whole_machines": 15,
+      "crafting_speed_used": 0.75
+    },
+    "engine-unit": {
+      "items_per_second": 1.0,
+      "items_per_minute": 60.0,
+      "machines_at_nominal_speed": 13.33333333,
+      "minimum_whole_machines": 14,
+      "crafting_speed_used": 0.75
+    },
+    "firearm-magazine": {
+      "items_per_second": 0.375,
+      "items_per_minute": 22.5,
+      "machines_at_nominal_speed": 0.5,
+      "minimum_whole_machines": 1,
+      "crafting_speed_used": 0.75
+    },
+    "flying-robot-frame": {
+      "items_per_second": 0.25,
+      "items_per_minute": 15.0,
+      "machines_at_nominal_speed": 6.66666667,
+      "minimum_whole_machines": 7,
+      "crafting_speed_used": 0.75
+    },
+    "grenade": {
+      "items_per_second": 0.375,
+      "items_per_minute": 22.5,
+      "machines_at_nominal_speed": 4.0,
+      "minimum_whole_machines": 4,
+      "crafting_speed_used": 0.75
+    },
+    "heavy-oil": {
+      "items_per_second": 3.75,
+      "items_per_minute": 225.0
+    },
+    "inserter": {
+      "items_per_second": 0.75,
+      "items_per_minute": 45.0,
+      "machines_at_nominal_speed": 0.5,
+      "minimum_whole_machines": 1,
+      "crafting_speed_used": 0.75
+    },
+    "iron-gear-wheel": {
+      "items_per_second": 2.875,
+      "items_per_minute": 172.5,
+      "machines_at_nominal_speed": 1.91666667,
+      "minimum_whole_machines": 2,
+      "crafting_speed_used": 0.75
+    },
+    "iron-plate": {
+      "items_per_second": 37.375,
+      "items_per_minute": 2242.5
+    },
+    "iron-stick": {
+      "items_per_second": 3.75,
+      "items_per_minute": 225.0,
+      "machines_at_nominal_speed": 1.25,
+      "minimum_whole_machines": 2,
+      "crafting_speed_used": 0.75
+    },
+    "logistic-science-pack": {
+      "items_per_second": 0.75,
+      "items_per_minute": 45.0,
+      "machines_at_nominal_speed": 6.0,
+      "minimum_whole_machines": 6,
+      "crafting_speed_used": 0.75
+    },
+    "low-density-structure": {
+      "items_per_second": 0.75,
+      "items_per_minute": 45.0,
+      "machines_at_nominal_speed": 15.0,
+      "minimum_whole_machines": 15,
+      "crafting_speed_used": 0.75
+    },
+    "lubricant": {
+      "items_per_second": 3.75,
+      "items_per_minute": 225.0,
+      "machines_at_nominal_speed": 0.375,
+      "minimum_whole_machines": 1,
+      "crafting_speed_used": 1
+    },
+    "military-science-pack": {
+      "items_per_second": 0.75,
+      "items_per_minute": 45.0,
+      "machines_at_nominal_speed": 5.0,
+      "minimum_whole_machines": 5,
+      "crafting_speed_used": 0.75
+    },
+    "petroleum-gas": {
+      "items_per_second": 154.375,
+      "items_per_minute": 9262.5
+    },
+    "piercing-rounds-magazine": {
+      "items_per_second": 0.375,
+      "items_per_minute": 22.5,
+      "machines_at_nominal_speed": 1.5,
+      "minimum_whole_machines": 2,
+      "crafting_speed_used": 0.75
+    },
+    "pipe": {
+      "items_per_second": 2.0,
+      "items_per_minute": 120.0,
+      "machines_at_nominal_speed": 1.33333333,
+      "minimum_whole_machines": 2,
+      "crafting_speed_used": 0.75
+    },
+    "plastic-bar": {
+      "items_per_second": 13.0,
+      "items_per_minute": 780.0,
+      "machines_at_nominal_speed": 6.5,
+      "minimum_whole_machines": 7,
+      "crafting_speed_used": 1
+    },
+    "processing-unit": {
+      "items_per_second": 0.5,
+      "items_per_minute": 30.0,
+      "machines_at_nominal_speed": 6.66666667,
+      "minimum_whole_machines": 7,
+      "crafting_speed_used": 0.75
+    },
+    "production-science-pack": {
+      "items_per_second": 0.75,
+      "items_per_minute": 45.0,
+      "machines_at_nominal_speed": 7.0,
+      "minimum_whole_machines": 7,
+      "crafting_speed_used": 0.75
+    },
+    "productivity-module": {
+      "items_per_second": 0.25,
+      "items_per_minute": 15.0,
+      "machines_at_nominal_speed": 5.0,
+      "minimum_whole_machines": 5,
+      "crafting_speed_used": 0.75
+    },
+    "rail": {
+      "items_per_second": 7.5,
+      "items_per_minute": 450.0,
+      "machines_at_nominal_speed": 2.5,
+      "minimum_whole_machines": 3,
+      "crafting_speed_used": 0.75
+    },
+    "steel-plate": {
+      "items_per_second": 9.1875,
+      "items_per_minute": 551.25
+    },
+    "stone": {
+      "items_per_second": 3.75,
+      "items_per_minute": 225.0
+    },
+    "stone-brick": {
+      "items_per_second": 6.25,
+      "items_per_minute": 375.0
+    },
+    "stone-wall": {
+      "items_per_second": 0.75,
+      "items_per_minute": 45.0,
+      "machines_at_nominal_speed": 0.5,
+      "minimum_whole_machines": 1,
+      "crafting_speed_used": 0.75
+    },
+    "sulfur": {
+      "items_per_second": 1.625,
+      "items_per_minute": 97.5,
+      "machines_at_nominal_speed": 0.8125,
+      "minimum_whole_machines": 1,
+      "crafting_speed_used": 1
+    },
+    "sulfuric-acid": {
+      "items_per_second": 12.5,
+      "items_per_minute": 750.0,
+      "machines_at_nominal_speed": 0.25,
+      "minimum_whole_machines": 1,
+      "crafting_speed_used": 1
+    },
+    "transport-belt": {
+      "items_per_second": 0.75,
+      "items_per_minute": 45.0,
+      "machines_at_nominal_speed": 0.25,
+      "minimum_whole_machines": 1,
+      "crafting_speed_used": 0.75
+    },
+    "utility-science-pack": {
+      "items_per_second": 0.75,
+      "items_per_minute": 45.0,
+      "machines_at_nominal_speed": 7.0,
+      "minimum_whole_machines": 7,
+      "crafting_speed_used": 0.75
+    },
+    "water": {
+      "items_per_second": 49.375,
+      "items_per_minute": 2962.5
+    }
+  }
+}

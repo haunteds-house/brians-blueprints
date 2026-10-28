@@ -1,0 +1,79 @@
+[
+  {
+    "name": "fast-inserter",
+    "position": {
+      "x": 2.5,
+      "y": 46.5
+    }
+  },
+  {
+    "name": "fast-inserter",
+    "position": {
+      "x": 3.5,
+      "y": 47.5
+    }
+  },
+  {
+    "name": "fast-inserter",
+    "position": {
+      "x": 3.5,
+      "y": 49.5
+    }
+  },
+  {
+    "name": "fast-inserter",
+    "position": {
+      "x": 2.5,
+      "y": 50.5
+    }
+  },
+  {
+    "name": "constant-combinator",
+    "position": {
+      "x": 0.5,
+      "y": 46.5
+    }
+  },
+  {
+    "name": "constant-combinator",
+    "position": {
+      "x": 1.5,
+      "y": 48.5
+    }
+  },
+  {
+    "name": "constant-combinator",
+    "position": {
+      "x": 0.5,
+      "y": 50.5
+    }
+  },
+  {
+    "name": "fast-inserter",
+    "position": {
+      "x": 1.5,
+      "y": 45.5
+    }
+  },
+  {
+    "name": "steel-furnace",
+    "position": {
+      "x": 1,
+      "y": 44
+    }
+  },
+  {
+    "name": "steel-furnace",
+    "position": {
+      "x": 4,
+      "y": 46
+    }
+  },
+  {
+    "name": "steel-furnace",
+    "position": {
+      "x": 4,
+      "y": 51
+    }
+  }
+]

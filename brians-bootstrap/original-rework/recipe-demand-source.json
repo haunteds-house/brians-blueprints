@@ -1,0 +1,918 @@
+{
+  "advanced-circuit": {
+    "energy": 6,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "plastic-bar",
+        "amount": 2
+      },
+      {
+        "type": "item",
+        "name": "copper-cable",
+        "amount": 4
+      },
+      {
+        "type": "item",
+        "name": "electronic-circuit",
+        "amount": 2
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "advanced-circuit",
+        "amount": 1,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "automation-science-pack": {
+    "energy": 5,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "copper-plate",
+        "amount": 1
+      },
+      {
+        "type": "item",
+        "name": "iron-gear-wheel",
+        "amount": 1
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "automation-science-pack",
+        "amount": 1,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "battery": {
+    "energy": 4,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 1
+      },
+      {
+        "type": "item",
+        "name": "copper-plate",
+        "amount": 1
+      },
+      {
+        "type": "fluid",
+        "name": "sulfuric-acid",
+        "amount": 20
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "battery",
+        "amount": 1,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "chemical-science-pack": {
+    "energy": 24,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "sulfur",
+        "amount": 1
+      },
+      {
+        "type": "item",
+        "name": "advanced-circuit",
+        "amount": 3
+      },
+      {
+        "type": "item",
+        "name": "engine-unit",
+        "amount": 2
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "chemical-science-pack",
+        "amount": 2,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "copper-cable": {
+    "energy": 0.5,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "copper-plate",
+        "amount": 1
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "copper-cable",
+        "amount": 2,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "electric-engine-unit": {
+    "energy": 10,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "electronic-circuit",
+        "amount": 2
+      },
+      {
+        "type": "item",
+        "name": "engine-unit",
+        "amount": 1
+      },
+      {
+        "type": "fluid",
+        "name": "lubricant",
+        "amount": 15
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "electric-engine-unit",
+        "amount": 1,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "electric-furnace": {
+    "energy": 5,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "steel-plate",
+        "amount": 10
+      },
+      {
+        "type": "item",
+        "name": "advanced-circuit",
+        "amount": 5
+      },
+      {
+        "type": "item",
+        "name": "stone-brick",
+        "amount": 10
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "electric-furnace",
+        "amount": 1,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "electronic-circuit": {
+    "energy": 0.5,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 1
+      },
+      {
+        "type": "item",
+        "name": "copper-cable",
+        "amount": 3
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "electronic-circuit",
+        "amount": 1,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "engine-unit": {
+    "energy": 10,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "steel-plate",
+        "amount": 1
+      },
+      {
+        "type": "item",
+        "name": "iron-gear-wheel",
+        "amount": 1
+      },
+      {
+        "type": "item",
+        "name": "pipe",
+        "amount": 2
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "engine-unit",
+        "amount": 1,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "firearm-magazine": {
+    "energy": 1,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 4
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "firearm-magazine",
+        "amount": 1,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "flying-robot-frame": {
+    "energy": 20,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "steel-plate",
+        "amount": 1
+      },
+      {
+        "type": "item",
+        "name": "battery",
+        "amount": 2
+      },
+      {
+        "type": "item",
+        "name": "electronic-circuit",
+        "amount": 3
+      },
+      {
+        "type": "item",
+        "name": "electric-engine-unit",
+        "amount": 1
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "flying-robot-frame",
+        "amount": 1,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "grenade": {
+    "energy": 8,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "coal",
+        "amount": 10
+      },
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 5
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "grenade",
+        "amount": 1,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "inserter": {
+    "energy": 0.5,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 1
+      },
+      {
+        "type": "item",
+        "name": "iron-gear-wheel",
+        "amount": 1
+      },
+      {
+        "type": "item",
+        "name": "electronic-circuit",
+        "amount": 1
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "inserter",
+        "amount": 1,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "iron-gear-wheel": {
+    "energy": 0.5,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 2
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "iron-gear-wheel",
+        "amount": 1,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "iron-stick": {
+    "energy": 0.5,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 1
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "iron-stick",
+        "amount": 2,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "logistic-science-pack": {
+    "energy": 6,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "transport-belt",
+        "amount": 1
+      },
+      {
+        "type": "item",
+        "name": "inserter",
+        "amount": 1
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "logistic-science-pack",
+        "amount": 1,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "low-density-structure": {
+    "energy": 15,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "copper-plate",
+        "amount": 20
+      },
+      {
+        "type": "item",
+        "name": "steel-plate",
+        "amount": 2
+      },
+      {
+        "type": "item",
+        "name": "plastic-bar",
+        "amount": 5
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "low-density-structure",
+        "amount": 1,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "lubricant": {
+    "energy": 1,
+    "ingredients": [
+      {
+        "type": "fluid",
+        "name": "heavy-oil",
+        "amount": 10
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "fluid",
+        "name": "lubricant",
+        "amount": 10
+      }
+    ]
+  },
+  "military-science-pack": {
+    "energy": 10,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "piercing-rounds-magazine",
+        "amount": 1
+      },
+      {
+        "type": "item",
+        "name": "grenade",
+        "amount": 1
+      },
+      {
+        "type": "item",
+        "name": "stone-wall",
+        "amount": 2
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "military-science-pack",
+        "amount": 2,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "piercing-rounds-magazine": {
+    "energy": 6,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "copper-plate",
+        "amount": 2
+      },
+      {
+        "type": "item",
+        "name": "steel-plate",
+        "amount": 1
+      },
+      {
+        "type": "item",
+        "name": "firearm-magazine",
+        "amount": 2
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "piercing-rounds-magazine",
+        "amount": 2,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "pipe": {
+    "energy": 0.5,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 1
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "pipe",
+        "amount": 1,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "plastic-bar": {
+    "energy": 1,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "coal",
+        "amount": 1
+      },
+      {
+        "type": "fluid",
+        "name": "petroleum-gas",
+        "amount": 20
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "plastic-bar",
+        "amount": 2,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "processing-unit": {
+    "energy": 10,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "electronic-circuit",
+        "amount": 20
+      },
+      {
+        "type": "item",
+        "name": "advanced-circuit",
+        "amount": 2
+      },
+      {
+        "type": "fluid",
+        "name": "sulfuric-acid",
+        "amount": 5
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "processing-unit",
+        "amount": 1,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "production-science-pack": {
+    "energy": 21,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "rail",
+        "amount": 30
+      },
+      {
+        "type": "item",
+        "name": "electric-furnace",
+        "amount": 1
+      },
+      {
+        "type": "item",
+        "name": "productivity-module",
+        "amount": 1
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "production-science-pack",
+        "amount": 3,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "productivity-module": {
+    "energy": 15,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "electronic-circuit",
+        "amount": 5
+      },
+      {
+        "type": "item",
+        "name": "advanced-circuit",
+        "amount": 5
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "productivity-module",
+        "amount": 1,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "rail": {
+    "energy": 0.5,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "stone",
+        "amount": 1
+      },
+      {
+        "type": "item",
+        "name": "steel-plate",
+        "amount": 1
+      },
+      {
+        "type": "item",
+        "name": "iron-stick",
+        "amount": 1
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "rail",
+        "amount": 2,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "stone-wall": {
+    "energy": 0.5,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "stone-brick",
+        "amount": 5
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "stone-wall",
+        "amount": 1,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "sulfur": {
+    "energy": 1,
+    "ingredients": [
+      {
+        "type": "fluid",
+        "name": "water",
+        "amount": 30
+      },
+      {
+        "type": "fluid",
+        "name": "petroleum-gas",
+        "amount": 30
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "sulfur",
+        "amount": 2,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "sulfuric-acid": {
+    "energy": 1,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 1
+      },
+      {
+        "type": "item",
+        "name": "sulfur",
+        "amount": 5
+      },
+      {
+        "type": "fluid",
+        "name": "water",
+        "amount": 100
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "fluid",
+        "name": "sulfuric-acid",
+        "amount": 50
+      }
+    ]
+  },
+  "transport-belt": {
+    "energy": 0.5,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "iron-plate",
+        "amount": 1
+      },
+      {
+        "type": "item",
+        "name": "iron-gear-wheel",
+        "amount": 1
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "transport-belt",
+        "amount": 2,
+        "affected_by_quality": true
+      }
+    ]
+  },
+  "utility-science-pack": {
+    "energy": 21,
+    "ingredients": [
+      {
+        "type": "item",
+        "name": "processing-unit",
+        "amount": 2
+      },
+      {
+        "type": "item",
+        "name": "flying-robot-frame",
+        "amount": 1
+      },
+      {
+        "type": "item",
+        "name": "low-density-structure",
+        "amount": 3
+      }
+    ],
+    "products": [
+      {
+        "independent_probability": 1,
+        "shared_probability": {
+          "min": 0,
+          "max": 1
+        },
+        "type": "item",
+        "name": "utility-science-pack",
+        "amount": 3,
+        "affected_by_quality": true
+      }
+    ]
+  }
+}

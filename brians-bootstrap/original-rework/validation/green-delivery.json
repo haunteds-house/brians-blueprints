@@ -1,0 +1,36 @@
+{
+  "diagnostic": [
+    {
+      "position": [
+        37.5,
+        21.5
+      ],
+      "status": 36,
+      "energy": 268.44444444444446
+    },
+    {
+      "position": [
+        14.5,
+        44.5
+      ],
+      "status": 36,
+      "energy": 268.44444444444446
+    },
+    {
+      "position": [
+        13.5,
+        43.5
+      ],
+      "status": 38,
+      "energy": 268.44444444444446
+    }
+  ],
+  "source_count": 0,
+  "destination_count": 26,
+  "passed": true,
+  "engine_version": "2.1.23",
+  "inserters_delivered_to_science": 4,
+  "scope": "Transport test: inserters supplied only in original mall output chest. No manual delivery to science.",
+  "entity_count": 823,
+  "blueprint_sha256": "cde9727de200d532b57e3f049851c1f3840c65726f0cf98b41d833cf85e38260"
+}

@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "engine_version": "2.1.23",
+  "cases": [
+    {
+      "item": "iron-plate",
+      "science_items_per_minute": 1800,
+      "overflow_during_science_demand": 0,
+      "overflow_with_science_backed_up": 1802,
+      "passed": true
+    },
+    {
+      "item": "iron-plate",
+      "science_items_per_minute": 1800,
+      "overflow_during_science_demand": 0,
+      "overflow_with_science_backed_up": 1782,
+      "passed": true
+    },
+    {
+      "item": "copper-plate",
+      "science_items_per_minute": 1800,
+      "overflow_during_science_demand": 0,
+      "overflow_with_science_backed_up": 1794,
+      "passed": true
+    }
+  ],
+  "scope": "Main plate-import priority and backpressure test; terminal belts drained, not a full science-throughput benchmark.",
+  "blueprint_sha256": "ed36424bed574242f1721217c98af0985c4bc38c12bf8753b7de485b0746d7fb"
+}
